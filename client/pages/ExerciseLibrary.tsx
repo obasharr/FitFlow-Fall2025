@@ -151,27 +151,54 @@ export default function ExerciseLibrary() {
           </div>
 
           <div className="flex gap-3 overflow-x-auto px-4 pb-2 scrollbar-hide">
-            {basicExercises.map((exercise, index) => (
-              <Link
-                key={index}
-                to={`/exercise/${exercise.name.toLowerCase()}`}
-                className="flex flex-col gap-3 flex-shrink-0 bg-white rounded-lg p-3 w-48 hover:shadow-lg transition-shadow"
-              >
-                <img
-                  src={exercise.image}
-                  alt={exercise.name}
-                  className="w-full h-40 rounded-lg object-cover"
-                />
-                <div className="flex flex-col gap-0.5">
-                  <p className="text-sm text-black font-normal">
-                    {exercise.name}
-                  </p>
-                  <p className="text-base font-medium text-black line-clamp-2">
-                    {exercise.description}
-                  </p>
+            {basicExercises.map((exercise, index) => {
+              const isSquats = exercise.name.toLowerCase() === "squats";
+
+              if (isSquats) {
+                return (
+                  <Link
+                    key={index}
+                    to={`/exercise/squats`}
+                    className="flex flex-col gap-3 flex-shrink-0 bg-white rounded-lg p-3 w-48 hover:shadow-lg transition-shadow cursor-pointer"
+                  >
+                    <img
+                      src={exercise.image}
+                      alt={exercise.name}
+                      className="w-full h-40 rounded-lg object-cover"
+                    />
+                    <div className="flex flex-col gap-0.5">
+                      <p className="text-sm text-black font-normal">
+                        {exercise.name}
+                      </p>
+                      <p className="text-base font-medium text-black line-clamp-2">
+                        {exercise.description}
+                      </p>
+                    </div>
+                  </Link>
+                );
+              }
+
+              return (
+                <div
+                  key={index}
+                  className="flex flex-col gap-3 flex-shrink-0 bg-white rounded-lg p-3 w-48 cursor-default opacity-75"
+                >
+                  <img
+                    src={exercise.image}
+                    alt={exercise.name}
+                    className="w-full h-40 rounded-lg object-cover"
+                  />
+                  <div className="flex flex-col gap-0.5">
+                    <p className="text-sm text-black font-normal">
+                      {exercise.name}
+                    </p>
+                    <p className="text-base font-medium text-black line-clamp-2">
+                      {exercise.description}
+                    </p>
+                  </div>
                 </div>
-              </Link>
-            ))}
+              );
+            })}
           </div>
         </div>
 
