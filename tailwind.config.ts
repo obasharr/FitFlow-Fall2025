@@ -7,7 +7,13 @@ export default {
   theme: {
     fontFamily: {
       sans: ["Inter", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
-      display: ["Archivo Black", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
+      display: [
+        "Archivo Black",
+        "-apple-system",
+        "Roboto",
+        "Helvetica",
+        "sans-serif",
+      ],
     },
     container: {
       center: true,

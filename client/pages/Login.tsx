@@ -106,7 +106,9 @@ export default function Login() {
                   </clipPath>
                 </defs>
               </svg>
-              <span className="text-sm font-medium text-black">Continue with Google</span>
+              <span className="text-sm font-medium text-black">
+                Continue with Google
+              </span>
             </Button>
 
             {/* Apple button */}
@@ -124,7 +126,9 @@ export default function Login() {
               >
                 <path d="M17.05 13.5C16.8 14.3 16.35 15.15 15.7 15.95C14.95 16.95 14.3 17.5 13.75 17.5C13.1 17.5 12.75 17.2 12.15 17.2C11.55 17.2 11.15 17.5 10.65 17.5C10.1 17.5 9.5 17 8.7 15.95C6.9 13.7 6 11.35 6 8.9C6 5.45 8.15 3.55 10.35 3.55C11 3.55 11.65 3.85 12.15 4.05C12.5 4.2 12.8 4.3 13 4.3C13.15 4.3 13.5 4.2 13.95 3.9C14.7 3.4 15.2 3.15 16 3.15C16.9 3.15 17.6 3.7 18.05 4.75C17.05 5.3 16.5 6.4 16.5 7.6C16.5 9.15 17.25 10.5 18.5 11.25C18.3 11.8 17.7 13 17.05 13.5Z" />
               </svg>
-              <span className="text-sm font-medium text-black">Continue with Apple</span>
+              <span className="text-sm font-medium text-black">
+                Continue with Apple
+              </span>
             </Button>
           </div>
 
@@ -135,7 +139,6 @@ export default function Login() {
               <span className="font-semibold text-black">SIGN UP</span>
             </p>
           </div>
-
         </div>
       </div>
 

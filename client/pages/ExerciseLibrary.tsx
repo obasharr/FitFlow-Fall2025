@@ -9,19 +9,23 @@ export default function ExerciseLibrary() {
   const muscleGroups = [
     {
       name: "Chest",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/9aff6cd3c48575c912d56c2be1d384441017ba7c?width=152",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/9aff6cd3c48575c912d56c2be1d384441017ba7c?width=152",
     },
     {
       name: "Back",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/ff3b40add17eb28ffaae35ff9448bc1df4cec8e3?width=152",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/ff3b40add17eb28ffaae35ff9448bc1df4cec8e3?width=152",
     },
     {
       name: "Arms",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/9b1c429c47afc18473b2d7f1d73ba9f59ca928a2?width=152",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/9b1c429c47afc18473b2d7f1d73ba9f59ca928a2?width=152",
     },
     {
       name: "Calves",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/cb46a244aaceadc60b49a6d21705bdbb360dee4a?width=152",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/cb46a244aaceadc60b49a6d21705bdbb360dee4a?width=152",
     },
   ];
 
@@ -29,17 +33,20 @@ export default function ExerciseLibrary() {
     {
       name: "Push-Ups",
       description: "Wide push-up, In...",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/8b540e670edaaec579bafc3b1ce61671582dc789?width=296",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/8b540e670edaaec579bafc3b1ce61671582dc789?width=296",
     },
     {
       name: "Squats",
       description: "Front squat, Sum...",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/68b91da69c4d1c10ce4803a3e0542bee4d16d810?width=296",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/68b91da69c4d1c10ce4803a3e0542bee4d16d810?width=296",
     },
     {
       name: "Sit Ups",
       description: "Straight",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/8d2685c51fd8a4886fabf3334dd85d93301f255a?width=296",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/8d2685c51fd8a4886fabf3334dd85d93301f255a?width=296",
     },
   ];
 
@@ -96,7 +103,9 @@ export default function ExerciseLibrary() {
                 <div
                   key={index}
                   className={`w-1.5 h-1.5 rounded-full ${
-                    index === carouselIndex ? "bg-black opacity-80" : "bg-black opacity-20"
+                    index === carouselIndex
+                      ? "bg-black opacity-80"
+                      : "bg-black opacity-20"
                   }`}
                 />
               ))}
@@ -115,13 +124,18 @@ export default function ExerciseLibrary() {
 
           <div className="flex gap-6 overflow-x-auto px-4 pb-2 scrollbar-hide">
             {muscleGroups.map((group, index) => (
-              <div key={index} className="flex flex-col items-center gap-2 flex-shrink-0">
+              <div
+                key={index}
+                className="flex flex-col items-center gap-2 flex-shrink-0"
+              >
                 <img
                   src={group.image}
                   alt={group.name}
                   className="w-20 h-20 rounded-full object-cover"
                 />
-                <p className="text-sm font-medium text-black text-center">{group.name}</p>
+                <p className="text-sm font-medium text-black text-center">
+                  {group.name}
+                </p>
               </div>
             ))}
           </div>
@@ -148,7 +162,9 @@ export default function ExerciseLibrary() {
                   className="w-full h-40 rounded-lg object-cover"
                 />
                 <div className="flex flex-col gap-0.5">
-                  <p className="text-sm text-black font-normal">{exercise.name}</p>
+                  <p className="text-sm text-black font-normal">
+                    {exercise.name}
+                  </p>
                   <p className="text-base font-medium text-black line-clamp-2">
                     {exercise.description}
                   </p>
