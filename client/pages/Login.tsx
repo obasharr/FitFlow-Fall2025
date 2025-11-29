@@ -48,7 +48,7 @@ export default function Login() {
         {/* Form container */}
         <div className="w-full max-w-sm">
           {/* Log In heading */}
-          <h2 className="text-2xl font-normal text-black text-center mb-8">
+          <h2 className="text-xl font-normal text-black text-center mb-6">
             Log In
           </h2>
 
