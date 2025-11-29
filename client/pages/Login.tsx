@@ -60,7 +60,7 @@ export default function Login() {
               placeholder="email@domain.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="h-10 rounded-lg border border-[#E0E0E0] bg-white placeholder:text-[#828282] text-black"
+              className="h-10 rounded-lg border border-[#E0E0E0] bg-white placeholder:text-[#828282] text-black text-sm px-4 py-2"
             />
 
             {/* Password input */}
@@ -69,7 +69,7 @@ export default function Login() {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="h-10 rounded-lg border border-[#E0E0E0] bg-white placeholder:text-[#828282] text-black"
+              className="h-10 rounded-lg border border-[#E0E0E0] bg-white placeholder:text-[#828282] text-black text-sm px-4 py-2"
             />
 
             {/* Log In button */}
