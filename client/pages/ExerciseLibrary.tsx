@@ -152,9 +152,10 @@ export default function ExerciseLibrary() {
 
           <div className="flex gap-3 overflow-x-auto px-4 pb-2 scrollbar-hide">
             {basicExercises.map((exercise, index) => (
-              <div
+              <Link
                 key={index}
-                className="flex flex-col gap-3 flex-shrink-0 bg-white rounded-lg p-3 w-48"
+                to={`/exercise/${exercise.name.toLowerCase()}`}
+                className="flex flex-col gap-3 flex-shrink-0 bg-white rounded-lg p-3 w-48 hover:shadow-lg transition-shadow"
               >
                 <img
                   src={exercise.image}
@@ -169,7 +170,7 @@ export default function ExerciseLibrary() {
                     {exercise.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
