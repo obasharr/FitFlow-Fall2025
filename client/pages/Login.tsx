@@ -25,13 +25,6 @@ export default function Login() {
           </h1>
         </div>
 
-        {/* Description */}
-        <div className="text-center mb-12 max-w-sm">
-          <p className="text-base text-black leading-relaxed">
-            Here the user has the option to Log in, Sign-Up, or view Legal Information
-          </p>
-        </div>
-
         {/* Form container */}
         <div className="w-full max-w-sm">
           {/* Log In heading */}
