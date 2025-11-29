@@ -22,7 +22,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/exercise-library" element={<NotFound />} />
+          <Route path="/exercise-library" element={<ExerciseLibrary />} />
           <Route path="/muscle-library" element={<NotFound />} />
           <Route path="/profile" element={<NotFound />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
