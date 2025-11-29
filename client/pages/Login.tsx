@@ -93,7 +93,7 @@ export default function Login() {
             {/* Google button */}
             <Button
               variant="outline"
-              className="w-full h-10 bg-[#EEE] border border-[#EEE] hover:bg-[#E0E0E0] rounded-lg flex items-center justify-center gap-2"
+              className="w-full h-10 bg-[#EEE] border-0 hover:bg-[#E0E0E0] rounded-lg flex items-center justify-center gap-2 py-2.5"
             >
               <svg
                 width="20"
@@ -132,7 +132,7 @@ export default function Login() {
             {/* Apple button */}
             <Button
               variant="outline"
-              className="w-full h-10 bg-[#EEE] border border-[#EEE] hover:bg-[#E0E0E0] rounded-lg flex items-center justify-center gap-2"
+              className="w-full h-10 bg-[#EEE] border-0 hover:bg-[#E0E0E0] rounded-lg flex items-center justify-center gap-2 py-2.5"
             >
               <svg
                 width="20"
