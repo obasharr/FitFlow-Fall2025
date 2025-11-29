@@ -39,7 +39,7 @@ export default function ExerciseLibrary() {
     {
       name: "Sit Ups",
       description: "Straight",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/81a56dcfb637132efc7284facee41a9e6522b116?width=296",
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/8d2685c51fd8a4886fabf3334dd85d93301f255a?width=296",
     },
   ];
 
