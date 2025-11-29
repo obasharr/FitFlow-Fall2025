@@ -13,22 +13,6 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-[#FAF2E9] flex flex-col">
-      {/* Status bar area */}
-      <div className="flex justify-between items-center px-6 pt-6 pb-4 text-sm font-medium">
-        <span className="text-black">9:41</span>
-        <div className="flex gap-1 items-center">
-          <svg width="16" height="10" viewBox="0 0 16 10" className="fill-black">
-            <path d="M0 9.35714C0 9.35714 0 8.73611 1.14286 8.73611C2.28571 8.73611 2.28571 9.35714 3.42857 9.35714C4.57143 9.35714 4.57143 8.73611 5.71429 8.73611C6.85714 8.73611 6.85714 9.35714 8 9.35714C9.14286 9.35714 9.14286 8.73611 10.2857 8.73611C11.4286 8.73611 11.4286 9.35714 12.5714 9.35714C13.7143 9.35714 13.7143 8.73611 14.8571 8.73611C16 8.73611 16 9.35714 16 9.35714" />
-          </svg>
-          <svg width="16" height="10" viewBox="0 0 24 24" className="fill-black">
-            <path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z" />
-          </svg>
-          <svg width="24" height="12" viewBox="0 0 24 12" className="fill-black">
-            <rect x="2" y="2" width="20" height="8" rx="2" stroke="black" fill="none" strokeWidth="1.5" />
-          </svg>
-        </div>
-      </div>
-
       {/* Main content */}
       <div className="flex-1 flex flex-col items-center justify-center px-6 py-8 w-full max-w-full">
         {/* Logo */}
