@@ -116,13 +116,15 @@ export default function ExerciseDetails() {
           <h3 className="text-2xl font-bold text-black mb-4">Instructions</h3>
           <div className="space-y-3">
             <p className="text-sm font-bold text-black leading-relaxed">
-              1. Stand with your feet shoulder-width apart and bar resting on upper back
+              1. Stand with your feet shoulder-width apart and bar resting on
+              upper back
             </p>
             <p className="text-sm font-bold text-black leading-relaxed">
               2.Keep chest up and tighten your core
             </p>
             <p className="text-sm font-bold text-black leading-relaxed">
-              3. Lower your hips back and down until thighs are parallel to the floor
+              3. Lower your hips back and down until thighs are parallel to the
+              floor
             </p>
             <p className="text-sm font-bold text-black leading-relaxed">
               4. Push through your heels to return to standing
@@ -163,8 +165,9 @@ export default function ExerciseDetails() {
           {showTips && (
             <div className="mt-4 px-4 py-4 bg-white rounded-lg border border-[#E0E0E0]">
               <p className="text-sm text-black leading-relaxed">
-                Keep your core engaged throughout the movement. Your knees should track over your toes
-                and not cave inward. Start with lighter weight to master the form before adding weight.
+                Keep your core engaged throughout the movement. Your knees
+                should track over your toes and not cave inward. Start with
+                lighter weight to master the form before adding weight.
               </p>
             </div>
           )}
