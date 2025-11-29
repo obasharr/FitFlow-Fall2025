@@ -5,6 +5,10 @@ export default {
   content: ["./client/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
+    fontFamily: {
+      sans: ["Inter", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
+      display: ["Archivo Black", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
+    },
     container: {
       center: true,
       padding: "2rem",
