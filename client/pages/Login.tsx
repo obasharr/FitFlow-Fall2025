@@ -136,12 +136,6 @@ export default function Login() {
             </p>
           </div>
 
-          {/* Footer text */}
-          <p className="text-center text-xs text-[#828282] leading-relaxed">
-            By clicking continue, you agree to our{" "}
-            <span className="text-black font-normal">Terms of Service</span> and{" "}
-            <span className="text-black font-normal">Privacy Policy</span>
-          </p>
         </div>
       </div>
 
