@@ -3,6 +3,7 @@ import { ArrowLeft, Search, ChevronRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function ExerciseLibrary() {
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [carouselIndex, setCarouselIndex] = useState(0);
 
