@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft, Search, ChevronRight } from "lucide-react";
+import { ChevronLeft, Search, ChevronRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function ExerciseLibrary() {
