@@ -59,7 +59,7 @@ export default function ExerciseLibrary() {
           onClick={() => navigate(-1)}
           className="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition"
         >
-          <ArrowLeft className="w-6 h-6 text-[#32402F]" strokeWidth={2} />
+          <ChevronLeft className="w-6 h-6 text-black" strokeWidth={2} />
         </button>
 
         <h1 className="font-display text-xl font-normal text-black text-center flex-1">
