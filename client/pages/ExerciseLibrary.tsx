@@ -115,29 +115,31 @@ export default function ExerciseLibrary() {
 
         {/* Muscle Group Section */}
         <div className="py-4">
-          <div className="flex items-center justify-between px-4 mb-4">
+          <Link
+            to="/muscle-library"
+            className="flex items-center justify-between px-4 mb-4 hover:opacity-75 transition-opacity cursor-pointer"
+          >
             <h2 className="text-base font-bold text-black">Muscle Group</h2>
             <div className="w-5 h-5 flex items-center justify-center rounded-full bg-[#F5F5F5]">
               <ChevronRight className="w-3.5 h-3.5 text-black" />
             </div>
-          </div>
+          </Link>
 
           <div className="flex gap-6 overflow-x-auto px-4 pb-2 scrollbar-hide">
             {muscleGroups.map((group, index) => (
-              <Link
+              <div
                 key={index}
-                to="/muscle-library"
-                className="flex flex-col items-center gap-2 flex-shrink-0 hover:opacity-75 transition-opacity"
+                className="flex flex-col items-center gap-2 flex-shrink-0"
               >
                 <img
                   src={group.image}
                   alt={group.name}
-                  className="w-20 h-20 rounded-full object-cover cursor-pointer"
+                  className="w-20 h-20 rounded-full object-cover"
                 />
-                <p className="text-sm font-medium text-black text-center cursor-pointer">
+                <p className="text-sm font-medium text-black text-center">
                   {group.name}
                 </p>
-              </Link>
+              </div>
             ))}
           </div>
         </div>
