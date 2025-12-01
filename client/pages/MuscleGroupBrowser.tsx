@@ -28,7 +28,7 @@ export default function MuscleGroupBrowser() {
     {
       name: "Calves (Lower Leg)",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/ed4715e3ed0921c1f3267587a208f2ad383e2036?width=164",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F25a00711c34a484bab3082ed60e9d0e8?format=webp&width=800",
     },
   ];
 
