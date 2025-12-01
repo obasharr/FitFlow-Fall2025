@@ -23,7 +23,7 @@ export default function MuscleGroupBrowser() {
     {
       name: "Arms (Biceps & Triceps)",
       description: "Push, Pull, & Grip - 24 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/1a4e85eacc9e117f99ed2f1dd0d77f8cb34309e1?width=164",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F65b6a8bedfa248128ee66727399471f8?format=webp&width=800",
     },
     {
       name: "Calves (Lower Leg)",
