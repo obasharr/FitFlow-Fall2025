@@ -28,7 +28,7 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/exercise-library" element={<ExerciseLibrary />} />
           <Route path="/exercise/squats" element={<ExerciseDetails />} />
-          <Route path="/muscle-library" element={<NotFound />} />
+          <Route path="/muscle-library" element={<MuscleGroupBrowser />} />
           <Route path="/profile" element={<NotFound />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
