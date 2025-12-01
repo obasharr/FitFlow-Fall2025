@@ -18,7 +18,7 @@ export default function MuscleGroupBrowser() {
     {
       name: "Back (Lats & Traps)",
       description: "Pull & Stabilize - 15 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/6c5e5e8c5e8c5e8c5e8c5e8c5e8c5e8c?width=164",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F50c591c58fc94bb49a89a3dfe992fcd5?format=webp&width=800",
     },
     {
       name: "Arms (Biceps & Triceps)",
