@@ -124,19 +124,20 @@ export default function ExerciseLibrary() {
 
           <div className="flex gap-6 overflow-x-auto px-4 pb-2 scrollbar-hide">
             {muscleGroups.map((group, index) => (
-              <div
+              <Link
                 key={index}
-                className="flex flex-col items-center gap-2 flex-shrink-0"
+                to="/muscle-library"
+                className="flex flex-col items-center gap-2 flex-shrink-0 hover:opacity-75 transition-opacity"
               >
                 <img
                   src={group.image}
                   alt={group.name}
-                  className="w-20 h-20 rounded-full object-cover"
+                  className="w-20 h-20 rounded-full object-cover cursor-pointer"
                 />
-                <p className="text-sm font-medium text-black text-center">
+                <p className="text-sm font-medium text-black text-center cursor-pointer">
                   {group.name}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
