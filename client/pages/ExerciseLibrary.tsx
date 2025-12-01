@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Menu, Search, ChevronRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ArrowLeft, Search, ChevronRight } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function ExerciseLibrary() {
   const [searchQuery, setSearchQuery] = useState("");
