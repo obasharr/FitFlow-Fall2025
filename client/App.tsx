@@ -11,6 +11,7 @@ import Index from "./pages/Index";
 import Dashboard from "./pages/Dashboard";
 import ExerciseLibrary from "./pages/ExerciseLibrary";
 import ExerciseDetails from "./pages/ExerciseDetails";
+import MuscleGroupBrowser from "./pages/MuscleGroupBrowser";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
