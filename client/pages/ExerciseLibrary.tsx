@@ -55,8 +55,11 @@ export default function ExerciseLibrary() {
     <div className="min-h-screen bg-[#FAF2E9] flex flex-col">
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-4 h-16">
-        <button className="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition">
-          <Menu className="w-6 h-6 text-[#32402F]" strokeWidth={2} />
+        <button
+          onClick={() => navigate(-1)}
+          className="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition"
+        >
+          <ArrowLeft className="w-6 h-6 text-[#32402F]" strokeWidth={2} />
         </button>
 
         <h1 className="font-display text-xl font-normal text-black text-center flex-1">
