@@ -137,7 +137,6 @@ export default function ExerciseDetails() {
 
         {/* Equipment Section */}
         <div className="px-4 py-6">
-          <h3 className="text-2xl font-bold text-black mb-4">Equipment</h3>
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/dfb9710b2957d1c18cfa6b6f6aad0c60d868ae6c?width=578"
             alt="Equipment"
