@@ -20,13 +20,7 @@ export default function Profile() {
           FitFlow
         </h1>
 
-        <div className="w-8 h-8 rounded-full bg-gray-400 flex-shrink-0 overflow-hidden">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F92b137ad3047419da61c243feb037232?format=webp&width=800"
-            alt="Profile"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <div className="w-8 h-8 flex-shrink-0" />
       </div>
 
       {/* Main content - scrollable */}
