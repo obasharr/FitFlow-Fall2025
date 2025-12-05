@@ -62,8 +62,11 @@ export default function Profile() {
 
         {/* Action buttons */}
         <div className="w-full max-w-sm px-4 flex flex-col gap-3 mb-8">
-          <Button className="bg-[#465342] hover:bg-[#3a4536] text-white font-bold text-lg py-6 rounded-full w-full h-auto">
-            Edit Profile
+          <Button
+            className="bg-[#465342] hover:bg-[#3a4536] text-white font-bold text-lg py-6 rounded-full w-full h-auto"
+            asChild
+          >
+            <Link to="/edit-profile">Edit Profile</Link>
           </Button>
 
           <Button
