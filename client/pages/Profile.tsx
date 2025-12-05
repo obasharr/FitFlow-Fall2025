@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { ChevronLeft, Heart, Dumbbell } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
