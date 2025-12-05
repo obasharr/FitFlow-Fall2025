@@ -13,6 +13,7 @@ import ExerciseLibrary from "./pages/ExerciseLibrary";
 import ExerciseDetails from "./pages/ExerciseDetails";
 import MuscleGroupBrowser from "./pages/MuscleGroupBrowser";
 import Profile from "./pages/Profile";
+import Favorites from "./pages/Favorites";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
