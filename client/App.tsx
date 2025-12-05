@@ -13,6 +13,7 @@ import ExerciseLibrary from "./pages/ExerciseLibrary";
 import ExerciseDetails from "./pages/ExerciseDetails";
 import MuscleGroupBrowser from "./pages/MuscleGroupBrowser";
 import Profile from "./pages/Profile";
+import EditProfile from "./pages/EditProfile";
 import Favorites from "./pages/Favorites";
 import NotFound from "./pages/NotFound";
 
