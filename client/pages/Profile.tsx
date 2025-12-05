@@ -34,7 +34,7 @@ export default function Profile() {
         {/* Profile image */}
         <div className="w-44 h-44 rounded-full bg-gray-400 flex-shrink-0 overflow-hidden my-8">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/51dda9ea46b345a7c1976e23f6566abe70bf879d?width=350"
+            src="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fd0c10e4b63fd4c3688593caa5bc1b4f6?format=webp&width=800"
             alt="Profile"
             className="w-full h-full object-cover"
           />
