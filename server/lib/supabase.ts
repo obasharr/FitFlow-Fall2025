@@ -21,6 +21,7 @@ async function supabaseRequest<T>(
   path: string,
   body?: unknown
 ): Promise<SupabaseResponse<T>> {
+  const { supabaseUrl, supabaseAnonKey } = getSupabaseConfig();
   const url = `${supabaseUrl}/rest/v1${path}`;
 
   try {
@@ -28,7 +29,7 @@ async function supabaseRequest<T>(
       method,
       headers: {
         "Content-Type": "application/json",
-        apikey: supabaseAnonKey!,
+        apikey: supabaseAnonKey,
         Authorization: `Bearer ${supabaseAnonKey}`,
       },
       body: body ? JSON.stringify(body) : undefined,
