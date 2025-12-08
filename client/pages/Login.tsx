@@ -49,9 +49,9 @@ export default function Login() {
 
         {/* Form container */}
         <div className="w-full max-w-sm">
-          {/* Log In heading */}
+          {/* Log In / Sign Up heading */}
           <h2 className="text-xl font-normal text-black text-center mb-6">
-            Log In
+            {isSignup ? "Sign Up" : "Log In"}
           </h2>
 
           {/* Form */}
@@ -62,7 +62,9 @@ export default function Login() {
               placeholder="email@domain.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="h-10 rounded-lg border border-[#E0E0E0] bg-white placeholder:text-[#828282] text-black text-sm px-4 py-2"
+              disabled={isLoading}
+              required
+              className="h-10 rounded-lg border border-[#E0E0E0] bg-white placeholder:text-[#828282] text-black text-sm px-4 py-2 disabled:opacity-50"
             />
 
             {/* Password input */}
@@ -71,15 +73,18 @@ export default function Login() {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="h-10 rounded-lg border border-[#E0E0E0] bg-white placeholder:text-[#828282] text-black text-sm px-4 py-2"
+              disabled={isLoading}
+              required
+              className="h-10 rounded-lg border border-[#E0E0E0] bg-white placeholder:text-[#828282] text-black text-sm px-4 py-2 disabled:opacity-50"
             />
 
-            {/* Log In button */}
+            {/* Log In / Sign Up button */}
             <Button
               type="submit"
-              className="w-full h-10 bg-[#32402F] hover:bg-[#2a3427] text-white font-medium text-sm rounded-lg py-2.5"
+              disabled={isLoading}
+              className="w-full h-10 bg-[#32402F] hover:bg-[#2a3427] text-white font-medium text-sm rounded-lg py-2.5 disabled:opacity-50"
             >
-              Log In
+              {isLoading ? "Loading..." : isSignup ? "Sign Up" : "Log In"}
             </Button>
           </form>
 
