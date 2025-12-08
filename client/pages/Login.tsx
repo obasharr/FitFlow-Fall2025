@@ -2,16 +2,38 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { toast } from "sonner";
+import { login, signup, saveAuthToken } from "@/lib/auth";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSignup, setIsSignup] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Login attempt:", { email, password });
-    navigate("/dashboard");
+    setIsLoading(true);
+
+    try {
+      const response = isSignup
+        ? await signup(email, password)
+        : await login(email, password);
+
+      if (response.success && response.token) {
+        saveAuthToken(response.token);
+        toast.success(response.message);
+        navigate("/dashboard");
+      } else {
+        toast.error(response.message || "Authentication failed");
+      }
+    } catch (error) {
+      toast.error("An error occurred. Please try again.");
+      console.error("Auth error:", error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
