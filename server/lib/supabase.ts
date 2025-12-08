@@ -19,29 +19,58 @@ async function supabaseRequest<T>(
 ): Promise<SupabaseResponse<T>> {
   const url = `${supabaseUrl}/rest/v1${path}`;
 
-  const response = await fetch(url, {
-    method,
-    headers: {
-      "Content-Type": "application/json",
-      apikey: supabaseAnonKey!,
-      Authorization: `Bearer ${supabaseAnonKey}`,
-    },
-    body: body ? JSON.stringify(body) : undefined,
-  });
+  try {
+    const response = await fetch(url, {
+      method,
+      headers: {
+        "Content-Type": "application/json",
+        apikey: supabaseAnonKey!,
+        Authorization: `Bearer ${supabaseAnonKey}`,
+      },
+      body: body ? JSON.stringify(body) : undefined,
+    });
 
-  const data = await response.json();
+    const responseText = await response.text();
 
-  if (!response.ok) {
+    if (!responseText) {
+      console.error(`Empty response from Supabase: ${method} ${path}`);
+      return {
+        data: null,
+        error: { message: "Empty response from database" },
+      };
+    }
+
+    let data: unknown;
+    try {
+      data = JSON.parse(responseText);
+    } catch (e) {
+      console.error(`Invalid JSON response: ${responseText}`);
+      return {
+        data: null,
+        error: { message: "Invalid response from database" },
+      };
+    }
+
+    if (!response.ok) {
+      const errorMsg = (data as any)?.message || (data as any)?.error_description || "Unknown error";
+      console.error(`Supabase API error: ${response.status}`, errorMsg);
+      return {
+        data: null,
+        error: { message: errorMsg },
+      };
+    }
+
+    return {
+      data: data as T,
+      error: null,
+    };
+  } catch (error) {
+    console.error("Supabase request error:", error);
     return {
       data: null,
-      error: { message: data.message || "Unknown error" },
+      error: { message: error instanceof Error ? error.message : "Network error" },
     };
   }
-
-  return {
-    data,
-    error: null,
-  };
 }
 
 export async function getUserByEmail(
