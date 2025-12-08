@@ -1,10 +1,14 @@
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
+function getSupabaseConfig() {
+  const supabaseUrl = process.env.SUPABASE_URL;
+  const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error(
-    "Missing SUPABASE_URL or SUPABASE_ANON_KEY environment variables"
-  );
+  if (!supabaseUrl || !supabaseAnonKey) {
+    throw new Error(
+      "Missing SUPABASE_URL or SUPABASE_ANON_KEY environment variables"
+    );
+  }
+
+  return { supabaseUrl, supabaseAnonKey };
 }
 
 interface SupabaseResponse<T> {
