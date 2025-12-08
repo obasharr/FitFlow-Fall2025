@@ -1,30 +1,34 @@
 import { LoginRequest, SignupRequest, AuthResponse } from "@shared/api";
 
-const API_URL = "/.netlify/functions/api";
-
 async function apiCall(
   endpoint: string,
   method: string,
   body?: unknown
 ): Promise<AuthResponse> {
-  const response = await fetch(`${API_URL}${endpoint}`, {
-    method,
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: body ? JSON.stringify(body) : undefined,
-  });
+  try {
+    const response = await fetch(`/api${endpoint}`, {
+      method,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: body ? JSON.stringify(body) : undefined,
+    });
 
-  const data = (await response.json()) as AuthResponse;
+    const data = (await response.json()) as AuthResponse;
 
-  if (!response.ok) {
-    return {
-      success: false,
-      message: data.message || "Request failed",
-    };
+    if (!response.ok) {
+      console.error(`API error: ${response.status}`, data);
+      return {
+        success: false,
+        message: data.message || `Request failed with status ${response.status}`,
+      };
+    }
+
+    return data;
+  } catch (error) {
+    console.error("API call error:", error);
+    throw error;
   }
-
-  return data;
 }
 
 export async function login(
