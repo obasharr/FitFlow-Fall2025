@@ -159,12 +159,21 @@ export default function Login() {
             </Button>
           </div>
 
-          {/* Sign up link */}
+          {/* Sign up / Log in link */}
           <div className="text-center mb-8">
-            <p className="text-xs">
-              <span className="text-[#828282]">DON'T HAVE AN ACCOUNT?</span>{" "}
-              <span className="font-semibold text-black">SIGN UP</span>
-            </p>
+            <button
+              type="button"
+              onClick={() => setIsSignup(!isSignup)}
+              disabled={isLoading}
+              className="text-xs hover:text-opacity-80 disabled:opacity-50 cursor-pointer"
+            >
+              <span className="text-[#828282]">
+                {isSignup ? "ALREADY HAVE AN ACCOUNT?" : "DON'T HAVE AN ACCOUNT?"}
+              </span>{" "}
+              <span className="font-semibold text-black">
+                {isSignup ? "LOG IN" : "SIGN UP"}
+              </span>
+            </button>
           </div>
         </div>
       </div>
