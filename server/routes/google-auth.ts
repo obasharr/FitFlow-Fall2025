@@ -27,7 +27,7 @@ function decodeGoogleToken(token: string): GoogleTokenPayload | null {
     }
 
     const decoded = JSON.parse(
-      Buffer.from(parts[1], "base64").toString("utf-8")
+      Buffer.from(parts[1], "base64").toString("utf-8"),
     ) as GoogleTokenPayload;
 
     // Basic validation - check if token has necessary fields

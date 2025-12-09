@@ -4,7 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
 import { login, signup, saveAuthToken } from "@/lib/auth";
-import { initializeGoogleSignIn, authenticateWithGoogle } from "@/lib/google-auth";
+import {
+  initializeGoogleSignIn,
+  authenticateWithGoogle,
+} from "@/lib/google-auth";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -148,7 +151,6 @@ export default function Login() {
                 justifyContent: "center",
               }}
             />
-
           </div>
 
           {/* Sign up / Log in link */}
@@ -160,7 +162,9 @@ export default function Login() {
               className="text-xs hover:text-opacity-80 disabled:opacity-50 cursor-pointer"
             >
               <span className="text-[#828282]">
-                {isSignup ? "ALREADY HAVE AN ACCOUNT?" : "DON'T HAVE AN ACCOUNT?"}
+                {isSignup
+                  ? "ALREADY HAVE AN ACCOUNT?"
+                  : "DON'T HAVE AN ACCOUNT?"}
               </span>{" "}
               <span className="font-semibold text-black">
                 {isSignup ? "LOG IN" : "SIGN UP"}
@@ -169,7 +173,6 @@ export default function Login() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

@@ -4,7 +4,7 @@ function getSupabaseConfig() {
 
   if (!supabaseUrl || !supabaseAnonKey) {
     throw new Error(
-      "Missing SUPABASE_URL or SUPABASE_ANON_KEY environment variables"
+      "Missing SUPABASE_URL or SUPABASE_ANON_KEY environment variables",
     );
   }
 
@@ -19,7 +19,7 @@ interface SupabaseResponse<T> {
 async function supabaseRequest<T>(
   method: string,
   path: string,
-  body?: unknown
+  body?: unknown,
 ): Promise<SupabaseResponse<T>> {
   const { supabaseUrl, supabaseAnonKey } = getSupabaseConfig();
   const url = `${supabaseUrl}/rest/v1${path}`;
@@ -64,7 +64,10 @@ async function supabaseRequest<T>(
     }
 
     if (!response.ok) {
-      const errorMsg = (data as any)?.message || (data as any)?.error_description || "Unknown error";
+      const errorMsg =
+        (data as any)?.message ||
+        (data as any)?.error_description ||
+        "Unknown error";
       console.error(`Supabase API error: ${response.status}`, errorMsg);
       return {
         data: null,
@@ -80,13 +83,15 @@ async function supabaseRequest<T>(
     console.error("Supabase request error:", error);
     return {
       data: null,
-      error: { message: error instanceof Error ? error.message : "Network error" },
+      error: {
+        message: error instanceof Error ? error.message : "Network error",
+      },
     };
   }
 }
 
 export async function getUserByEmail(
-  email: string
+  email: string,
 ): Promise<{ id: string; email: string; password_hash: string } | null> {
   const result = await supabaseRequest<
     { id: string; email: string; password_hash: string }[]
@@ -101,16 +106,14 @@ export async function getUserByEmail(
 
 export async function createUser(
   email: string,
-  passwordHash: string
+  passwordHash: string,
 ): Promise<{ id: string; email: string }> {
-  const result = await supabaseRequest<{ id: string; email: string }[] | { id: string; email: string }>(
-    "POST",
-    "/users",
-    {
-      email,
-      password_hash: passwordHash,
-    }
-  );
+  const result = await supabaseRequest<
+    { id: string; email: string }[] | { id: string; email: string }
+  >("POST", "/users", {
+    email,
+    password_hash: passwordHash,
+  });
 
   if (result.error) {
     throw new Error(result.error.message);
@@ -127,7 +130,7 @@ export async function createUser(
 
 export async function verifyUserPassword(
   email: string,
-  password: string
+  password: string,
 ): Promise<boolean> {
   const user = await getUserByEmail(email);
 

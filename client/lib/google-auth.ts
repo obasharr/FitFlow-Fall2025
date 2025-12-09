@@ -3,7 +3,9 @@ import { saveAuthToken } from "./auth";
 
 const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
-export function initializeGoogleSignIn(callback: (token: string) => void): void {
+export function initializeGoogleSignIn(
+  callback: (token: string) => void,
+): void {
   // Load Google Sign-In library
   if (!document.getElementById("google-signin-script")) {
     const script = document.createElement("script");
@@ -35,12 +37,14 @@ export function renderGoogleSignInButton(containerId: string): void {
         theme: "outline",
         size: "large",
         width: "100%",
-      }
+      },
     );
   }
 }
 
-export async function authenticateWithGoogle(token: string): Promise<GoogleAuthResponse> {
+export async function authenticateWithGoogle(
+  token: string,
+): Promise<GoogleAuthResponse> {
   try {
     const response = await fetch("/api/google-auth", {
       method: "POST",

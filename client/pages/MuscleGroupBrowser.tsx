@@ -13,22 +13,26 @@ export default function MuscleGroupBrowser() {
     {
       name: "Chest (Pectorals)",
       description: "Primary Push - 12 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/b3de63ba60d25b4575600796a6c227f58f6b9964?width=164",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/b3de63ba60d25b4575600796a6c227f58f6b9964?width=164",
     },
     {
       name: "Back (Lats & Traps)",
       description: "Pull & Stabilize - 15 Exercises",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F50c591c58fc94bb49a89a3dfe992fcd5?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F50c591c58fc94bb49a89a3dfe992fcd5?format=webp&width=800",
     },
     {
       name: "Arms (Biceps & Triceps)",
       description: "Push, Pull, & Grip - 24 Exercises",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F65b6a8bedfa248128ee66727399471f8?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F65b6a8bedfa248128ee66727399471f8?format=webp&width=800",
     },
     {
       name: "Calves (Lower Leg)",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F25a00711c34a484bab3082ed60e9d0e8?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F25a00711c34a484bab3082ed60e9d0e8?format=webp&width=800",
     },
   ];
 

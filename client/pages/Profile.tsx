@@ -41,7 +41,10 @@ export default function Profile() {
         <p className="text-2xl font-bold text-black mb-8">Email@email.com</p>
 
         {/* Favorites Card */}
-        <Link to="/favorites" className="w-full max-w-sm px-4 mb-8 hover:opacity-75 transition-opacity">
+        <Link
+          to="/favorites"
+          className="w-full max-w-sm px-4 mb-8 hover:opacity-75 transition-opacity"
+        >
           <div className="bg-white rounded-lg p-6 shadow-sm flex gap-6 items-center cursor-pointer hover:shadow-md transition">
             <div className="flex flex-col items-center gap-4">
               <Heart className="w-10 h-10 fill-[#32402F] text-[#32402F]" />
