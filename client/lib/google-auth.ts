@@ -66,6 +66,12 @@ export async function authenticateWithGoogle(
 
     if (data.success && data.token) {
       saveAuthToken(data.token);
+      if (data.user?.email) {
+        saveEmail(data.user.email);
+      }
+      if (data.user?.username) {
+        saveUsername(data.user.username);
+      }
     }
 
     return data;
