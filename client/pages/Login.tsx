@@ -117,6 +117,19 @@ export default function Login() {
               className="h-10 rounded-lg border border-[#E0E0E0] bg-white placeholder:text-[#828282] text-black text-sm px-4 py-2 disabled:opacity-50"
             />
 
+            {/* Username input - only show on signup */}
+            {isSignup && (
+              <Input
+                type="text"
+                placeholder="Username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                disabled={isLoading}
+                required={isSignup}
+                className="h-10 rounded-lg border border-[#E0E0E0] bg-white placeholder:text-[#828282] text-black text-sm px-4 py-2 disabled:opacity-50"
+              />
+            )}
+
             {/* Password input */}
             <Input
               type="password"
