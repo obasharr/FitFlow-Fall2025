@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { ChevronLeft, Heart, Dumbbell } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -5,8 +6,21 @@ import { getUsername, getEmail } from "@/lib/auth";
 
 export default function Profile() {
   const navigate = useNavigate();
-  const username = getUsername() || "Username";
-  const email = getEmail() || "Email@email.com";
+  const [username, setUsername] = useState("Username");
+  const [email, setEmail] = useState("Email@email.com");
+
+  useEffect(() => {
+    // Fetch fresh username and email each time the page loads
+    const storedUsername = getUsername();
+    const storedEmail = getEmail();
+
+    if (storedUsername) {
+      setUsername(storedUsername);
+    }
+    if (storedEmail) {
+      setEmail(storedEmail);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#FAF2E9] flex flex-col">
