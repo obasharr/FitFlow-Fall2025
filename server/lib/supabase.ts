@@ -92,9 +92,9 @@ async function supabaseRequest<T>(
 
 export async function getUserByEmail(
   email: string,
-): Promise<{ id: string; email: string; password_hash: string } | null> {
+): Promise<{ id: string; email: string; username?: string; password_hash: string } | null> {
   const result = await supabaseRequest<
-    { id: string; email: string; password_hash: string }[]
+    { id: string; email: string; username?: string; password_hash: string }[]
   >("GET", `/users?email=eq.${encodeURIComponent(email)}&select=*`);
 
   if (result.error || !result.data || result.data.length === 0) {
