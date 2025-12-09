@@ -37,7 +37,7 @@ export default function Profile() {
         </div>
 
         {/* Username */}
-        <h2 className="text-2xl font-bold text-black mt-4 mb-2">Username</h2>
+        <h2 className="text-2xl font-bold text-black mt-4 mb-2">{username}</h2>
 
         {/* Email */}
         <p className="text-2xl font-bold text-black mb-8">Email@email.com</p>
