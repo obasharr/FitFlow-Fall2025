@@ -41,7 +41,7 @@ export default function Profile() {
         <h2 className="text-2xl font-bold text-black mt-4 mb-2">{username}</h2>
 
         {/* Email */}
-        <p className="text-2xl font-bold text-black mb-8">Email@email.com</p>
+        <p className="text-2xl font-bold text-black mb-8">{email}</p>
 
         {/* Favorites Card */}
         <Link
