@@ -73,6 +73,9 @@ export default function Login() {
         if (response.user?.username) {
           saveUsername(response.user.username);
         }
+        if (response.user?.email) {
+          saveEmail(response.user.email);
+        }
         toast.success(response.message);
         navigate("/dashboard");
       } else {
