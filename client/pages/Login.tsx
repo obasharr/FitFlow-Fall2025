@@ -20,6 +20,25 @@ export default function Login() {
     });
   }, []);
 
+  const handleGoogleSignIn = async (token: string) => {
+    setIsLoading(true);
+    try {
+      const response = await authenticateWithGoogle(token);
+
+      if (response.success) {
+        toast.success("Logged in with Google");
+        navigate("/dashboard");
+      } else {
+        toast.error(response.message || "Google authentication failed");
+      }
+    } catch (error) {
+      toast.error("An error occurred. Please try again.");
+      console.error("Google auth error:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
