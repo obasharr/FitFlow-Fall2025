@@ -39,3 +39,20 @@ export interface User {
   email: string;
   created_at: string;
 }
+
+/**
+ * Google OAuth request/response types
+ */
+export interface GoogleAuthRequest {
+  token: string;
+}
+
+export interface GoogleAuthResponse {
+  success: boolean;
+  message: string;
+  token?: string;
+  user?: {
+    id: string;
+    email: string;
+  };
+}
