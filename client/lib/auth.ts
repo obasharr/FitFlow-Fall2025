@@ -77,6 +77,18 @@ export function clearUsername(): void {
   localStorage.removeItem("username");
 }
 
+export function saveEmail(email: string): void {
+  localStorage.setItem("email", email);
+}
+
+export function getEmail(): string | null {
+  return localStorage.getItem("email");
+}
+
+export function clearEmail(): void {
+  localStorage.removeItem("email");
+}
+
 export function isAuthenticated(): boolean {
   return !!getAuthToken();
 }
