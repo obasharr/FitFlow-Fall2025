@@ -25,13 +25,20 @@ async function supabaseRequest<T>(
   const url = `${supabaseUrl}/rest/v1${path}`;
 
   try {
+    const headers: Record<string, string> = {
+      "Content-Type": "application/json",
+      apikey: supabaseAnonKey,
+      Authorization: `Bearer ${supabaseAnonKey}`,
+    };
+
+    // Request Supabase to return the created/modified record
+    if (method === "POST" || method === "PATCH" || method === "PUT") {
+      headers["Prefer"] = "return=representation";
+    }
+
     const response = await fetch(url, {
       method,
-      headers: {
-        "Content-Type": "application/json",
-        apikey: supabaseAnonKey,
-        Authorization: `Bearer ${supabaseAnonKey}`,
-      },
+      headers,
       body: body ? JSON.stringify(body) : undefined,
     });
 
