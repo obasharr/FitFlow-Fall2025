@@ -1,5 +1,5 @@
 import { GoogleAuthResponse } from "@shared/api";
-import { saveAuthToken } from "./auth";
+import { saveAuthToken, saveEmail, saveUsername } from "./auth";
 
 const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
