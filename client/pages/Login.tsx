@@ -13,6 +13,13 @@ export default function Login() {
   const [isSignup, setIsSignup] = useState(false);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    // Initialize Google Sign-In
+    initializeGoogleSignIn(async (token: string) => {
+      await handleGoogleSignIn(token);
+    });
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
