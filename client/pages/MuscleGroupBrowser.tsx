@@ -123,11 +123,6 @@ export default function MuscleGroupBrowser() {
           ))}
         </div>
       </div>
-
-      {/* Home indicator */}
-      <div className="flex justify-center items-center pb-4 pt-2">
-        <div className="w-32 h-1 bg-black rounded-full"></div>
-      </div>
     </div>
   );
 }
