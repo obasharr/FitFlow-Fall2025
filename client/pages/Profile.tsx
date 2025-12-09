@@ -1,11 +1,12 @@
 import { useNavigate, Link } from "react-router-dom";
 import { ChevronLeft, Heart, Dumbbell } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getUsername } from "@/lib/auth";
+import { getUsername, getEmail } from "@/lib/auth";
 
 export default function Profile() {
   const navigate = useNavigate();
   const username = getUsername() || "Username";
+  const email = getEmail() || "Email@email.com";
 
   return (
     <div className="min-h-screen bg-[#FAF2E9] flex flex-col">
