@@ -18,6 +18,22 @@ export default function Login() {
     initializeGoogleSignIn(async (token: string) => {
       await handleGoogleSignIn(token);
     });
+
+    // Render Google button after script loads
+    const checkGoogleLoaded = setInterval(() => {
+      const buttonContainer = document.getElementById("google-signin-button");
+      if (window.google?.accounts?.id && buttonContainer) {
+        window.google.accounts.id.renderButton(buttonContainer, {
+          theme: "outline",
+          size: "large",
+          width: "100%",
+          text: "signin_with",
+        });
+        clearInterval(checkGoogleLoaded);
+      }
+    }, 100);
+
+    return () => clearInterval(checkGoogleLoaded);
   }, []);
 
   const handleGoogleSignIn = async (token: string) => {
