@@ -18,12 +18,12 @@ function verifyPassword(password: string, hash: string): boolean {
 
 export const handleSignup: RequestHandler = async (req, res) => {
   try {
-    const { email, password } = req.body as SignupRequest;
+    const { email, password, username } = req.body as SignupRequest;
 
-    if (!email || !password) {
+    if (!email || !password || !username) {
       res.status(400).json({
         success: false,
-        message: "Email and password are required",
+        message: "Email, password, and username are required",
       } as AuthResponse);
       return;
     }
@@ -40,7 +40,7 @@ export const handleSignup: RequestHandler = async (req, res) => {
 
     // Create new user
     const passwordHash = hashPassword(password);
-    const user = await createUser(email, passwordHash);
+    const user = await createUser(email, passwordHash, username);
 
     const token = generateToken(user.id);
 
@@ -51,6 +51,7 @@ export const handleSignup: RequestHandler = async (req, res) => {
       user: {
         id: user.id,
         email: user.email,
+        username: user.username,
       },
     } as AuthResponse);
   } catch (error) {
