@@ -10,3 +10,51 @@
 export interface DemoResponse {
   message: string;
 }
+
+/**
+ * Authentication request/response types
+ */
+export interface SignupRequest {
+  email: string;
+  password: string;
+  username: string;
+}
+
+export interface LoginRequest {
+  email: string;
+  password: string;
+}
+
+export interface AuthResponse {
+  success: boolean;
+  message: string;
+  token?: string;
+  user?: {
+    id: string;
+    email: string;
+    username?: string;
+  };
+}
+
+export interface User {
+  id: string;
+  email: string;
+  created_at: string;
+}
+
+/**
+ * Google OAuth request/response types
+ */
+export interface GoogleAuthRequest {
+  token: string;
+}
+
+export interface GoogleAuthResponse {
+  success: boolean;
+  message: string;
+  token?: string;
+  user?: {
+    id: string;
+    email: string;
+  };
+}

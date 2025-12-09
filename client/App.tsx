@@ -12,6 +12,9 @@ import Dashboard from "./pages/Dashboard";
 import ExerciseLibrary from "./pages/ExerciseLibrary";
 import ExerciseDetails from "./pages/ExerciseDetails";
 import MuscleGroupBrowser from "./pages/MuscleGroupBrowser";
+import Profile from "./pages/Profile";
+import EditProfile from "./pages/EditProfile";
+import Favorites from "./pages/Favorites";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,7 +32,9 @@ const App = () => (
           <Route path="/exercise-library" element={<ExerciseLibrary />} />
           <Route path="/exercise/squats" element={<ExerciseDetails />} />
           <Route path="/muscle-library" element={<MuscleGroupBrowser />} />
-          <Route path="/profile" element={<NotFound />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/edit-profile" element={<EditProfile />} />
+          <Route path="/favorites" element={<Favorites />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
