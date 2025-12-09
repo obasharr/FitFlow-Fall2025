@@ -3,7 +3,7 @@ import { LoginRequest, SignupRequest, AuthResponse } from "@shared/api";
 async function apiCall(
   endpoint: string,
   method: string,
-  body?: unknown
+  body?: unknown,
 ): Promise<AuthResponse> {
   try {
     const response = await fetch(`/api${endpoint}`, {
@@ -20,7 +20,8 @@ async function apiCall(
       console.error(`API error: ${response.status}`, data);
       return {
         success: false,
-        message: data.message || `Request failed with status ${response.status}`,
+        message:
+          data.message || `Request failed with status ${response.status}`,
       };
     }
 
@@ -33,7 +34,7 @@ async function apiCall(
 
 export async function login(
   email: string,
-  password: string
+  password: string,
 ): Promise<AuthResponse> {
   return apiCall("/login", "POST", {
     email,
@@ -44,7 +45,7 @@ export async function login(
 export async function signup(
   email: string,
   password: string,
-  username: string
+  username: string,
 ): Promise<AuthResponse> {
   return apiCall("/signup", "POST", {
     email,

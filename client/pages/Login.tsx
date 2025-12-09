@@ -3,7 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
-import { login, signup, saveAuthToken, saveUsername, saveEmail } from "@/lib/auth";
+import {
+  login,
+  signup,
+  saveAuthToken,
+  saveUsername,
+  saveEmail,
+} from "@/lib/auth";
 import {
   initializeGoogleSignIn,
   authenticateWithGoogle,

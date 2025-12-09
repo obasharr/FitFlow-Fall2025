@@ -92,7 +92,12 @@ async function supabaseRequest<T>(
 
 export async function getUserByEmail(
   email: string,
-): Promise<{ id: string; email: string; username?: string; password_hash: string } | null> {
+): Promise<{
+  id: string;
+  email: string;
+  username?: string;
+  password_hash: string;
+} | null> {
   const result = await supabaseRequest<
     { id: string; email: string; username?: string; password_hash: string }[]
   >("GET", `/users?email=eq.${encodeURIComponent(email)}&select=*`);
@@ -110,7 +115,8 @@ export async function createUser(
   username?: string,
 ): Promise<{ id: string; email: string; username?: string }> {
   const result = await supabaseRequest<
-    { id: string; email: string; username?: string }[] | { id: string; email: string; username?: string }
+    | { id: string; email: string; username?: string }[]
+    | { id: string; email: string; username?: string }
   >("POST", "/users", {
     email,
     password_hash: passwordHash,

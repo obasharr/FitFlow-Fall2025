@@ -2,7 +2,13 @@ import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { ChevronLeft, Heart, Dumbbell } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getUsername, getEmail, clearUsername, clearEmail, clearAuthToken } from "@/lib/auth";
+import {
+  getUsername,
+  getEmail,
+  clearUsername,
+  clearEmail,
+  clearAuthToken,
+} from "@/lib/auth";
 
 export default function Profile() {
   const navigate = useNavigate();
