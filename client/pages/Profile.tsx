@@ -95,7 +95,12 @@ export default function Profile() {
           </Button>
 
           <Button
-            onClick={() => navigate("/login")}
+            onClick={() => {
+              clearAuthToken();
+              clearUsername();
+              clearEmail();
+              navigate("/login");
+            }}
             variant="outline"
             className="border-2 border-[#32402F] bg-transparent hover:bg-gray-100 text-white font-bold text-lg py-6 rounded-full w-full h-auto"
             style={{
