@@ -103,7 +103,7 @@ export async function createUser(
   email: string,
   passwordHash: string
 ): Promise<{ id: string; email: string }> {
-  const result = await supabaseRequest<{ id: string; email: string }>(
+  const result = await supabaseRequest<{ id: string; email: string }[] | { id: string; email: string }>(
     "POST",
     "/users",
     {
@@ -116,7 +116,13 @@ export async function createUser(
     throw new Error(result.error.message);
   }
 
-  return result.data!;
+  // Handle both array and object responses from Supabase
+  const data = result.data;
+  if (Array.isArray(data)) {
+    return data[0];
+  }
+
+  return data as { id: string; email: string };
 }
 
 export async function verifyUserPassword(
