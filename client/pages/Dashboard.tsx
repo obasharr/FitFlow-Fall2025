@@ -1,17 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Menu } from "lucide-react";
 
 export default function Dashboard() {
   return (
     <div className="min-h-screen bg-[#FAF2E9] flex flex-col">
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-4 h-16">
-        {/* Menu icon */}
-        <button className="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition">
-          <Menu className="w-6 h-6 text-[#32402F]" strokeWidth={2} />
-        </button>
-
         {/* FitFlow title */}
         <h1 className="font-display text-xl font-normal text-black text-center flex-1">
           FitFlow
