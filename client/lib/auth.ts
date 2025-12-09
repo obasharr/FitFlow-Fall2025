@@ -43,11 +43,13 @@ export async function login(
 
 export async function signup(
   email: string,
-  password: string
+  password: string,
+  username: string
 ): Promise<AuthResponse> {
   return apiCall("/signup", "POST", {
     email,
     password,
+    username,
   } as SignupRequest);
 }
 
