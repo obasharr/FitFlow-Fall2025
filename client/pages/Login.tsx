@@ -65,11 +65,14 @@ export default function Login() {
 
     try {
       const response = isSignup
-        ? await signup(email, password)
+        ? await signup(email, password, username)
         : await login(email, password);
 
       if (response.success && response.token) {
         saveAuthToken(response.token);
+        if (response.user?.username) {
+          saveUsername(response.user.username);
+        }
         toast.success(response.message);
         navigate("/dashboard");
       } else {
