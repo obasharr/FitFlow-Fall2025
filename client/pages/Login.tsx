@@ -189,10 +189,6 @@ export default function Login() {
         </div>
       </div>
 
-      {/* Home indicator (mobile) */}
-      <div className="flex justify-center items-center pb-6 pt-4">
-        <div className="w-32 h-1 bg-black rounded-full"></div>
-      </div>
     </div>
   );
 }
