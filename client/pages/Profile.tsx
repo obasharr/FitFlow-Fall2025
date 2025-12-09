@@ -11,15 +11,26 @@ export default function Profile() {
 
   useEffect(() => {
     // Fetch fresh username and email each time the page loads
-    const storedUsername = getUsername();
-    const storedEmail = getEmail();
+    const updateUserInfo = () => {
+      const storedUsername = getUsername();
+      const storedEmail = getEmail();
 
-    if (storedUsername) {
-      setUsername(storedUsername);
-    }
-    if (storedEmail) {
-      setEmail(storedEmail);
-    }
+      if (storedUsername) {
+        setUsername(storedUsername);
+      }
+      if (storedEmail) {
+        setEmail(storedEmail);
+      }
+    };
+
+    updateUserInfo();
+
+    // Also listen for storage changes (in case user logs in from another tab or window)
+    window.addEventListener("storage", updateUserInfo);
+
+    return () => {
+      window.removeEventListener("storage", updateUserInfo);
+    };
   }, []);
 
   return (
