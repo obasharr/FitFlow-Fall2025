@@ -46,7 +46,7 @@ export const handleSignup: RequestHandler = async (req, res) => {
 
     res.status(201).json({
       success: true,
-      message: "User created successfully",
+      message: "Welcome to FitFlow!",
       token,
       user: {
         id: user.id,
