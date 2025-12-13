@@ -124,17 +124,29 @@ export default function MuscleGroupBrowser() {
         <div className="px-4 py-4 flex-1">
           <div className="flex flex-col gap-3 pb-6">
             {muscleGroups.map((group, index) => (
-              <button
+              <div
                 key={index}
-                onClick={() => {}}
-                className="w-full h-16 rounded-lg overflow-hidden shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:shadow-lg transition-shadow"
+                className="flex gap-3 bg-white rounded-lg p-3 shadow-sm hover:shadow-md transition"
               >
-                <img
-                  src={group.image}
-                  alt={group.name}
-                  className="w-full h-full object-cover"
-                />
-              </button>
+                {/* Image */}
+                <div className="flex-shrink-0 w-16 h-16">
+                  <img
+                    src={group.image}
+                    alt={group.name}
+                    className="w-full h-full object-cover rounded"
+                  />
+                </div>
+
+                {/* Text Content */}
+                <div className="flex-1 flex flex-col justify-center">
+                  <h3 className="text-sm font-bold text-black">
+                    {group.name}
+                  </h3>
+                  <p className="text-xs text-[#828282] font-medium">
+                    {group.description}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
