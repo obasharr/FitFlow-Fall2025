@@ -1,12 +1,22 @@
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft, Camera } from "lucide-react";
 import { useState, useRef } from "react";
-import { getProfilePicture, saveProfilePicture } from "@/lib/auth";
+import { getProfilePicture, saveProfilePicture, getUsername, saveUsername } from "@/lib/auth";
+import { toast } from "sonner";
 
 export default function EditProfile() {
   const navigate = useNavigate();
   const [profilePicture, setProfilePicture] = useState(getProfilePicture());
+  const [newUsername, setNewUsername] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleSaveInfo = () => {
+    if (newUsername.trim()) {
+      saveUsername(newUsername);
+      toast.success("Username updated successfully");
+      setNewUsername("");
+    }
+  };
 
   return (
     <div className="min-h-screen bg-[#FAF2E9] flex flex-col">
@@ -78,13 +88,18 @@ export default function EditProfile() {
           <input
             type="text"
             placeholder="New Username (Optional)"
+            value={newUsername}
+            onChange={(e) => setNewUsername(e.target.value)}
             className="h-10 px-4 border border-[#E0E0E0] rounded-lg text-sm text-[#828282] placeholder:text-[#828282] outline-none focus:border-[#32402F] transition"
           />
         </div>
 
 
         {/* Save Button */}
-        <button className="h-10 bg-[#32402F] text-white rounded-lg font-medium text-sm hover:bg-opacity-90 transition mt-2">
+        <button
+          onClick={handleSaveInfo}
+          className="h-10 bg-[#32402F] text-white rounded-lg font-medium text-sm hover:bg-opacity-90 transition mt-2"
+        >
           Save Info
         </button>
       </div>
