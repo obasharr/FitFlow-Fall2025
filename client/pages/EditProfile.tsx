@@ -82,34 +82,6 @@ export default function EditProfile() {
           />
         </div>
 
-        {/* Email Section */}
-        <div className="flex flex-col gap-2">
-          <label className="text-left text-black font-bold text-[15px]">
-            Change Email
-          </label>
-          <input
-            type="email"
-            placeholder="New Email (Optional)"
-            className="h-10 px-4 border border-[#E0E0E0] rounded-lg text-sm text-[#828282] placeholder:text-[#828282] outline-none focus:border-[#32402F] transition"
-          />
-        </div>
-
-        {/* Change Password Section */}
-        <div className="flex flex-col gap-2">
-          <label className="text-left text-black font-bold text-[15px]">
-            Change Password
-          </label>
-          <input
-            type="password"
-            placeholder="New Password (Optional)"
-            className="h-10 px-4 border border-[#E0E0E0] rounded-lg text-sm text-[#828282] placeholder:text-[#828282] outline-none focus:border-[#32402F] transition"
-          />
-          <input
-            type="password"
-            placeholder="Confirm Password (Optional)"
-            className="h-10 px-4 border border-[#E0E0E0] rounded-lg text-sm text-[#828282] placeholder:text-[#828282] outline-none focus:border-[#32402F] transition"
-          />
-        </div>
 
         {/* Save Button */}
         <button className="h-10 bg-[#32402F] text-white rounded-lg font-medium text-sm hover:bg-opacity-90 transition mt-2">
