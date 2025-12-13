@@ -1,20 +1,52 @@
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft, Camera } from "lucide-react";
 import { useState, useRef } from "react";
-import { getProfilePicture, saveProfilePicture, getUsername, saveUsername } from "@/lib/auth";
+import { getProfilePicture, saveProfilePicture, getUsername, saveUsername, getEmail } from "@/lib/auth";
 import { toast } from "sonner";
 
 export default function EditProfile() {
   const navigate = useNavigate();
   const [profilePicture, setProfilePicture] = useState(getProfilePicture());
   const [newUsername, setNewUsername] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const handleSaveInfo = () => {
+  const handleSaveInfo = async () => {
     if (newUsername.trim()) {
-      saveUsername(newUsername);
-      toast.success("Username updated successfully");
-      setNewUsername("");
+      setIsLoading(true);
+      try {
+        const email = getEmail();
+        if (!email) {
+          toast.error("User email not found");
+          return;
+        }
+
+        const response = await fetch("/api/update-username", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email,
+            newUsername: newUsername.trim(),
+          }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          saveUsername(newUsername.trim());
+          toast.success("Username updated successfully");
+          setNewUsername("");
+        } else {
+          toast.error(data.message || "Failed to update username");
+        }
+      } catch (error) {
+        toast.error("An error occurred while updating username");
+        console.error("Update username error:", error);
+      } finally {
+        setIsLoading(false);
+      }
     }
   };
 
@@ -90,7 +122,8 @@ export default function EditProfile() {
             placeholder="New Username (Optional)"
             value={newUsername}
             onChange={(e) => setNewUsername(e.target.value)}
-            className="h-10 px-4 border border-[#E0E0E0] rounded-lg text-sm text-[#828282] placeholder:text-[#828282] outline-none focus:border-[#32402F] transition"
+            disabled={isLoading}
+            className="h-10 px-4 border border-[#E0E0E0] rounded-lg text-sm text-[#828282] placeholder:text-[#828282] outline-none focus:border-[#32402F] transition disabled:opacity-50"
           />
         </div>
 
@@ -98,9 +131,10 @@ export default function EditProfile() {
         {/* Save Button */}
         <button
           onClick={handleSaveInfo}
-          className="h-10 bg-[#32402F] text-white rounded-lg font-medium text-sm hover:bg-opacity-90 transition mt-2"
+          disabled={isLoading}
+          className="h-10 bg-[#32402F] text-white rounded-lg font-medium text-sm hover:bg-opacity-90 transition mt-2 disabled:opacity-50"
         >
-          Save Info
+          {isLoading ? "Saving..." : "Save Info"}
         </button>
       </div>
     </div>
