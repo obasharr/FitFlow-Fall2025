@@ -155,23 +155,30 @@ export async function updateUsername(
   email: string,
   newUsername: string,
 ): Promise<{ id: string; email: string; username: string } | null> {
-  // First, check if the new username already exists for a different user
+  // First, get the user by email to ensure they exist
+  const user = await getUserByEmail(email);
+  if (!user) {
+    throw new Error("User not found");
+  }
+
+  // Check if the new username already exists for a different user
   const existingUser = await supabaseRequest<
     { id: string; email: string; username: string }[]
-  >("GET", `/users?username=eq.${encodeURIComponent(newUsername)}&select=email`);
+  >("GET", `/users?username=eq.${encodeURIComponent(newUsername)}&select=id,email`);
 
   if (existingUser.data && existingUser.data.length > 0) {
-    const existingEmail = existingUser.data[0].email;
-    if (existingEmail !== email) {
+    const existingUserRecord = existingUser.data[0];
+    if (existingUserRecord.id !== user.id) {
       // Username already exists for a different user
       throw new Error("Username already taken");
     }
   }
 
+  // Update the user by their ID
   const result = await supabaseRequest<
     | { id: string; email: string; username: string }[]
     | { id: string; email: string; username: string }
-  >("PATCH", `/users?email=eq.${encodeURIComponent(email)}`, {
+  >("PATCH", `/users?id=eq.${encodeURIComponent(user.id)}`, {
     username: newUsername,
   });
 
