@@ -195,3 +195,49 @@ export async function updateUsername(
 
   return (data as { id: string; email: string; username: string }) || null;
 }
+
+export async function updateProfilePictureUrl(
+  email: string,
+  imageUrl: string,
+): Promise<{ id: string; email: string; profile_image_url: string } | null> {
+  // First, get the user by email to ensure they exist
+  const user = await getUserByEmail(email);
+  if (!user) {
+    throw new Error("User not found");
+  }
+
+  // Update the user's profile_image_url
+  const result = await supabaseRequest<
+    | {
+        id: string;
+        email: string;
+        profile_image_url: string;
+      }[]
+    | {
+        id: string;
+        email: string;
+        profile_image_url: string;
+      }
+  >("PATCH", `/users?id=eq.${encodeURIComponent(user.id)}`, {
+    profile_image_url: imageUrl,
+  });
+
+  if (result.error) {
+    console.error("Error updating profile picture URL:", result.error.message);
+    throw new Error(result.error.message);
+  }
+
+  // Handle both array and object responses from Supabase
+  const data = result.data;
+  if (Array.isArray(data)) {
+    return data[0] || null;
+  }
+
+  return (
+    (data as {
+      id: string;
+      email: string;
+      profile_image_url: string;
+    }) || null
+  );
+}
