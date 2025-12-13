@@ -150,3 +150,27 @@ export async function verifyUserPassword(
   // For now, we'll store plain passwords for demo
   return user.password_hash === password;
 }
+
+export async function updateUsername(
+  email: string,
+  newUsername: string,
+): Promise<{ id: string; email: string; username: string } | null> {
+  const result = await supabaseRequest<
+    | { id: string; email: string; username: string }[]
+    | { id: string; email: string; username: string }
+  >("PATCH", `/users?email=eq.${encodeURIComponent(email)}`, {
+    username: newUsername,
+  });
+
+  if (result.error) {
+    return null;
+  }
+
+  // Handle both array and object responses from Supabase
+  const data = result.data;
+  if (Array.isArray(data)) {
+    return data[0] || null;
+  }
+
+  return (data as { id: string; email: string; username: string }) || null;
+}

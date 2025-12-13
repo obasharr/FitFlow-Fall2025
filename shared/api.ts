@@ -58,3 +58,13 @@ export interface GoogleAuthResponse {
     email: string;
   };
 }
+
+export interface UpdateUsernameRequest {
+  email: string;
+  newUsername: string;
+}
+
+export interface UpdateUsernameResponse {
+  success: boolean;
+  message: string;
+}
