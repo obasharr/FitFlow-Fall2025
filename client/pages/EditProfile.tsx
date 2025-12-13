@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, Camera } from "lucide-react";
 
 export default function EditProfile() {
   const navigate = useNavigate();
@@ -10,33 +10,86 @@ export default function EditProfile() {
       <div className="flex items-center justify-between px-4 py-4 h-16">
         <button
           onClick={() => navigate(-1)}
-          className="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition"
+          className="w-5 h-5 rounded-full bg-[#FAF2E9] flex items-center justify-center flex-shrink-0"
         >
-          <ChevronLeft className="w-6 h-6 text-black" strokeWidth={2} />
+          <ChevronLeft className="w-[7px] h-[14px] text-black" strokeWidth={3} />
         </button>
 
-        <h1 className="font-display text-xl font-normal text-black text-center flex-1">
+        <h1 className="text-xl font-normal text-black text-center tracking-tight font-['Archivo_Black']">
           FitFlow
         </h1>
 
-        <div className="w-8 h-8 rounded-full bg-gray-400 flex-shrink-0 overflow-hidden">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F92b137ad3047419da61c243feb037232?format=webp&width=800"
-            alt="Profile"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <div className="w-5 h-5" />
       </div>
 
       {/* Title */}
-      <div className="px-4 py-6 text-center">
-        <h2 className="text-2xl font-bold text-black">Edit Profile</h2>
+      <div className="px-4 py-2 text-center mt-2">
+        <h2 className="text-xl font-bold text-black">Edit Profile</h2>
       </div>
 
-      {/* Main content - scrollable */}
-      <div className="flex-1 overflow-y-auto">
-        {/* Spacer */}
-        <div className="h-6" />
+      {/* Profile Image */}
+      <div className="flex justify-center mt-8 mb-6">
+        <div className="relative">
+          <div className="w-44 h-44 rounded-full overflow-hidden">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/51dda9ea46b345a7c1976e23f6566abe70bf879d?width=350"
+              alt="Profile"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <button className="absolute bottom-0 right-0 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center">
+            <Camera className="w-6 h-6 text-[#FAF2E9] stroke-[#32402F]" strokeWidth={2} />
+          </button>
+        </div>
+      </div>
+
+      {/* Form Content */}
+      <div className="px-6 flex flex-col gap-4 pb-8">
+        {/* Username Section */}
+        <div className="flex flex-col gap-2">
+          <label className="text-center text-black font-bold text-[15px]">
+            Username
+          </label>
+          <input
+            type="text"
+            placeholder="New Username (Optional)"
+            className="h-10 px-4 border border-[#E0E0E0] rounded-lg text-sm text-[#828282] placeholder:text-[#828282] outline-none focus:border-[#32402F] transition"
+          />
+        </div>
+
+        {/* Email Section */}
+        <div className="flex flex-col gap-2">
+          <label className="text-center text-black font-bold text-[15px]">
+            Email@email.com
+          </label>
+          <input
+            type="email"
+            placeholder="New Email (Optional)"
+            className="h-10 px-4 border border-[#E0E0E0] rounded-lg text-sm text-[#828282] placeholder:text-[#828282] outline-none focus:border-[#32402F] transition"
+          />
+        </div>
+
+        {/* Change Password Section */}
+        <div className="flex flex-col gap-2">
+          <label className="text-center text-black font-bold text-[15px]">
+            Change Password
+          </label>
+          <input
+            type="password"
+            placeholder="New Password (Optional)"
+            className="h-10 px-4 border border-[#E0E0E0] rounded-lg text-sm text-[#828282] placeholder:text-[#828282] outline-none focus:border-[#32402F] transition"
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password (Optional)"
+            className="h-10 px-4 border border-[#E0E0E0] rounded-lg text-sm text-[#828282] placeholder:text-[#828282] outline-none focus:border-[#32402F] transition"
+          />
+        </div>
+
+        {/* Save Button */}
+        <button className="h-10 bg-[#32402F] text-white rounded-lg font-medium text-sm hover:bg-opacity-90 transition mt-2">
+          Save Info
+        </button>
       </div>
     </div>
   );
