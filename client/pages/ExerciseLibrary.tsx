@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
+import { getProfilePicture } from "@/lib/auth";
 
 export default function ExerciseLibrary() {
   const navigate = useNavigate();
   const [carouselIndex, setCarouselIndex] = useState(0);
+  const [profilePicture, setProfilePicture] = useState(getProfilePicture());
+
+  useEffect(() => {
+    const handleStorageChange = () => {
+      setProfilePicture(getProfilePicture());
+    };
+    window.addEventListener("storage", handleStorageChange);
+    return () => window.removeEventListener("storage", handleStorageChange);
+  }, []);
 
   const muscleGroups = [
     {
@@ -67,7 +77,7 @@ export default function ExerciseLibrary() {
 
         <div className="w-8 h-8 rounded-full bg-gray-400 flex-shrink-0 overflow-hidden">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F92b137ad3047419da61c243feb037232?format=webp&width=800"
+            src={profilePicture}
             alt="Profile"
             className="w-full h-full object-cover"
           />
