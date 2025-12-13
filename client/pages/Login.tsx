@@ -9,6 +9,8 @@ import {
   saveAuthToken,
   saveUsername,
   saveEmail,
+  saveProfilePicture,
+  getProfilePicture,
 } from "@/lib/auth";
 import {
   initializeGoogleSignIn,
