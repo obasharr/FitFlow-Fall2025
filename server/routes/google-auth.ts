@@ -92,6 +92,7 @@ export const handleGoogleAuth: RequestHandler = async (req, res) => {
       user: {
         id: user.id,
         email: user.email,
+        profile_image_url: (user as any).profile_image_url || undefined,
       },
     });
   } catch (error) {
