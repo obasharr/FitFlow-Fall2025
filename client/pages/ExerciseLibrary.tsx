@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { ChevronLeft, Search, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function ExerciseLibrary() {
   const navigate = useNavigate();
-  const [searchQuery, setSearchQuery] = useState("");
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   const muscleGroups = [
@@ -77,19 +76,6 @@ export default function ExerciseLibrary() {
 
       {/* Main content */}
       <div className="flex-1 flex flex-col overflow-y-auto">
-        {/* Search bar */}
-        <div className="px-4 py-4">
-          <div className="flex items-center gap-3 px-4 py-2.5 border-2 border-[#32402F] rounded-lg bg-[#F5F5F5]">
-            <Search className="w-6 h-6 text-[#828282] flex-shrink-0" />
-            <input
-              type="text"
-              placeholder="Search"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="flex-1 bg-transparent text-[#828282] placeholder:text-[#828282] outline-none text-base"
-            />
-          </div>
-        </div>
 
         {/* Pre-Workout Banner */}
         <div className="px-4 py-4">

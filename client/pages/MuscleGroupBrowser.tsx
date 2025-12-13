@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Search, ChevronLeft } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 
 export default function MuscleGroupBrowser() {
   const navigate = useNavigate();
