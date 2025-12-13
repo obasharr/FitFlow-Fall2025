@@ -2,7 +2,12 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
-import { handleSignup, handleLogin, handleUpdateUsername } from "./routes/auth";
+import {
+  handleSignup,
+  handleLogin,
+  handleUpdateUsername,
+  handleUpdateProfilePicture,
+} from "./routes/auth";
 import { handleGoogleAuth } from "./routes/google-auth";
 
 export function createServer() {
@@ -26,6 +31,7 @@ export function createServer() {
   app.post("/api/login", handleLogin);
   app.post("/api/google-auth", handleGoogleAuth);
   app.post("/api/update-username", handleUpdateUsername);
+  app.post("/api/update-profile-picture", handleUpdateProfilePicture);
 
   return app;
 }
