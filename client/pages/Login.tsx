@@ -9,7 +9,6 @@ import {
   saveAuthToken,
   saveUsername,
   saveEmail,
-  clearProfilePicture,
 } from "@/lib/auth";
 import {
   initializeGoogleSignIn,
@@ -83,8 +82,6 @@ export default function Login() {
         if (response.user?.email) {
           saveEmail(response.user.email);
         }
-        // Clear profile picture on login so each account starts with default
-        clearProfilePicture();
         toast.success(response.message);
         navigate("/dashboard");
       } else {
