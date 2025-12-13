@@ -5,7 +5,6 @@ import { getProfilePicture } from "@/lib/auth";
 
 export default function MuscleGroupBrowser() {
   const navigate = useNavigate();
-  const [selectedFilter, setSelectedFilter] = useState("All");
   const [profilePicture, setProfilePicture] = useState(getProfilePicture());
 
   useEffect(() => {
@@ -15,8 +14,6 @@ export default function MuscleGroupBrowser() {
     window.addEventListener("storage", handleStorageChange);
     return () => window.removeEventListener("storage", handleStorageChange);
   }, []);
-
-  const filters = ["All", "Upper Body", "Core", "Low"];
 
   const muscleGroups = [
     {
@@ -112,23 +109,6 @@ export default function MuscleGroupBrowser() {
           <h2 className="text-2xl font-bold text-black">Muscle Group Browser</h2>
         </div>
 
-
-        {/* Filter Pills */}
-        <div className="flex gap-2 px-4 py-2 overflow-x-auto scrollbar-hide">
-          {filters.map((filter) => (
-            <button
-              key={filter}
-              onClick={() => setSelectedFilter(filter)}
-              className={`px-6 py-2 rounded-full font-bold text-base whitespace-nowrap transition ${
-                selectedFilter === filter
-                  ? "bg-[#32402F] text-white"
-                  : "bg-[#32402F] bg-opacity-90 text-white hover:bg-opacity-100"
-              }`}
-            >
-              {filter}
-            </button>
-          ))}
-        </div>
 
         {/* Muscle Groups List */}
         <div className="px-4 py-4 flex-1">
