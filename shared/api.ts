@@ -57,6 +57,7 @@ export interface GoogleAuthResponse {
   user?: {
     id: string;
     email: string;
+    profile_image_url?: string;
   };
 }
 
