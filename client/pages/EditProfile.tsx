@@ -32,7 +32,7 @@ export default function EditProfile() {
         <div className="relative">
           <div className="w-44 h-44 rounded-full overflow-hidden">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/51dda9ea46b345a7c1976e23f6566abe70bf879d?width=350"
+              src="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F92b137ad3047419da61c243feb037232?format=webp&width=800"
               alt="Profile"
               className="w-full h-full object-cover"
             />
