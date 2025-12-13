@@ -95,16 +95,26 @@ export function isAuthenticated(): boolean {
 }
 
 export function saveProfilePicture(pictureUrl: string): void {
-  localStorage.setItem("profile_picture", pictureUrl);
+  const username = getUsername();
+  if (username) {
+    localStorage.setItem(`profile_picture_${username}`, pictureUrl);
+  }
 }
 
 export function getProfilePicture(): string {
-  return (
-    localStorage.getItem("profile_picture") ||
-    "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F92b137ad3047419da61c243feb037232?format=webp&width=800"
-  );
+  const username = getUsername();
+  if (username) {
+    const picture = localStorage.getItem(`profile_picture_${username}`);
+    if (picture) {
+      return picture;
+    }
+  }
+  return "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F92b137ad3047419da61c243feb037232?format=webp&width=800";
 }
 
 export function clearProfilePicture(): void {
-  localStorage.removeItem("profile_picture");
+  const username = getUsername();
+  if (username) {
+    localStorage.removeItem(`profile_picture_${username}`);
+  }
 }
