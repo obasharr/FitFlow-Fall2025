@@ -84,6 +84,10 @@ export default function Login() {
         if (response.user?.email) {
           saveEmail(response.user.email);
         }
+        if (isSignup) {
+          // Set default profile picture for new accounts
+          saveProfilePicture(getProfilePicture());
+        }
         toast.success(response.message);
         navigate("/dashboard");
       } else {
