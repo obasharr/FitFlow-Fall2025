@@ -9,7 +9,6 @@ import {
   clearEmail,
   clearAuthToken,
   getProfilePicture,
-  clearProfilePicture,
 } from "@/lib/auth";
 
 export default function Profile() {
@@ -112,7 +111,6 @@ export default function Profile() {
               clearAuthToken();
               clearUsername();
               clearEmail();
-              clearProfilePicture();
               navigate("/login");
             }}
             variant="outline"
