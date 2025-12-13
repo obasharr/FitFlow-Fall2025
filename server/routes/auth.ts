@@ -147,10 +147,21 @@ export const handleUpdateUsername: RequestHandler = async (req, res) => {
       message: "Username updated successfully",
     } as UpdateUsernameResponse);
   } catch (error) {
-    console.error("Update username error:", error);
+    const errorMessage =
+      error instanceof Error ? error.message : "Failed to update username";
+    console.error("Update username error:", errorMessage);
+
+    if (errorMessage === "Username already taken") {
+      res.status(400).json({
+        success: false,
+        message: "Username already taken",
+      } as UpdateUsernameResponse);
+      return;
+    }
+
     res.status(500).json({
       success: false,
-      message: "Failed to update username",
+      message: errorMessage,
     } as UpdateUsernameResponse);
   }
 };
