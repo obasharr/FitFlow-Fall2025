@@ -110,16 +110,16 @@ export function isAuthenticated(): boolean {
 }
 
 export function saveProfilePicture(pictureUrl: string): void {
-  const username = getUsername();
-  if (username) {
-    localStorage.setItem(`profile_picture_${username}`, pictureUrl);
+  const email = getEmail();
+  if (email) {
+    localStorage.setItem(`profile_picture_${email}`, pictureUrl);
   }
 }
 
 export function getProfilePicture(): string {
-  const username = getUsername();
-  if (username) {
-    const picture = localStorage.getItem(`profile_picture_${username}`);
+  const email = getEmail();
+  if (email) {
+    const picture = localStorage.getItem(`profile_picture_${email}`);
     if (picture) {
       return picture;
     }
@@ -128,8 +128,8 @@ export function getProfilePicture(): string {
 }
 
 export function clearProfilePicture(): void {
-  const username = getUsername();
-  if (username) {
-    localStorage.removeItem(`profile_picture_${username}`);
+  const email = getEmail();
+  if (email) {
+    localStorage.removeItem(`profile_picture_${email}`);
   }
 }
