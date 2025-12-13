@@ -155,6 +155,19 @@ export async function updateUsername(
   email: string,
   newUsername: string,
 ): Promise<{ id: string; email: string; username: string } | null> {
+  // First, check if the new username already exists for a different user
+  const existingUser = await supabaseRequest<
+    { id: string; email: string; username: string }[]
+  >("GET", `/users?username=eq.${encodeURIComponent(newUsername)}&select=email`);
+
+  if (existingUser.data && existingUser.data.length > 0) {
+    const existingEmail = existingUser.data[0].email;
+    if (existingEmail !== email) {
+      // Username already exists for a different user
+      throw new Error("Username already taken");
+    }
+  }
+
   const result = await supabaseRequest<
     | { id: string; email: string; username: string }[]
     | { id: string; email: string; username: string }
@@ -163,7 +176,8 @@ export async function updateUsername(
   });
 
   if (result.error) {
-    return null;
+    console.error("Error updating username:", result.error.message);
+    throw new Error(result.error.message);
   }
 
   // Handle both array and object responses from Supabase
