@@ -68,3 +68,14 @@ export interface UpdateUsernameResponse {
   success: boolean;
   message: string;
 }
+
+export interface UpdateProfilePictureRequest {
+  email: string;
+  imageData: string;
+}
+
+export interface UpdateProfilePictureResponse {
+  success: boolean;
+  message: string;
+  imageUrl?: string;
+}
