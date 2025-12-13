@@ -1,7 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { getProfilePicture } from "@/lib/auth";
 
 export default function Dashboard() {
+  const [profilePicture, setProfilePicture] = useState(getProfilePicture());
+
+  useEffect(() => {
+    const handleStorageChange = () => {
+      setProfilePicture(getProfilePicture());
+    };
+    window.addEventListener("storage", handleStorageChange);
+    return () => window.removeEventListener("storage", handleStorageChange);
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#FAF2E9] flex flex-col">
       {/* Header */}
@@ -14,7 +26,7 @@ export default function Dashboard() {
         {/* Profile image */}
         <div className="w-8 h-8 rounded-full bg-gray-400 flex-shrink-0 overflow-hidden">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F92b137ad3047419da61c243feb037232?format=webp&width=800"
+            src={profilePicture}
             alt="Profile"
             className="w-full h-full object-cover"
           />
