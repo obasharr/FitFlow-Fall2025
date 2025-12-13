@@ -12,7 +12,7 @@ export default function MuscleGroupBrowser() {
     {
       name: "Chest (Pectorals)",
       description: "Primary Push - 12 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/132dcdb06c2e2942915d12f2912e2e83d6663445?width=164",
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/845477f077f9d4fa9e2ab35fe08515df41fe04b2?width=708",
     },
     {
       name: "Back (Lats & Traps)",
@@ -32,32 +32,42 @@ export default function MuscleGroupBrowser() {
     {
       name: "Abs",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/fdc400a9872b7948ced9e610132603715ec17966?width=708",
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/45f73c8da32c28375ac5b89d522d9b89c6a644e6?width=708",
     },
     {
-      name: "Shoulders (Deltoids)",
-      description: "Push & Stabilize - 18 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/ad33659c33381eac40061641b81f19d65a13ad9f?width=708",
+      name: "Lower Back",
+      description: "Propulsion & Stability - 6 Exercises",
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/215d6838810c3d836b9735d53c16f2131ac6e69c?width=708",
     },
     {
-      name: "Hamstrings",
-      description: "Pull & Stabilize - 10 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/ad33659c33381eac40061641b81f19d65a13ad9f?width=708",
+      name: "Shoulders",
+      description: "Propulsion & Stability - 6 Exercises",
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/f064745f93efc12b5c9b010b7093a90dac5258d4?width=708",
+    },
+    {
+      name: "Forearms",
+      description: "Propulsion & Stability - 6 Exercises",
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/d1deee7fcd3b73e9de0f5e048644946bf1c1b70e?width=708",
     },
     {
       name: "Glutes",
-      description: "Power & Stability - 14 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/ad33659c33381eac40061641b81f19d65a13ad9f?width=708",
+      description: "Propulsion & Stability - 6 Exercises",
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/75fc02050f45e10cc00d09ca2dc63cf387f3b300?width=708",
+    },
+    {
+      name: "Hamstrings",
+      description: "Propulsion & Stability - 6 Exercises",
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/5c7287a632fe66be918b26b05382c5d2a5c90ef3?width=708",
+    },
+    {
+      name: "Cardio",
+      description: "Propulsion & Stability - 6 Exercises",
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/103cd26b6f05324cf924d53fe0d1b31800da5864?width=708",
     },
     {
       name: "Calves",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/ad33659c33381eac40061641b81f19d65a13ad9f?width=708",
-    },
-    {
-      name: "Forearms",
-      description: "Grip & Stability - 8 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/ad33659c33381eac40061641b81f19d65a13ad9f?width=708",
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/e19ca96b5b1c589f5da2ad06c571bacadf57fe9f?width=708",
     },
   ];
 
@@ -112,32 +122,20 @@ export default function MuscleGroupBrowser() {
 
         {/* Muscle Groups List */}
         <div className="px-4 py-4 flex-1">
-          <div className="flex flex-col gap-4 pb-6">
+          <div className="flex flex-col gap-9 pb-6">
             {muscleGroups.map((group, index) => (
-                <div
-                  key={index}
-                  className="flex gap-4 bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition"
-                >
-                  {/* Image */}
-                  <div className="flex-shrink-0 w-24 h-24">
-                    <img
-                      src={group.image}
-                      alt={group.name}
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                  </div>
-
-                  {/* Text Content */}
-                  <div className="flex-1 flex flex-col justify-center">
-                    <h3 className="text-lg font-bold text-black mb-1">
-                      {group.name}
-                    </h3>
-                    <p className="text-sm text-[#828282] font-medium">
-                      {group.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+              <button
+                key={index}
+                onClick={() => {}}
+                className="w-full rounded-lg overflow-hidden shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:shadow-lg transition-shadow"
+              >
+                <img
+                  src={group.image}
+                  alt={group.name}
+                  className="w-full h-auto object-cover"
+                />
+              </button>
+            ))}
           </div>
         </div>
       </div>
