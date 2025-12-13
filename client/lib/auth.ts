@@ -133,3 +133,10 @@ export function clearProfilePicture(): void {
     localStorage.removeItem(`profile_picture_${email}`);
   }
 }
+
+export function saveProfilePictureUrl(pictureUrl: string): void {
+  const email = getEmail();
+  if (email && pictureUrl) {
+    localStorage.setItem(`profile_picture_${email}`, pictureUrl);
+  }
+}
