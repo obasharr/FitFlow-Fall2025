@@ -9,7 +9,6 @@ import {
   saveAuthToken,
   saveUsername,
   saveEmail,
-  getUsername,
 } from "@/lib/auth";
 import {
   initializeGoogleSignIn,
@@ -77,14 +76,11 @@ export default function Login() {
 
       if (response.success && response.token) {
         saveAuthToken(response.token);
-        const currentUsername = getUsername();
-        if (response.user?.username) {
-          if (!currentUsername) {
-            saveUsername(response.user.username);
-          }
-        }
         if (response.user?.email) {
           saveEmail(response.user.email);
+        }
+        if (response.user?.username) {
+          saveUsername(response.user.username);
         }
         toast.success(response.message);
         navigate("/dashboard");
