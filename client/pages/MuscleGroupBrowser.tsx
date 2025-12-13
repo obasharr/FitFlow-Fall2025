@@ -12,7 +12,7 @@ export default function MuscleGroupBrowser() {
     {
       name: "Chest (Pectorals)",
       description: "Primary Push - 12 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/845477f077f9d4fa9e2ab35fe08515df41fe04b2?width=708",
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/132dcdb06c2e2942915d12f2912e2e83d6663445?width=164",
     },
     {
       name: "Back (Lats & Traps)",
