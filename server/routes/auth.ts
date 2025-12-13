@@ -1,6 +1,12 @@
 import { RequestHandler } from "express";
-import { SignupRequest, LoginRequest, AuthResponse } from "@shared/api";
-import { createUser, getUserByEmail } from "../lib/supabase";
+import {
+  SignupRequest,
+  LoginRequest,
+  AuthResponse,
+  UpdateUsernameRequest,
+  UpdateUsernameResponse,
+} from "@shared/api";
+import { createUser, getUserByEmail, updateUsername } from "../lib/supabase";
 
 // Simple token generation (in production, use JWT)
 function generateToken(userId: string): string {
@@ -112,5 +118,39 @@ export const handleLogin: RequestHandler = async (req, res) => {
       success: false,
       message: "Login failed",
     } as AuthResponse);
+  }
+};
+
+export const handleUpdateUsername: RequestHandler = async (req, res) => {
+  try {
+    const { email, newUsername } = req.body as UpdateUsernameRequest;
+
+    if (!email || !newUsername) {
+      res.status(400).json({
+        success: false,
+        message: "Email and new username are required",
+      } as UpdateUsernameResponse);
+      return;
+    }
+
+    const updatedUser = await updateUsername(email, newUsername);
+    if (!updatedUser) {
+      res.status(500).json({
+        success: false,
+        message: "Failed to update username",
+      } as UpdateUsernameResponse);
+      return;
+    }
+
+    res.status(200).json({
+      success: true,
+      message: "Username updated successfully",
+    } as UpdateUsernameResponse);
+  } catch (error) {
+    console.error("Update username error:", error);
+    res.status(500).json({
+      success: false,
+      message: "Failed to update username",
+    } as UpdateUsernameResponse);
   }
 };
