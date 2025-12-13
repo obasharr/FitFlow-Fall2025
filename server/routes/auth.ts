@@ -5,8 +5,15 @@ import {
   AuthResponse,
   UpdateUsernameRequest,
   UpdateUsernameResponse,
+  UpdateProfilePictureRequest,
+  UpdateProfilePictureResponse,
 } from "@shared/api";
-import { createUser, getUserByEmail, updateUsername } from "../lib/supabase";
+import {
+  createUser,
+  getUserByEmail,
+  updateUsername,
+  updateProfilePictureUrl,
+} from "../lib/supabase";
 
 // Simple token generation (in production, use JWT)
 function generateToken(userId: string): string {
@@ -163,5 +170,45 @@ export const handleUpdateUsername: RequestHandler = async (req, res) => {
       success: false,
       message: errorMessage,
     } as UpdateUsernameResponse);
+  }
+};
+
+export const handleUpdateProfilePicture: RequestHandler = async (req, res) => {
+  try {
+    const { email, imageData } = req.body as UpdateProfilePictureRequest;
+
+    if (!email || !imageData) {
+      res.status(400).json({
+        success: false,
+        message: "Email and image data are required",
+      } as UpdateProfilePictureResponse);
+      return;
+    }
+
+    // For now, store the base64 data directly as a data URL
+    // In production, you might want to upload to a file storage service
+    const updatedUser = await updateProfilePictureUrl(email, imageData);
+    if (!updatedUser) {
+      res.status(500).json({
+        success: false,
+        message: "Failed to update profile picture",
+      } as UpdateProfilePictureResponse);
+      return;
+    }
+
+    res.status(200).json({
+      success: true,
+      message: "Profile picture updated successfully",
+      imageUrl: updatedUser.profile_image_url,
+    } as UpdateProfilePictureResponse);
+  } catch (error) {
+    const errorMessage =
+      error instanceof Error ? error.message : "Failed to update profile picture";
+    console.error("Update profile picture error:", errorMessage);
+
+    res.status(500).json({
+      success: false,
+      message: errorMessage,
+    } as UpdateProfilePictureResponse);
   }
 };
