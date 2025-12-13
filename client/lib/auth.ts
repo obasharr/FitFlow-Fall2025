@@ -68,14 +68,29 @@ export function clearAuthToken(): void {
 
 export function saveUsername(username: string): void {
   localStorage.setItem("username", username);
+  const email = getEmail();
+  if (email) {
+    localStorage.setItem(`username_${email}`, username);
+  }
 }
 
 export function getUsername(): string | null {
+  const email = getEmail();
+  if (email) {
+    const userSpecificUsername = localStorage.getItem(`username_${email}`);
+    if (userSpecificUsername) {
+      return userSpecificUsername;
+    }
+  }
   return localStorage.getItem("username");
 }
 
 export function clearUsername(): void {
   localStorage.removeItem("username");
+  const email = getEmail();
+  if (email) {
+    localStorage.removeItem(`username_${email}`);
+  }
 }
 
 export function saveEmail(email: string): void {
