@@ -120,10 +120,25 @@ export async function createUser(
   email: string,
   passwordHash: string,
   username?: string,
-): Promise<{ id: string; email: string; username?: string }> {
+): Promise<{
+  id: string;
+  email: string;
+  username?: string;
+  profile_image_url?: string;
+}> {
   const result = await supabaseRequest<
-    | { id: string; email: string; username?: string }[]
-    | { id: string; email: string; username?: string }
+    | {
+        id: string;
+        email: string;
+        username?: string;
+        profile_image_url?: string;
+      }[]
+    | {
+        id: string;
+        email: string;
+        username?: string;
+        profile_image_url?: string;
+      }
   >("POST", "/users", {
     email,
     password_hash: passwordHash,
@@ -140,7 +155,12 @@ export async function createUser(
     return data[0];
   }
 
-  return data as { id: string; email: string; username?: string };
+  return data as {
+    id: string;
+    email: string;
+    username?: string;
+    profile_image_url?: string;
+  };
 }
 
 export async function verifyUserPassword(
