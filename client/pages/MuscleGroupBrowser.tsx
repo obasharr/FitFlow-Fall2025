@@ -122,17 +122,17 @@ export default function MuscleGroupBrowser() {
 
         {/* Muscle Groups List */}
         <div className="px-4 py-4 flex-1">
-          <div className="flex flex-col gap-9 pb-6">
+          <div className="flex flex-col gap-3 pb-6">
             {muscleGroups.map((group, index) => (
               <button
                 key={index}
                 onClick={() => {}}
-                className="w-full rounded-lg overflow-hidden shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:shadow-lg transition-shadow"
+                className="w-full h-16 rounded-lg overflow-hidden shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:shadow-lg transition-shadow"
               >
                 <img
                   src={group.image}
                   alt={group.name}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                 />
               </button>
             ))}
