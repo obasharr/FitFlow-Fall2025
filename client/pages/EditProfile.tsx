@@ -32,14 +32,35 @@ export default function EditProfile() {
         <div className="relative">
           <div className="w-44 h-44 rounded-full overflow-hidden">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F92b137ad3047419da61c243feb037232?format=webp&width=800"
+              src={profilePicture}
               alt="Profile"
               className="w-full h-full object-cover"
             />
           </div>
-          <button className="absolute bottom-0 right-0 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center">
+          <button
+            onClick={() => fileInputRef.current?.click()}
+            className="absolute bottom-0 right-0 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:shadow-xl transition"
+          >
             <Camera className="w-6 h-6 text-[#FAF2E9] stroke-[#32402F]" strokeWidth={2} />
           </button>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="image/*"
+            onChange={(e) => {
+              const file = e.target.files?.[0];
+              if (file) {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                  const base64String = event.target?.result as string;
+                  setProfilePicture(base64String);
+                  saveProfilePicture(base64String);
+                };
+                reader.readAsDataURL(file);
+              }
+            }}
+            className="hidden"
+          />
         </div>
       </div>
 
