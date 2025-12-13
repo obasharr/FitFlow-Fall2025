@@ -4,7 +4,6 @@ import { Search, ChevronLeft } from "lucide-react";
 
 export default function MuscleGroupBrowser() {
   const navigate = useNavigate();
-  const [searchQuery, setSearchQuery] = useState("");
   const [selectedFilter, setSelectedFilter] = useState("All");
 
   const filters = ["All", "Upper Body", "Core", "Low"];
@@ -93,19 +92,6 @@ export default function MuscleGroupBrowser() {
           <h2 className="text-2xl font-bold text-black">Muscle Group Browser</h2>
         </div>
 
-        {/* Search Bar */}
-        <div className="px-4 py-4">
-          <div className="flex items-center gap-3 px-4 py-2.5 border-2 border-[#32402F] rounded-lg bg-[#F5F5F5]">
-            <Search className="w-6 h-6 text-[#828282] flex-shrink-0" />
-            <input
-              type="text"
-              placeholder="Search"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="flex-1 bg-transparent text-[#828282] placeholder:text-[#828282] outline-none text-base"
-            />
-          </div>
-        </div>
 
         {/* Filter Pills */}
         <div className="flex gap-2 px-4 py-2 overflow-x-auto scrollbar-hide">
@@ -127,11 +113,7 @@ export default function MuscleGroupBrowser() {
         {/* Muscle Groups List */}
         <div className="px-4 py-4 flex-1">
           <div className="flex flex-col gap-4 pb-6">
-            {muscleGroups
-              .filter((group) =>
-                group.name.toLowerCase().includes(searchQuery.toLowerCase())
-              )
-              .map((group, index) => (
+            {muscleGroups.map((group, index) => (
                 <div
                   key={index}
                   className="flex gap-4 bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition"
