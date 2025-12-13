@@ -12,62 +12,62 @@ export default function MuscleGroupBrowser() {
     {
       name: "Chest (Pectorals)",
       description: "Primary Push - 12 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/845477f077f9d4fa9e2ab35fe08515df41fe04b2?width=708",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F49f276c26e6a44889ab33112904fd889?format=webp&width=800",
     },
     {
       name: "Back (Lats & Traps)",
       description: "Pull & Stabilize - 15 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/672314b39499854ccc197d35c8d7da3cfab12c2f?width=708",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fcd4dfe2c00e3432db017352c98148ce9?format=webp&width=800",
     },
     {
       name: "Arms (Biceps & Triceps)",
       description: "Push, Pull, & Grip - 24 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/4d3b41e98dc5c20f267d92af0d68af170b1d25a8?width=708",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8853b2c1f5e546f1ab11e3beca3eceba?format=webp&width=800",
     },
     {
       name: "Quads",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/f61e8f47e22a61557a06bf40c67e5dca9741e7e9?width=708",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F1c89dd35feaa48789c9afbcda1ece2b1?format=webp&width=800",
     },
     {
       name: "Abs",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/45f73c8da32c28375ac5b89d522d9b89c6a644e6?width=708",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Ff8b80b4747cf485a8cfbdc8bd10267d9?format=webp&width=800",
     },
     {
       name: "Lower Back",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/215d6838810c3d836b9735d53c16f2131ac6e69c?width=708",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F36ebfc5c3b8347ad898fb20ff0f471e2?format=webp&width=800",
     },
     {
       name: "Shoulders",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/f064745f93efc12b5c9b010b7093a90dac5258d4?width=708",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F3ab98f2ee4a54731aac4ad8d41c90ba9?format=webp&width=800",
     },
     {
       name: "Forearms",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/d1deee7fcd3b73e9de0f5e048644946bf1c1b70e?width=708",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F220c136186c34edb9060f9279681354f?format=webp&width=800",
     },
     {
       name: "Glutes",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/75fc02050f45e10cc00d09ca2dc63cf387f3b300?width=708",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6cdc77e803e14757bb4af88ed8798b3a?format=webp&width=800",
     },
     {
       name: "Hamstrings",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/5c7287a632fe66be918b26b05382c5d2a5c90ef3?width=708",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fc490ed1885764a95a0914bf44854b336?format=webp&width=800",
     },
     {
       name: "Cardio",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/103cd26b6f05324cf924d53fe0d1b31800da5864?width=708",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fd02689a6faac4bae8d98c8dff016416b?format=webp&width=800",
     },
     {
       name: "Calves",
       description: "Propulsion & Stability - 6 Exercises",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/e19ca96b5b1c589f5da2ad06c571bacadf57fe9f?width=708",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8f386a2570de4381bde7f1f09493e9a0?format=webp&width=800",
     },
   ];
 
