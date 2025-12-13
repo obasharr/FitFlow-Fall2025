@@ -65,6 +65,7 @@ export const handleSignup: RequestHandler = async (req, res) => {
         id: user.id,
         email: user.email,
         username: user.username,
+        profile_image_url: (user as any).profile_image_url || undefined,
       },
     } as AuthResponse);
   } catch (error) {
@@ -117,6 +118,7 @@ export const handleLogin: RequestHandler = async (req, res) => {
         id: user.id,
         email: user.email,
         username: user.username,
+        profile_image_url: (user as any).profile_image_url || undefined,
       },
     } as AuthResponse);
   } catch (error) {

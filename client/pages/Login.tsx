@@ -9,6 +9,7 @@ import {
   saveAuthToken,
   saveUsername,
   saveEmail,
+  saveProfilePictureUrl,
 } from "@/lib/auth";
 import {
   initializeGoogleSignIn,
@@ -81,6 +82,9 @@ export default function Login() {
         }
         if (response.user?.username) {
           saveUsername(response.user.username);
+        }
+        if (response.user?.profile_image_url) {
+          saveProfilePictureUrl(response.user.profile_image_url);
         }
         toast.success(response.message);
         navigate("/dashboard");
