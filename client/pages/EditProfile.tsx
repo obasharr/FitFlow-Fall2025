@@ -1,8 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft, Camera } from "lucide-react";
+import { useState, useRef } from "react";
+import { getProfilePicture, saveProfilePicture } from "@/lib/auth";
 
 export default function EditProfile() {
   const navigate = useNavigate();
+  const [profilePicture, setProfilePicture] = useState(getProfilePicture());
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   return (
     <div className="min-h-screen bg-[#FAF2E9] flex flex-col">
