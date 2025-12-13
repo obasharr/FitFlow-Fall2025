@@ -93,3 +93,18 @@ export function clearEmail(): void {
 export function isAuthenticated(): boolean {
   return !!getAuthToken();
 }
+
+export function saveProfilePicture(pictureUrl: string): void {
+  localStorage.setItem("profile_picture", pictureUrl);
+}
+
+export function getProfilePicture(): string {
+  return (
+    localStorage.getItem("profile_picture") ||
+    "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F92b137ad3047419da61c243feb037232?format=webp&width=800"
+  );
+}
+
+export function clearProfilePicture(): void {
+  localStorage.removeItem("profile_picture");
+}
