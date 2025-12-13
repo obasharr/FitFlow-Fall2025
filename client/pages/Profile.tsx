@@ -8,24 +8,31 @@ import {
   clearUsername,
   clearEmail,
   clearAuthToken,
+  getProfilePicture,
+  clearProfilePicture,
 } from "@/lib/auth";
 
 export default function Profile() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("Username");
   const [email, setEmail] = useState("Email@email.com");
+  const [profilePicture, setProfilePicture] = useState(getProfilePicture());
 
   useEffect(() => {
-    // Fetch fresh username and email each time the page loads
+    // Fetch fresh username, email, and profile picture each time the page loads
     const updateUserInfo = () => {
       const storedUsername = getUsername();
       const storedEmail = getEmail();
+      const storedProfilePicture = getProfilePicture();
 
       if (storedUsername) {
         setUsername(storedUsername);
       }
       if (storedEmail) {
         setEmail(storedEmail);
+      }
+      if (storedProfilePicture) {
+        setProfilePicture(storedProfilePicture);
       }
     };
 
@@ -62,7 +69,7 @@ export default function Profile() {
         {/* Profile image */}
         <div className="w-44 h-44 rounded-full bg-gray-400 flex-shrink-0 overflow-hidden my-8">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F92b137ad3047419da61c243feb037232?format=webp&width=800"
+            src={profilePicture}
             alt="Profile"
             className="w-full h-full object-cover"
           />
@@ -105,6 +112,7 @@ export default function Profile() {
               clearAuthToken();
               clearUsername();
               clearEmail();
+              clearProfilePicture();
               navigate("/login");
             }}
             variant="outline"
