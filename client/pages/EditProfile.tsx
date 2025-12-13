@@ -12,15 +12,16 @@ export default function EditProfile() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleSaveInfo = async () => {
-    if (newUsername.trim()) {
-      setIsLoading(true);
-      try {
-        const email = getEmail();
-        if (!email) {
-          toast.error("User email not found");
-          return;
-        }
+    setIsLoading(true);
+    try {
+      const email = getEmail();
+      if (!email) {
+        toast.error("User email not found");
+        return;
+      }
 
+      // Update username if provided
+      if (newUsername.trim()) {
         const response = await fetch("/api/update-username", {
           method: "POST",
           headers: {
@@ -43,14 +44,52 @@ export default function EditProfile() {
           toast.error(errorMessage);
           console.error("Update username error:", errorMessage);
         }
-      } catch (error) {
-        const errorMessage =
-          error instanceof Error ? error.message : "An error occurred";
-        toast.error("An error occurred while updating username");
-        console.error("Update username error:", errorMessage);
-      } finally {
-        setIsLoading(false);
       }
+    } catch (error) {
+      const errorMessage =
+        error instanceof Error ? error.message : "An error occurred";
+      toast.error("An error occurred while updating username");
+      console.error("Update username error:", errorMessage);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const uploadProfilePicture = async (imageData: string) => {
+    try {
+      const email = getEmail();
+      if (!email) {
+        toast.error("User email not found");
+        return;
+      }
+
+      const response = await fetch("/api/update-profile-picture", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          imageData,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        saveProfilePicture(imageData);
+        return true;
+      } else {
+        toast.error(data.message || "Failed to save profile picture");
+        console.error("Upload error:", data.message);
+        return false;
+      }
+    } catch (error) {
+      const errorMessage =
+        error instanceof Error ? error.message : "An error occurred";
+      toast.error("An error occurred while uploading profile picture");
+      console.error("Upload error:", errorMessage);
+      return false;
     }
   };
 
@@ -101,10 +140,10 @@ export default function EditProfile() {
               const file = e.target.files?.[0];
               if (file) {
                 const reader = new FileReader();
-                reader.onload = (event) => {
+                reader.onload = async (event) => {
                   const base64String = event.target?.result as string;
                   setProfilePicture(base64String);
-                  saveProfilePicture(base64String);
+                  await uploadProfilePicture(base64String);
                 };
                 reader.readAsDataURL(file);
               }
