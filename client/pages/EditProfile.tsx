@@ -10,9 +10,9 @@ export default function EditProfile() {
       <div className="flex items-center justify-between px-4 py-4 h-16">
         <button
           onClick={() => navigate(-1)}
-          className="w-5 h-5 rounded-full bg-[#FAF2E9] flex items-center justify-center flex-shrink-0"
+          className="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition"
         >
-          <ChevronLeft className="w-[7px] h-[14px] text-black" strokeWidth={3} />
+          <ChevronLeft className="w-6 h-6 text-black" strokeWidth={2} />
         </button>
 
         <h1 className="text-xl font-normal text-black text-center tracking-tight font-['Archivo_Black']">
@@ -47,8 +47,8 @@ export default function EditProfile() {
       <div className="px-6 flex flex-col gap-4 pb-8">
         {/* Username Section */}
         <div className="flex flex-col gap-2">
-          <label className="text-center text-black font-bold text-[15px]">
-            Username
+          <label className="text-left text-black font-bold text-[15px]">
+            Change Username
           </label>
           <input
             type="text"
@@ -59,8 +59,8 @@ export default function EditProfile() {
 
         {/* Email Section */}
         <div className="flex flex-col gap-2">
-          <label className="text-center text-black font-bold text-[15px]">
-            Email@email.com
+          <label className="text-left text-black font-bold text-[15px]">
+            Change Email
           </label>
           <input
             type="email"
@@ -71,7 +71,7 @@ export default function EditProfile() {
 
         {/* Change Password Section */}
         <div className="flex flex-col gap-2">
-          <label className="text-center text-black font-bold text-[15px]">
+          <label className="text-left text-black font-bold text-[15px]">
             Change Password
           </label>
           <input
