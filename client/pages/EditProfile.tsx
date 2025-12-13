@@ -39,11 +39,15 @@ export default function EditProfile() {
           toast.success("Username updated successfully");
           setNewUsername("");
         } else {
-          toast.error(data.message || "Failed to update username");
+          const errorMessage = data.message || "Failed to update username";
+          toast.error(errorMessage);
+          console.error("Update username error:", errorMessage);
         }
       } catch (error) {
+        const errorMessage =
+          error instanceof Error ? error.message : "An error occurred";
         toast.error("An error occurred while updating username");
-        console.error("Update username error:", error);
+        console.error("Update username error:", errorMessage);
       } finally {
         setIsLoading(false);
       }
