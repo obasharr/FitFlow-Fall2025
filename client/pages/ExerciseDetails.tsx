@@ -210,6 +210,52 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Hi-Lo Pulley Cable"],
   },
+  "machine-hip-adductor": {
+    title: "Machine Hip Adductor",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F1f6314a651ed412bafcb6f557ad58c8f?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/254ac9c2a7048513087c38b08fc2d8fd56760b59?width=264",
+    instructions: [
+      "1. Sit upright in a thigh abductor machine with your lower back pressed against the back pad.",
+      "2. Bend your knees to a 90 degree angle and place your feet on the foot pedals in a wide position with your knees against the inner pads.",
+      "3. Brace your core to keep your spine neutral and stationary as you press your knees through the pads to create an inward arc.",
+      "4. Once the knee pads have been brought together, return to the starting position.",
+    ],
+    equipment: ["Thigh Adductor Machine"],
+    tips: "Focus on feeling your inner thighs (adductors) work, not just moving the weight. Slow, controlled movements build strength better than rushing or clanging the weights.",
+  },
+  "lateral-box-jump": {
+    title: "Lateral Box Jump",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9b80737769c7432cb72cd7344433139d?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/44a4a81bf5980ec9d24d021525ba520321f291b3?width=264",
+    instructions: [
+      "1. Stand 3-6\" away and perpendicular to the plyo box and place your feet hip-width apart.",
+      "2. Begin hinging at your hips while simultaneously extending your arms behind you.",
+      "3. Maintain a straight and rigid torso throughout while you descend and keep your heels firmly on the ground.",
+      "4. Once you have reached the bottom of the movement, immediately explode upward by extending your hips and knees and swinging your arms forward.",
+      "5. Push off more with your outside foot to move laterally to the top of the box.",
+      "6. Absorb the impact by slightly flexing your hips and knees before jumping back to the starting position.",
+    ],
+    equipment: ["Box"],
+    tips: "Aim for power and speed, not just height or distance. Protect joints by landing softly and staying athletic (hips over knees), not flat-footed.",
+  },
+  "butterfly-stretch": {
+    title: "Butterfly Stretch",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F749507474cb94eabae7c06f8c6ed737d?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/7022dae1aaea30eeefab11898e8994ebf3c4f975?width=264",
+    instructions: [
+      "1. Sit upright and bend your knees so that the soles of your feet are pressed together and pull your heels into your hips.",
+      "2. Place your hands on top of your feet and slowly bend your torso forward until you feel a comfortable stretch on the inside of your thighs.",
+      "3. Hold the stretch for 15-30 seconds.",
+    ],
+    equipment: ["Yoga matt"],
+    tips: "Sit tall with a straight spine; engage your core to support your back. The stretch should be in your inner thighs and groin, not your knees.",
+  },
 };
 
 export default function ExerciseDetails() {
