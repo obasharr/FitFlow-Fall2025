@@ -98,7 +98,7 @@ export default function MuscleGroupBrowser() {
       description: "Propulsion & Stability",
       image:
         "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8f386a2570de4381bde7f1f09493e9a0?format=webp&width=800",
-      route: null,
+      route: "/muscle/calves",
     },
   ];
 
