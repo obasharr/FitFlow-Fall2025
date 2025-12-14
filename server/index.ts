@@ -9,6 +9,7 @@ import {
   handleUpdateProfilePicture,
 } from "./routes/auth";
 import { handleGoogleAuth } from "./routes/google-auth";
+import favoritesRouter from "./routes/favorites";
 
 export function createServer() {
   const app = express();
