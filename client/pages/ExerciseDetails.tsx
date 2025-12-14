@@ -453,7 +453,7 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Dumbbells"],
   },
-  "cable-tricep-pushdowns": {
+  "cable-tricep-pushdown": {
     title: "Cable Tricep Pushdowns",
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F431a39ee856b44a0bcc9d7a414ab5dab?format=webp&width=800",
