@@ -425,6 +425,34 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Pull Up Bar"],
   },
+  "barbell-curl": {
+    title: "Barbell Curl",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6474f488b5034abf85cdc2e4d11fce6c?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F051d928c3ada488d8a6d5bbb4cf95524?format=webp&width=800",
+    instructions: [
+      "1. Stand in an upright posture grabbing ahold of a barbell shoulder-width apart with your palms facing away from your body just below waist height.",
+      "2. Brace your core by breathing into your stomach and flexing your abdominal muscles as you begin to flex your elbows to raise the bar.",
+      "3. Keep your elbows at your sides as you flex the barbell to shoulder height avoiding movement through your spine.",
+      "4. Exhale and lower the barbell back to the starting position.",
+    ],
+    equipment: ["Barbells"],
+  },
+  "cross-body-hammer-curls": {
+    title: "Cross Body Hammer Curls",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F553cb530b7ea4bbab49a0ff31f24ddc3?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F051d928c3ada488d8a6d5bbb4cf95524?format=webp&width=800",
+    instructions: [
+      "1. Grasp a dumbbell in each hand, and stand with your feet close to shoulder-width apart.",
+      "2. Position each dumbbell in front of you with your palms facing your body.Bend your arms slightly at the elbow, and position your elbows close to shoulder-width apart.",
+      "3. Raise one dumbbell in an arc toward your opposite shoulder by engaging the bicep of that arm. Lock your elbow in place for the duration of the exercise.",
+      "4. Hold the dumbbell in position at the top of this movement for a moment. Maintain tension in your bicep as you bring the dumbbell back to position",
+    ],
+    equipment: ["Dumbbells"],
+  },
 };
 
 export default function ExerciseDetails() {
