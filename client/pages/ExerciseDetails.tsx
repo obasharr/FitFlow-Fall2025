@@ -13,6 +13,46 @@ interface ExerciseData {
 }
 
 const exerciseData: Record<string, ExerciseData> = {
+  "dumbbell-bench-press": {
+    title: "Dumbbell Bench Press Details",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0fe73a05f33044d5a64255af51e28720?format=webp&width=800",
+    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/a8dfcc21308e254d009d6ea203955bcf029505ac?width=264",
+    instructions: [
+      "1. Lie your back onto a bench while squeezing your shoulder blades together and placing your heels firmly on the ground underneath your knees.",
+      "2. The bench should be in contact with your head, shoulders, and butt at all times.",
+      "3. Position the dumbbells so that they are just outside shoulder-width apart.",
+      "4. Keeping your core braced by breathing into your stomach and flexing the abdominal muscles, extend your elbows while keeping them at a 45 degree angle from your torso.",
+      "5. Once your arms are fully extended over the shoulders, exhale to return the dumbbells back to the starting position.",
+    ],
+    equipment: ["Dumbbells", "Bench (Floor as as substitute)"],
+    tips: "Flaring your elbows out can sometimes help you lift heavier weights, but it places more tension on your shoulders. The ideal position can vary slightly from person to person, but try to keep your elbows around 45 degrees from your torso, and make small adjustments from there.",
+  },
+  "svend-press": {
+    title: "Svend Press Details",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0b8a1ec5565c442f9b79ee592ea05aa6?format=webp&width=800",
+    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/a8dfcc21308e254d009d6ea203955bcf029505ac?width=264",
+    instructions: [
+      "1. Stand in an upright posture with your feet shoulder-width apart.",
+      "2. Press two light barbell plates between your palms and position them in the middle of your chest just below shoulder height.",
+      "3. Continue to press the barbell plates together as you extend your arms forward keeping the plates in front of the middle of your chest.",
+      "4. You should remain in an upright posture as you flex your elbows to return the barbell plates back to the starting position.",
+    ],
+    equipment: ["Weight plate"],
+    tips: "Don't overdue it with a heavy weight",
+  },
+  "push-up": {
+    title: "Push Up Details",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F675e35b579804de5b1400c570e5bd315?format=webp&width=800",
+    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/a8dfcc21308e254d009d6ea203955bcf029505ac?width=264",
+    instructions: [
+      "1. Start with your elbows fully extended and your hands placed on the floor just outside shoulder-width apart.",
+      "2. Brace your core by breathing into your stomach and flexing the abdominal muscles to create a straight and rigid posture from your heels to your shoulders.",
+      "3. With your hips and knees extended throughout the exercise, flex your elbows to descend your chest to the floor while keeping your elbows at a 45 degree angle to your torso.",
+      "4. Return to the starting position after your chest has reached the floor.",
+    ],
+    equipment: ["Body Weight"],
+    tips: "Don't allow your hips to sag or raise up during this exercise. It's very common to see this especially as you become fatigued during your set. Keeping your core engaged will help you keep your spine in a neutral position. It can also help to think of this exercise as a plank first, and the movement as a secondary piece to this exercise.",
+  },
   squats: {
     title: "Squat Details",
     image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F69f6d8a6486247f29bb4e94cd18f204a?format=webp&width=800",
