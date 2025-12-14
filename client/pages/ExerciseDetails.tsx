@@ -573,6 +573,7 @@ export default function ExerciseDetails() {
   const [isFavorite, setIsFavorite] = useState(false);
   const [showTips, setShowTips] = useState(false);
   const [profilePicture, setProfilePicture] = useState(getProfilePicture());
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const handleStorageChange = () => {
@@ -581,6 +582,51 @@ export default function ExerciseDetails() {
     window.addEventListener("storage", handleStorageChange);
     return () => window.removeEventListener("storage", handleStorageChange);
   }, []);
+
+  // Load favorites on mount
+  useEffect(() => {
+    const loadFavorites = async () => {
+      const email = getEmail();
+      if (email && exerciseName) {
+        const favorites = await getFavorites(email);
+        setIsFavorite(favorites.includes(exerciseName));
+      }
+      setIsLoading(false);
+    };
+
+    loadFavorites();
+  }, [exerciseName]);
+
+  const handleFavoriteToggle = async () => {
+    const email = getEmail();
+    if (!email || !exerciseName) {
+      toast.error("Please login to add favorites");
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      if (isFavorite) {
+        const success = await removeFavorite(email, exerciseName);
+        if (success) {
+          setIsFavorite(false);
+          toast.success("Removed from favorites");
+        } else {
+          toast.error("Failed to remove favorite");
+        }
+      } else {
+        const success = await addFavorite(email, exerciseName);
+        if (success) {
+          setIsFavorite(true);
+          toast.success("Added to favorites");
+        } else {
+          toast.error("Failed to add favorite");
+        }
+      }
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   const exercise = exerciseName ? exerciseData[exerciseName] : null;
 
