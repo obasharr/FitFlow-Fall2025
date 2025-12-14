@@ -565,6 +565,51 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Squat Rack", "Barbell"],
   },
+  "russian-twists": {
+    title: "Russian Twists",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F85d23c1ec80f491bbcfff8caf47ca8cf?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F336df94ab9f04b3ebf0ebef4b4c04752?format=webp&width=800",
+    instructions: [
+      "1. Sit in an upright position with your knees bent and feet off the floor underneath a stable object.",
+      "2. Hold onto a weighted apparatus or clasp your hands in front of your chest with your elbows slightly flexed.",
+      "3. Extend your hips to angle your torso 45 degrees from the floor.",
+      "4. Rotate your shoulders to the right while keeping your weighted apparatus or your hands in the middle of your chest.",
+      "5. Once you have rotated far enough to touch the weighted apparatus or your hands to the floor by your side, rotate your shoulders to the left to again touch the floor."
+    ],
+    equipment: ["Body weight (Weight plate to increase insensitivity)"],
+    tips: "Make sure you're using your core to twist to each side rather than simply reaching to either side with your arms. This will make the exercise more effective."
+  },
+  "vertical-knee-raise": {
+    title: "Vertical Knee Raise",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fedca87e31e264efbb8ae3f97102b04e5?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F336df94ab9f04b3ebf0ebef4b4c04752?format=webp&width=800",
+    instructions: [
+      "1. Stand upright on the pedals of a vertical leg raise bench.",
+      "2. Press your back against the pad and rest your forearms on the parallel bars grabbing a hold of the handles with your palms facing in.",
+      "3. Brace your core to keep your head extended away from your shoulders before suspending your body above the floor.",
+      "4. Avoid any swinging as you flex your hips and your abdomen to bring your knees up to your chest.",
+      "5. Lower your legs to the extended position."
+    ],
+    equipment: ["Vertical Bench"],
+    tips: "Keep your core engaged for the duration of the exercise, even between reps. This exercise is designed to add instability that your core needs to compensate for. Keeping your core engaged throughout the exercise will improve the effectiveness of the exercise."
+  },
+  "tuck-crunch": {
+    title: "Tuck Crunch",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F51ba0da440334c8faa82f74f38bfe04b?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F336df94ab9f04b3ebf0ebef4b4c04752?format=webp&width=800",
+    instructions: [
+      "1. Sit upright on the floor with your knees at a 90 degree angle and your feet flat on the floor.",
+      "2. Slowly lean back until your abdomen muscles are engaged and your back is about 45 degrees from the floor. Raise your heels slightly off the floor. While engaging your abdomen, extend your legs forward without letting them touch the floor.",
+      "3. Once in full extension, slowly flex your knees toward your chest while also bringing your chest slightly forward. Keep tension in your abdomen as you lower your upper body back to 45 degrees from the floor.",
+    ],
+    equipment: ["Yoga Mat"],
+  },
 };
 
 export default function ExerciseDetails() {
