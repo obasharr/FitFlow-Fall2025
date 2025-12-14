@@ -271,6 +271,24 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Barbells"],
   },
+   "plate-flips": {
+    title: "Plate Flips",
+    image:
+       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9a7e83cab498485bb4b4bf6d5b9f52b0?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/7022dae1aaea30eeefab11898e8994ebf3c4f975?width=264",
+    instructions: [
+      "1. Stand in a location away from other exercisers with your feet roughly shoulder-width apart and a slight bend in your knees.",
+      "2. Grasp the top of a bumper plate in one hand. Squeeze the lip of the bumper plate and hold it in front of you with your palms facing you.",
+      "3. Engage your shoulders to explosively raise the weight up. Allow the bottom of the bumper plate to rotate up and away from you.",
+      "4. Release the bumper plate and allow it to rotate in the air.",
+      "5. Catch the top of the bumper plate after it flips and squeeze the lip of the plate.",
+      "6. If you feel you are going to drop the bumper plate while it is still in your grasp, hinge into a squat position and place the weight on the floor.",
+      "7. If you feel you are going to drop the bumper plate on the catch, step back and allow the weight to hit the floor. Do not try to recatch if you fumble an attempt.",
+      "8. Maintain good posture by keeping your core engaged and your chest up."
+    ],
+    equipment: ["Plates"],
+  },
 };
 
 export default function ExerciseDetails() {
