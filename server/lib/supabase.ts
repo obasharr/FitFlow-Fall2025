@@ -90,9 +90,7 @@ async function supabaseRequest<T>(
   }
 }
 
-export async function getUserByEmail(
-  email: string,
-): Promise<{
+export async function getUserByEmail(email: string): Promise<{
   id: string;
   email: string;
   username?: string;
@@ -191,7 +189,10 @@ export async function updateUsername(
   // Check if the new username already exists for a different user
   const existingUser = await supabaseRequest<
     { id: string; email: string; username: string }[]
-  >("GET", `/users?username=eq.${encodeURIComponent(newUsername)}&select=id,email`);
+  >(
+    "GET",
+    `/users?username=eq.${encodeURIComponent(newUsername)}&select=id,email`,
+  );
 
   if (existingUser.data && existingUser.data.length > 0) {
     const existingUserRecord = existingUser.data[0];

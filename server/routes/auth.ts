@@ -205,7 +205,9 @@ export const handleUpdateProfilePicture: RequestHandler = async (req, res) => {
     } as UpdateProfilePictureResponse);
   } catch (error) {
     const errorMessage =
-      error instanceof Error ? error.message : "Failed to update profile picture";
+      error instanceof Error
+        ? error.message
+        : "Failed to update profile picture";
     console.error("Update profile picture error:", errorMessage);
 
     res.status(500).json({

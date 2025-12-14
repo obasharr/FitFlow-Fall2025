@@ -15,8 +15,10 @@ interface ExerciseData {
 const exerciseData: Record<string, ExerciseData> = {
   "dumbbell-bench-press": {
     title: "Dumbbell Bench Press Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fbb0d31f9c6eb41b9ab69c879a3fd2438?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/a8dfcc21308e254d009d6ea203955bcf029505ac?width=264",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fbb0d31f9c6eb41b9ab69c879a3fd2438?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/a8dfcc21308e254d009d6ea203955bcf029505ac?width=264",
     instructions: [
       "1. Lie your back onto a bench while squeezing your shoulder blades together and placing your heels firmly on the ground underneath your knees.",
       "2. The bench should be in contact with your head, shoulders, and butt at all times.",
@@ -29,8 +31,10 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "svend-press": {
     title: "Svend Press Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fdb3050ea7f204a08b6480ad3640c75fb?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/a8dfcc21308e254d009d6ea203955bcf029505ac?width=264",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fdb3050ea7f204a08b6480ad3640c75fb?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/a8dfcc21308e254d009d6ea203955bcf029505ac?width=264",
     instructions: [
       "1. Stand in an upright posture with your feet shoulder-width apart.",
       "2. Press two light barbell plates between your palms and position them in the middle of your chest just below shoulder height.",
@@ -42,8 +46,10 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "push-up": {
     title: "Push Up Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Ffd2f81f981d54bcfbfff4addeebeaad5?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/a8dfcc21308e254d009d6ea203955bcf029505ac?width=264",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Ffd2f81f981d54bcfbfff4addeebeaad5?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/a8dfcc21308e254d009d6ea203955bcf029505ac?width=264",
     instructions: [
       "1. Start with your elbows fully extended and your hands placed on the floor just outside shoulder-width apart.",
       "2. Brace your core by breathing into your stomach and flexing the abdominal muscles to create a straight and rigid posture from your heels to your shoulders.",
@@ -55,8 +61,10 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "dumbbell-fly": {
     title: "Dumbbell Fly Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F79e1e3e8f4a540739c5c9fa5e33d3494?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/b7b48059ce93bda69e742bce22c368089bcd8f7b?width=264",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F79e1e3e8f4a540739c5c9fa5e33d3494?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/b7b48059ce93bda69e742bce22c368089bcd8f7b?width=264",
     instructions: [
       "1. Lie your back onto a bench while squeezing your shoulder blades together and placing your heels firmly on the ground underneath your knees.",
       "2. The bench should be in contact with your head, shoulders, and butt at all times.",
@@ -69,8 +77,10 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   squats: {
     title: "Squat Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F69f6d8a6486247f29bb4e94cd18f204a?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/ed628151645cac14e74cfe247487061653dd4caf?width=264",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F69f6d8a6486247f29bb4e94cd18f204a?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/ed628151645cac14e74cfe247487061653dd4caf?width=264",
     instructions: [
       "1. Begin by placing your feet just outside shoulder-width apart and slightly angled outward.",
       "1.5 Grab ahold a pair of dumbbells and clean them up to shoulder height, palms facing in, and elbows facing forward.",
@@ -84,8 +94,10 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   lunges: {
     title: "Lunge Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8326114f1f9d462fab98d01e12d5cd02?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/4f5cf1bdfca0ff6f6f8b06dd8749a773ef018228?width=266",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8326114f1f9d462fab98d01e12d5cd02?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/4f5cf1bdfca0ff6f6f8b06dd8749a773ef018228?width=266",
     instructions: [
       "1. Stand in an upright posture with your feet hip-width apart",
       "1.5 Hold a pair of dumbbells with your palms facing in",
@@ -98,8 +110,10 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "wall-sits": {
     title: "Wall Sit Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F57d8afe90d014f7faadb21aff027be30?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/3e8435d5f8e2be354d74469460e56decc950059b?width=264",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F57d8afe90d014f7faadb21aff027be30?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/3e8435d5f8e2be354d74469460e56decc950059b?width=264",
     instructions: [
       "1. Press your back against a wall and bend your knees to a 90 degree angle.",
       "1.5  Place a weighted plate on top of your thighs.",
@@ -110,8 +124,10 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   inchworm: {
     title: "Inchworm Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F33c4a57068e7433cab5d952b4ee21b40?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/1e3d91ce68ec47b59f2298b6f8536842d38bc683?width=264",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F33c4a57068e7433cab5d952b4ee21b40?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/1e3d91ce68ec47b59f2298b6f8536842d38bc683?width=264",
     instructions: [
       "1. Stand upright with your feet shoulder width apart.",
       "2. Lower your hands so that your palms are just in front of your toes and begin to walk your hands forward until you've created a straight line from your shoulders to your heels..",
@@ -121,8 +137,10 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   deadlift: {
     title: "Deadlift Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F660d876d196d4a868dfe9480930f21d1?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/2cd72be2dc7452fb50f955ee7868d9f90ae4fee5?width=264",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F660d876d196d4a868dfe9480930f21d1?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/2cd72be2dc7452fb50f955ee7868d9f90ae4fee5?width=264",
     instructions: [
       "1. Stand in an upright posture with your feet at shoulder-width apart and angled out slightly positioning a loaded barbell an inch away from the front of your lower legs.",
       "2. Hinge at the hips and flex your knees to drop down allowing your shins to drop forward to touch the barbell.",
@@ -135,8 +153,10 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "leg-curls": {
     title: "Leg Curl Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Ff3473ce01d304083b7b8fd1c00537903?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/b9041f06c003bd9da9b69f5a3982912723f12eca?width=264",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Ff3473ce01d304083b7b8fd1c00537903?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/b9041f06c003bd9da9b69f5a3982912723f12eca?width=264",
     instructions: [
       "1. Sit upright in a leg curl machine while positioning the top support pad just above your knees and placing it just above the back of your ankles onto the lower pad.",
       "2. Grab ahold of the handles for additional support.",
@@ -147,8 +167,10 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "hip-thrust": {
     title: "Hip Thrust Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F3c6a4908e987488bb9fbbbb178fd482b?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/ae45c09f80694871d5afb7b32e605724e1154ec4?width=264",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F3c6a4908e987488bb9fbbbb178fd482b?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/ae45c09f80694871d5afb7b32e605724e1154ec4?width=264",
     instructions: [
       "1. Lie flat on your back with your feet firmly on the ground and hip-width apart.",
       "2. Place your arms to your side with your palms on the ground.",
@@ -160,8 +182,10 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "leg-kickback": {
     title: "Leg Kickback Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9a48327a311d4a67ae30c784a7a0f33c?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/54a324930c243212104e8149112b458d3dc1a993?width=264",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9a48327a311d4a67ae30c784a7a0f33c?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/54a324930c243212104e8149112b458d3dc1a993?width=264",
     instructions: [
       "1. Get into a kneeling push-up position with your hands underneath your shoulders and your knees underneath your hips bent to 90 degrees.",
       "2. Brace your core to keep a neutral spine.",
@@ -173,8 +197,10 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "cable-hip-extension": {
     title: "Cable Hip Extension Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fe194c5965736472db87ab1a8803a7594?format=webp&width=800",
-    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/54a324930c243212104e8149112b458d3dc1a993?width=264",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fe194c5965736472db87ab1a8803a7594?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/54a324930c243212104e8149112b458d3dc1a993?width=264",
     instructions: [
       "1. Place a pulley at the lowest position with an ankle cuff attachment and wrap it around your right ankle.",
       "2. Stand upright facing the pulley with your feet hip-width apart and grab ahold of the steel frame.",
@@ -243,7 +269,9 @@ export default function ExerciseDetails() {
       <div className="flex-1 overflow-y-auto pb-6">
         {/* Exercise Title */}
         <div className="px-4 py-2 text-center">
-          <h2 className="text-xl font-bold text-black leading-[140%]">{exercise.title}</h2>
+          <h2 className="text-xl font-bold text-black leading-[140%]">
+            {exercise.title}
+          </h2>
         </div>
 
         {/* Exercise Image */}
@@ -257,7 +285,9 @@ export default function ExerciseDetails() {
 
         {/* Target Muscles Section */}
         <div className="px-6 py-4">
-          <h3 className="text-xl font-bold text-black mb-4 leading-[150%] tracking-[-0.2px]">Target Muscles</h3>
+          <h3 className="text-xl font-bold text-black mb-4 leading-[150%] tracking-[-0.2px]">
+            Target Muscles
+          </h3>
           <div className="flex justify-center">
             <img
               src={exercise.targetMusclesImage}
@@ -269,10 +299,15 @@ export default function ExerciseDetails() {
 
         {/* Instructions Section */}
         <div className="px-6 py-4">
-          <h3 className="text-xl font-bold text-black mb-3 leading-[150%] tracking-[-0.2px]">Instructions</h3>
+          <h3 className="text-xl font-bold text-black mb-3 leading-[150%] tracking-[-0.2px]">
+            Instructions
+          </h3>
           <div className="space-y-2">
             {exercise.instructions.map((instruction, index) => (
-              <p key={index} className="text-[10px] font-bold text-black leading-[140%]">
+              <p
+                key={index}
+                className="text-[10px] font-bold text-black leading-[140%]"
+              >
                 {instruction}
               </p>
             ))}
@@ -281,9 +316,14 @@ export default function ExerciseDetails() {
 
         {/* Equipment Section */}
         <div className="px-6 py-4">
-          <h3 className="text-xl font-bold text-black mb-2 leading-[150%] tracking-[-0.2px]">Equipment</h3>
+          <h3 className="text-xl font-bold text-black mb-2 leading-[150%] tracking-[-0.2px]">
+            Equipment
+          </h3>
           {exercise.equipment.map((item, index) => (
-            <p key={index} className="text-xs font-bold text-black leading-[150%] tracking-[-0.12px]">
+            <p
+              key={index}
+              className="text-xs font-bold text-black leading-[150%] tracking-[-0.12px]"
+            >
               {item}
             </p>
           ))}
@@ -297,8 +337,12 @@ export default function ExerciseDetails() {
               className="flex items-center justify-between w-full"
             >
               <div className="flex items-center gap-3">
-                <span className="text-[15px] font-bold text-black leading-[140%]">+</span>
-                <span className="text-[15px] font-bold text-black leading-[140%]">Tips</span>
+                <span className="text-[15px] font-bold text-black leading-[140%]">
+                  +
+                </span>
+                <span className="text-[15px] font-bold text-black leading-[140%]">
+                  Tips
+                </span>
               </div>
               <ChevronRight
                 className={`w-[9px] h-[15px] text-black transition-transform ${

@@ -19,19 +19,23 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
     exercises: [
       {
         name: "Dumbbell Bench Press",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F86cc86a816ea4a5f8558b9b649f27bbf?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F86cc86a816ea4a5f8558b9b649f27bbf?format=webp&width=800",
       },
       {
         name: "Svend Press",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fb6960d8af2ad479495296ff30805d9e9?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fb6960d8af2ad479495296ff30805d9e9?format=webp&width=800",
       },
       {
         name: "Push Up",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F986b025cc3454c0fa25d8a1a70676cec?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F986b025cc3454c0fa25d8a1a70676cec?format=webp&width=800",
       },
       {
         name: "Dumbbell Fly",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F79e1e3e8f4a540739c5c9fa5e33d3494?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F79e1e3e8f4a540739c5c9fa5e33d3494?format=webp&width=800",
       },
     ],
   },
@@ -40,15 +44,18 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
     exercises: [
       {
         name: "Squats",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F589b59f9d5ec478b834f6d7e8f7e538f?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F589b59f9d5ec478b834f6d7e8f7e538f?format=webp&width=800",
       },
       {
         name: "Lunges",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F1685e37c741d4960938ff84a132b5295?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F1685e37c741d4960938ff84a132b5295?format=webp&width=800",
       },
       {
         name: "Wall Sits",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F43009d39720f46c69866e7a32a4b710c?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F43009d39720f46c69866e7a32a4b710c?format=webp&width=800",
       },
     ],
   },
@@ -57,15 +64,18 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
     exercises: [
       {
         name: "Inchworm",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6f3a4cba7ec148e9b93fc7b5ad76e836?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6f3a4cba7ec148e9b93fc7b5ad76e836?format=webp&width=800",
       },
       {
         name: "Deadlift",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fc647cd23ad274dba9f44363c829a20f5?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fc647cd23ad274dba9f44363c829a20f5?format=webp&width=800",
       },
       {
         name: "Leg Curls",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F50a156c2aebc4329b5d5f68d4e7813be?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F50a156c2aebc4329b5d5f68d4e7813be?format=webp&width=800",
       },
     ],
   },
@@ -74,15 +84,18 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
     exercises: [
       {
         name: "Hip Thrust",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F24d8d5c9c94247a796c7fc0903fde757?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F24d8d5c9c94247a796c7fc0903fde757?format=webp&width=800",
       },
       {
         name: "Leg Kickback",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fe0456bdfa67a480393d225cceb70fea5?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fe0456bdfa67a480393d225cceb70fea5?format=webp&width=800",
       },
       {
         name: "Cable Hip Extension",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fba424ac979b84cd894196ae45829943f?format=webp&width=800",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fba424ac979b84cd894196ae45829943f?format=webp&width=800",
       },
     ],
   },
@@ -101,7 +114,9 @@ export default function MuscleGroupExercises() {
     return () => window.removeEventListener("storage", handleStorageChange);
   }, []);
 
-  const muscleGroup = muscleName ? muscleGroupData[muscleName.toLowerCase()] : null;
+  const muscleGroup = muscleName
+    ? muscleGroupData[muscleName.toLowerCase()]
+    : null;
 
   if (!muscleGroup) {
     return (
@@ -147,7 +162,11 @@ export default function MuscleGroupExercises() {
             <div
               key={index}
               className="flex items-center gap-4 bg-white rounded-lg p-3 shadow-md hover:shadow-lg transition cursor-pointer"
-              onClick={() => navigate(`/exercise/${exercise.name.toLowerCase().replace(/\s+/g, "-")}`)}
+              onClick={() =>
+                navigate(
+                  `/exercise/${exercise.name.toLowerCase().replace(/\s+/g, "-")}`,
+                )
+              }
             >
               {/* Circular Image */}
               <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0 bg-gray-200">
@@ -160,7 +179,9 @@ export default function MuscleGroupExercises() {
 
               {/* Exercise Name */}
               <div className="flex-1">
-                <h3 className="text-lg font-bold text-black">{exercise.name}</h3>
+                <h3 className="text-lg font-bold text-black">
+                  {exercise.name}
+                </h3>
               </div>
             </div>
           ))}

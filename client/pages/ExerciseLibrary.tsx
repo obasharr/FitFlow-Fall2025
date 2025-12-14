@@ -86,7 +86,6 @@ export default function ExerciseLibrary() {
 
       {/* Main content */}
       <div className="flex-1 flex flex-col overflow-y-auto">
-
         {/* Pre-Workout Banner */}
         <div className="px-4 py-4">
           <div

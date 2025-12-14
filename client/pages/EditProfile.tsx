@@ -1,7 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft, Camera } from "lucide-react";
 import { useState, useRef } from "react";
-import { getProfilePicture, saveProfilePicture, getUsername, saveUsername, getEmail } from "@/lib/auth";
+import {
+  getProfilePicture,
+  saveProfilePicture,
+  getUsername,
+  saveUsername,
+  getEmail,
+} from "@/lib/auth";
 import { toast } from "sonner";
 
 export default function EditProfile() {
@@ -130,7 +136,10 @@ export default function EditProfile() {
             onClick={() => fileInputRef.current?.click()}
             className="absolute bottom-0 right-0 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:shadow-xl transition"
           >
-            <Camera className="w-6 h-6 text-[#FAF2E9] stroke-[#32402F]" strokeWidth={2} />
+            <Camera
+              className="w-6 h-6 text-[#FAF2E9] stroke-[#32402F]"
+              strokeWidth={2}
+            />
           </button>
           <input
             ref={fileInputRef}
@@ -169,7 +178,6 @@ export default function EditProfile() {
             className="h-10 px-4 border border-[#E0E0E0] rounded-lg text-sm text-[#828282] placeholder:text-[#828282] outline-none focus:border-[#32402F] transition disabled:opacity-50"
           />
         </div>
-
 
         {/* Save Button */}
         <button

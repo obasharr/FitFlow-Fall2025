@@ -33,7 +33,10 @@ const App = () => (
           <Route path="/exercise-library" element={<ExerciseLibrary />} />
           <Route path="/exercise/:exerciseName" element={<ExerciseDetails />} />
           <Route path="/muscle-library" element={<MuscleGroupBrowser />} />
-          <Route path="/muscle/:muscleName" element={<MuscleGroupExercises />} />
+          <Route
+            path="/muscle/:muscleName"
+            element={<MuscleGroupExercises />}
+          />
           <Route path="/profile" element={<Profile />} />
           <Route path="/edit-profile" element={<EditProfile />} />
           <Route path="/favorites" element={<Favorites />} />

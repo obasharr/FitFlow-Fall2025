@@ -19,73 +19,85 @@ export default function MuscleGroupBrowser() {
     {
       name: "Chest (Pectorals)",
       description: "Primary Push",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F49f276c26e6a44889ab33112904fd889?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F49f276c26e6a44889ab33112904fd889?format=webp&width=800",
       route: "/muscle/chest",
     },
     {
       name: "Back (Lats & Traps)",
       description: "Pull & Stabilize",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fcd4dfe2c00e3432db017352c98148ce9?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fcd4dfe2c00e3432db017352c98148ce9?format=webp&width=800",
       route: null,
     },
     {
       name: "Arms (Biceps & Triceps)",
       description: "Push, Pull, & Grip",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8853b2c1f5e546f1ab11e3beca3eceba?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8853b2c1f5e546f1ab11e3beca3eceba?format=webp&width=800",
       route: null,
     },
     {
       name: "Quads",
       description: "Propulsion & Stability",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F1c89dd35feaa48789c9afbcda1ece2b1?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F1c89dd35feaa48789c9afbcda1ece2b1?format=webp&width=800",
       route: "/muscle/quads",
     },
     {
       name: "Abs",
       description: "Propulsion & Stability ",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Ff8b80b4747cf485a8cfbdc8bd10267d9?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Ff8b80b4747cf485a8cfbdc8bd10267d9?format=webp&width=800",
       route: null,
     },
     {
       name: "Lower Back",
       description: "Propulsion & Stability",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F36ebfc5c3b8347ad898fb20ff0f471e2?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F36ebfc5c3b8347ad898fb20ff0f471e2?format=webp&width=800",
       route: null,
     },
     {
       name: "Shoulders",
       description: "Propulsion & Stability",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F3ab98f2ee4a54731aac4ad8d41c90ba9?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F3ab98f2ee4a54731aac4ad8d41c90ba9?format=webp&width=800",
       route: null,
     },
     {
       name: "Forearms",
       description: "Propulsion & Stability",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F220c136186c34edb9060f9279681354f?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F220c136186c34edb9060f9279681354f?format=webp&width=800",
       route: null,
     },
     {
       name: "Glutes",
       description: "Propulsion & Stability",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6cdc77e803e14757bb4af88ed8798b3a?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6cdc77e803e14757bb4af88ed8798b3a?format=webp&width=800",
       route: "/muscle/glutes",
     },
     {
       name: "Hamstrings",
       description: "Propulsion & Stability",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fc490ed1885764a95a0914bf44854b336?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fc490ed1885764a95a0914bf44854b336?format=webp&width=800",
       route: "/muscle/hamstrings",
     },
     {
       name: "Adductors",
       description: "Propulsion & Stability",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F336b0178ea524462b33b45a24f101bce?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F336b0178ea524462b33b45a24f101bce?format=webp&width=800",
       route: null,
     },
     {
       name: "Calves",
       description: "Propulsion & Stability",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8f386a2570de4381bde7f1f09493e9a0?format=webp&width=800",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8f386a2570de4381bde7f1f09493e9a0?format=webp&width=800",
       route: null,
     },
   ];
@@ -118,9 +130,10 @@ export default function MuscleGroupBrowser() {
       <div className="flex-1 flex flex-col overflow-y-auto">
         {/* Page Title */}
         <div className="px-4 py-2 text-center">
-          <h2 className="text-2xl font-bold text-black">Muscle Group Browser</h2>
+          <h2 className="text-2xl font-bold text-black">
+            Muscle Group Browser
+          </h2>
         </div>
-
 
         {/* Muscle Groups List */}
         <div className="px-4 py-4 flex-1">
@@ -144,9 +157,7 @@ export default function MuscleGroupBrowser() {
 
                 {/* Text Content */}
                 <div className="flex-1 flex flex-col justify-center">
-                  <h3 className="text-sm font-bold text-black">
-                    {group.name}
-                  </h3>
+                  <h3 className="text-sm font-bold text-black">{group.name}</h3>
                   <p className="text-xs text-[#828282] font-medium">
                     {group.description}
                   </p>
