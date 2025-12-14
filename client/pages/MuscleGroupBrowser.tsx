@@ -28,7 +28,7 @@ export default function MuscleGroupBrowser() {
       description: "Pull & Stabilize",
       image:
         "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fcd4dfe2c00e3432db017352c98148ce9?format=webp&width=800",
-      route: null,
+      route: "/muscle/back",
     },
     {
       name: "Arms (Biceps & Triceps)",
