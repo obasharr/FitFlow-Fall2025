@@ -30,7 +30,7 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   lunges: {
     title: "Lunge Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F1939ce0002364ea48b0c339bd3a4ee90?format=webp&width=800",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8326114f1f9d462fab98d01e12d5cd02?format=webp&width=800",
     targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/4f5cf1bdfca0ff6f6f8b06dd8749a773ef018228?width=266",
     instructions: [
       "1. Stand in an upright posture with your feet hip-width apart",
@@ -44,7 +44,7 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "wall-sits": {
     title: "Wall Sit Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F2eb33696133b4b14b06e725df067f0f9?format=webp&width=800",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F57d8afe90d014f7faadb21aff027be30?format=webp&width=800",
     targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/3e8435d5f8e2be354d74469460e56decc950059b?width=264",
     instructions: [
       "1. Press your back against a wall and bend your knees to a 90 degree angle.",
