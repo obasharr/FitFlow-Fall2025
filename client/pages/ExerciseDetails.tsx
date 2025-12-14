@@ -256,7 +256,7 @@ const exerciseData: Record<string, ExerciseData> = {
     equipment: ["Yoga matt"],
     tips: "Sit tall with a straight spine; engage your core to support your back. The stretch should be in your inner thighs and groin, not your knees.",
   },
-  "palms-up-barbell": {
+  "palms-up-barbell-waist-curl": {
     title: "Palms-Up Barbell Wrist Curl",
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fbbb38996db4d4fc0b1636a601aba2a25?format=webp&width=800",
