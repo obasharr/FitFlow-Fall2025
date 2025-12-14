@@ -430,7 +430,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6474f488b5034abf85cdc2e4d11fce6c?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F051d928c3ada488d8a6d5bbb4cf95524?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Feb0500fe98bb4b8eb5c6ff923d819a6c?format=webp&width=800",
     instructions: [
       "1. Stand in an upright posture grabbing ahold of a barbell shoulder-width apart with your palms facing away from your body just below waist height.",
       "2. Brace your core by breathing into your stomach and flexing your abdominal muscles as you begin to flex your elbows to raise the bar.",
