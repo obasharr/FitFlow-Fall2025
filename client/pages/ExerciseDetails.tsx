@@ -15,7 +15,7 @@ interface ExerciseData {
 const exerciseData: Record<string, ExerciseData> = {
   "dumbbell-bench-press": {
     title: "Dumbbell Bench Press Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0fe73a05f33044d5a64255af51e28720?format=webp&width=800",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fbb0d31f9c6eb41b9ab69c879a3fd2438?format=webp&width=800",
     targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/a8dfcc21308e254d009d6ea203955bcf029505ac?width=264",
     instructions: [
       "1. Lie your back onto a bench while squeezing your shoulder blades together and placing your heels firmly on the ground underneath your knees.",
@@ -29,7 +29,7 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "svend-press": {
     title: "Svend Press Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0b8a1ec5565c442f9b79ee592ea05aa6?format=webp&width=800",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fdb3050ea7f204a08b6480ad3640c75fb?format=webp&width=800",
     targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/a8dfcc21308e254d009d6ea203955bcf029505ac?width=264",
     instructions: [
       "1. Stand in an upright posture with your feet shoulder-width apart.",
@@ -42,7 +42,7 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "push-up": {
     title: "Push Up Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F675e35b579804de5b1400c570e5bd315?format=webp&width=800",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Ffd2f81f981d54bcfbfff4addeebeaad5?format=webp&width=800",
     targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/a8dfcc21308e254d009d6ea203955bcf029505ac?width=264",
     instructions: [
       "1. Start with your elbows fully extended and your hands placed on the floor just outside shoulder-width apart.",
