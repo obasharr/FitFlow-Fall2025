@@ -386,7 +386,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6628831781d04838abab430fe0d02e73?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F58bc5031c1b943859596b90c2976b0ba?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8f1528a0e40a414a8ccd457c0d0bc42d?format=webp&width=800",
     instructions: [
       "1. Place a dumbbell on each side of a flat bench.",
       "2. Place your right knee on top of the bench and right hand on the other side of the bench. Your torso should be parallel to the floor.",
