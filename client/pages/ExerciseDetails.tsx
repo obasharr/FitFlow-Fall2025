@@ -91,6 +91,45 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Leg Curl Machine"],
   },
+  "hip-thrust": {
+    title: "Hip Thrust Details",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F54462482424f4eb8b7d974ebec4b6912?format=webp&width=800",
+    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/ae45c09f80694871d5afb7b32e605724e1154ec4?width=264",
+    instructions: [
+      "1. Lie flat on your back with your feet firmly on the ground and hip-width apart.",
+      "2. Place your arms to your side with your palms on the ground.",
+      "3. Slightly tilt your hips upward while placing tension in the abdomen to keep the back flush with the floor.",
+      "4. Begin extending your hips by flexing your glutes until your hips are fully extended or there is a straight alignment from your knees to your shoulders.",
+      "5. Control the movement as you descend your hips back to the ground.",
+    ],
+    equipment: ["Bodyweight"],
+  },
+  "leg-kickback": {
+    title: "Leg Kickback Details",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Faf1994d8ed154eeca96412babc3b8a83?format=webp&width=800",
+    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/54a324930c243212104e8149112b458d3dc1a993?width=264",
+    instructions: [
+      "1. Get into a kneeling push-up position with your hands underneath your shoulders and your knees underneath your hips bent to 90 degrees.",
+      "2. Brace your core to keep a neutral spine.",
+      "3. Keeping your ankles bent to 90 degrees, extend your right hip by flexing your right glute to elevate your right foot off the ground.",
+      "4. Lift your leg until the hamstrings are in line with the back while maintaining the 90-degree angle bend. Contract the glutes during this movement and hold the top position for a brief moment.",
+      "5. Return to the starting position and repeat with the opposite side.",
+    ],
+    equipment: ["Bodyweight"],
+  },
+  "cable-hip-extension": {
+    title: "Cable Hip Extension Details",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8c2364746aa74fc183466de911fc6f89?format=webp&width=800",
+    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/54a324930c243212104e8149112b458d3dc1a993?width=264",
+    instructions: [
+      "1. Place a pulley at the lowest position with an ankle cuff attachment and wrap it around your right ankle.",
+      "2. Stand upright facing the pulley with your feet hip-width apart and grab ahold of the steel frame.",
+      "3. Brace your core to maintain a neutral spine.",
+      "4. Keeping your right leg extended with the knee slightly flexed, extend it behind you by flexing your right glute.",
+      "5. Return to the starting position and repeat with the opposite leg.",
+    ],
+    equipment: ["Hi-Lo Pulley Cable"],
+  },
 };
 
 export default function ExerciseDetails() {
