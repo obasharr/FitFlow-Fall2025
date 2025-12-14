@@ -365,6 +365,66 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Barbells"],
   },
+  "cable-row": {
+    title: "Cable Row",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F75bfce957bd24b48b9a624e640228d6e?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F58bc5031c1b943859596b90c2976b0ba?format=webp&width=800",
+    instructions: [
+      "1. Position yourself on the bench, and place both feet on their respective foot plates. Bend your knees slightly.",
+      "2. Lean forward, and grasp the handle with both hands, while keeping your back straight.",
+      "3. Engage your back to pull the handles towards your torso.",
+      "4. Simultaneously engage your lower back to lean back slightly.",
+      "5. Pinch your shoulder blades together, and hold this position for a moment at the end of the movement.",
+      "6. Slowly return to the starting position while maintaining tension in your back."
+    ],
+    equipment: ["Row Cable"],
+  },
+  "dumbbell-row": {
+    title: "Dumbbell Row",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6628831781d04838abab430fe0d02e73?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F58bc5031c1b943859596b90c2976b0ba?format=webp&width=800",
+    instructions: [
+      "1. Place a dumbbell on each side of a flat bench.",
+      "2. Place your right knee on top of the bench and right hand on the other side of the bench. Your torso should be parallel to the floor.",
+      "3. Grasp a dumbbell with your left hand while keeping your back straight. The palm of your hand should face your torso.",
+      "4. Pull the dumbbell straight up to the side of your torso. Engage the muscles in your back and breathe out as you perform this step. The torso should remain stationary as your arm moves.",
+      "5. After a brief pause at the top of the movement, reverse this movement by lowering the dumbbell back to the starting position."
+    ],
+    equipment: ["Dumbbells", "Flat Bench"],
+  },
+  "lat-pulldown": {
+    title: "Lat Pulldown",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F626c1134f5954b599e21514d1c2224cd?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F58bc5031c1b943859596b90c2976b0ba?format=webp&width=800",
+    instructions: [
+      "1. Attach a bar to the pull-down pulley and grip it shoulder-width apart with your palms facing forward.",
+      "2. Sit upright on the seat positioning your knees underneath the adjustable pad.",
+      "3. Brace your core to maintain a neutral spine.",
+      "4. With your arms extended overhead, flex your elbows to your the backside of your ribcage leaning back slightly.",
+      "5. Extend your arms back to the starting position."
+    ],
+    equipment: ["Lat Pulldown Cable"],
+  },
+  "pull-up": {
+    title: "Pull Up",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fa04dd931e8264bdb84ac3215a4806e9b?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F58bc5031c1b943859596b90c2976b0ba?format=webp&width=800",
+    instructions: [
+      "1. Place your hands on the pull up bar with your palms facing away from your body.",
+      "2. Brace your torso by breathing into your stomach and keeping your abdominal muscles flexed.",
+      "3. Pull your chest up to the bar by flexing your elbows down into the backside of your ribcage.",
+      "4. Once you have reached your chest to the bar, you will lower yourself back to the starting position."
+    ],
+    equipment: ["Pull Up Bar"],
+  },
 };
 
 export default function ExerciseDetails() {
