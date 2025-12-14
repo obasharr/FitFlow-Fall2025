@@ -55,7 +55,7 @@ export default function ExerciseDetails() {
         {/* Exercise Image */}
         <div className="px-4 py-4 flex justify-center">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6ec26f9ab2634803aae67d90663a1921?format=webp&width=800"
+            src="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F69f6d8a6486247f29bb4e94cd18f204a?format=webp&width=800"
             alt="Squat exercise"
             className="w-[149px] h-[148px] object-cover"
           />
