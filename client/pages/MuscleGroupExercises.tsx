@@ -125,22 +125,22 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
       {
         name: "Palms-Up Barbell Waist Curl",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F1f6314a651ed412bafcb6f557ad58c8f?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fbbb38996db4d4fc0b1636a601aba2a25?format=webp&width=800",
       },
       {
         name: "Plate Flips",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9b80737769c7432cb72cd7344433139d?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9a7e83cab498485bb4b4bf6d5b9f52b0?format=webp&width=800",
       },
       {
         name: "Cable Wrist Curl",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F749507474cb94eabae7c06f8c6ed737d?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fa73fcd6d1582449e882cd11c83fb9dc3?format=webp&width=800",
       },
       {
         name: "Plate Pinch",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F749507474cb94eabae7c06f8c6ed737d?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F22b183eb96c04bad92d8913297eb5427?format=webp&width=800",
       },
     ],
   },
