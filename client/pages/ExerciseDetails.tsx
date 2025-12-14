@@ -453,6 +453,34 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Dumbbells"],
   },
+  "cable-tricep-pushdowns": {
+    title: "Cable Tricep Pushdowns",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F431a39ee856b44a0bcc9d7a414ab5dab?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F051d928c3ada488d8a6d5bbb4cf95524?format=webp&width=800",
+    instructions: [
+      "1. Place pulley to the highest position with a straight or angled bar attachment.",
+      "2. Grab ahold of the bar with an overhand grip, palms facing down, and pull your elbows to your sides and flexed to 90 degrees so your forearms are parallel with the floor.",
+      "3. Brace your core to keep your spine neutral with your shoulders back, then extend your elbows while keeping them at your sides to completely extend your arms.",
+      "4. Once you have reached full arm extension, flex your elbows back to the starting position.",
+    ],
+    equipment: ["Cable Machine", "Straight/Angled Bar Attachment"],
+  },
+  "one-arm-underhand-tricep-extension": {
+    title: "One Arm Underhand Tricep Extension",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fb1455cd70c3c452b88c66b3fdc983b7b?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F051d928c3ada488d8a6d5bbb4cf95524?format=webp&width=800",
+    instructions: [
+      "1. Position your body such that one arm is in line with the cable. Grasp the handle with that hand such that your palm is facing up.Engage your tricep to bring the handle down by extending your arm at your elbow",
+      "2. Allow your arm to rotate such that your palms are facing in towards you at the bottom of the movement. Tense your tricep and hold this position for a moment at the bottom of the movement",
+      "3. Slowly allow the weight to return to the starting position while maintaining tension in your tricep.",
+      "4. Maintain good body positioning by keeping your core engaged for stability, your elbow pinned to your side and your wrist straight throughout the movement.",
+    ],
+    equipment: ["Cable Machine", "Handle Attachment"],
+  },
 };
 
 export default function ExerciseDetails() {
