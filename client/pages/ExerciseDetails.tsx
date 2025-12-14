@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft, Heart, ChevronRight } from "lucide-react";
 import { getProfilePicture } from "@/lib/auth";
@@ -8,9 +8,6 @@ export default function ExerciseDetails() {
   const [isFavorite, setIsFavorite] = useState(false);
   const [showTips, setShowTips] = useState(false);
   const [profilePicture, setProfilePicture] = useState(getProfilePicture());
-  const [playing, setPlaying] = useState(false);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-
 
   useEffect(() => {
     const handleStorageChange = () => {
@@ -55,47 +52,13 @@ export default function ExerciseDetails() {
           <h2 className="text-xl font-bold text-black leading-[140%]">Squat Details</h2>
         </div>
 
-        {/* Exercise Media (image with play overlay -> video) */}
+        {/* Exercise Image */}
         <div className="px-4 py-4 flex justify-center">
-          <div className="relative w-[149px] h-[148px]">
-            <button
-              type="button"
-              onClick={(e) => {
-                e.preventDefault();
-                setPlaying(true);
-                // attempt to play immediately (within user gesture)
-                videoRef.current?.play().catch(() => {});
-              }}
-              className={`absolute inset-0 w-full h-full flex items-center justify-center rounded overflow-hidden focus:outline-none ${playing ? "hidden" : "block"}`}
-              aria-label="Play video"
-            >
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F69f6d8a6486247f29bb4e94cd18f204a?format=webp&width=800"
-                alt="Squat exercise"
-                className="w-full h-full object-cover"
-              />
-
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center opacity-90">
-                  <svg className="w-6 h-6 text-black" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </button>
-
-            <video
-              ref={videoRef}
-              src="https://cdn.builder.io/o/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fdb5904de7e7c4f4ab3563bb03cba3cca?alt=media&token=f5945f75-96df-470d-bfd7-c7d3a7f97b30&apiKey=2b2051e6b49f4e57abbdf7a6692fa1f3"
-              controls
-              autoPlay
-              muted
-              playsInline
-              poster="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F69f6d8a6486247f29bb4e94cd18f204a?format=webp&width=800"
-              onEnded={() => setPlaying(false)}
-              className={`w-full h-full object-cover rounded ${playing ? "block" : "hidden"}`}
-            />
-          </div>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F69f6d8a6486247f29bb4e94cd18f204a?format=webp&width=800"
+            alt="Squat exercise"
+            className="w-[149px] h-[148px] object-cover"
+          />
         </div>
 
         {/* Target Muscles Section */}
