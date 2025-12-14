@@ -19,19 +19,19 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
     exercises: [
       {
         name: "Dumbbell Bench Press",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F2bdc3cbe45e74f3fadb1ba79fcda5f81?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F86cc86a816ea4a5f8558b9b649f27bbf?format=webp&width=800",
       },
       {
         name: "Svend Press",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F2bdc3cbe45e74f3fadb1ba79fcda5f81?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fb6960d8af2ad479495296ff30805d9e9?format=webp&width=800",
       },
       {
         name: "Push Up",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F2bdc3cbe45e74f3fadb1ba79fcda5f81?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F986b025cc3454c0fa25d8a1a70676cec?format=webp&width=800",
       },
       {
         name: "Dumbbell Fly",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F2bdc3cbe45e74f3fadb1ba79fcda5f81?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F79e1e3e8f4a540739c5c9fa5e33d3494?format=webp&width=800",
       },
     ],
   },
