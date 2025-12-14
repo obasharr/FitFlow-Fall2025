@@ -269,3 +269,5 @@ export async function updateProfilePictureUrl(
     }) || null
   );
 }
+
+export { supabaseRequest };
