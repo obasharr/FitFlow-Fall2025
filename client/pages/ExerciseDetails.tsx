@@ -401,7 +401,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F626c1134f5954b599e21514d1c2224cd?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F58bc5031c1b943859596b90c2976b0ba?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8f1528a0e40a414a8ccd457c0d0bc42d?format=webp&width=800",
     instructions: [
       "1. Attach a bar to the pull-down pulley and grip it shoulder-width apart with your palms facing forward.",
       "2. Sit upright on the seat positioning your knees underneath the adjustable pad.",
