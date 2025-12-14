@@ -49,7 +49,7 @@ export default function MuscleGroupBrowser() {
       description: "Propulsion & Stability ",
       image:
         "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Ff8b80b4747cf485a8cfbdc8bd10267d9?format=webp&width=800",
-      route: null,
+      route: "/muscle/abs",
     },
     {
       name: "Lower Back",
