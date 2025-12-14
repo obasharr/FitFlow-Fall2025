@@ -8,6 +8,14 @@ export default function ExerciseDetails() {
   const [isFavorite, setIsFavorite] = useState(false);
   const [showTips, setShowTips] = useState(false);
   const [profilePicture, setProfilePicture] = useState(getProfilePicture());
+  const [playing, setPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    if (playing) {
+      videoRef.current?.play().catch(() => {});
+    }
+  }, [playing]);
 
   useEffect(() => {
     const handleStorageChange = () => {
