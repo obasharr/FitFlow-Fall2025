@@ -11,11 +11,6 @@ export default function ExerciseDetails() {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
-  useEffect(() => {
-    if (playing) {
-      videoRef.current?.play().catch(() => {});
-    }
-  }, [playing]);
 
   useEffect(() => {
     const handleStorageChange = () => {
