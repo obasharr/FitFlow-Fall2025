@@ -93,7 +93,7 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "hip-thrust": {
     title: "Hip Thrust Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F54462482424f4eb8b7d974ebec4b6912?format=webp&width=800",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F3c6a4908e987488bb9fbbbb178fd482b?format=webp&width=800",
     targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/ae45c09f80694871d5afb7b32e605724e1154ec4?width=264",
     instructions: [
       "1. Lie flat on your back with your feet firmly on the ground and hip-width apart.",
