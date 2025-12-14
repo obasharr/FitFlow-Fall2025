@@ -53,6 +53,20 @@ const exerciseData: Record<string, ExerciseData> = {
     equipment: ["Body Weight"],
     tips: "Don't allow your hips to sag or raise up during this exercise. It's very common to see this especially as you become fatigued during your set. Keeping your core engaged will help you keep your spine in a neutral position. It can also help to think of this exercise as a plank first, and the movement as a secondary piece to this exercise.",
   },
+  "dumbbell-fly": {
+    title: "Dumbbell Fly Details",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F3b244a75d71f4d459fe321a492fb20c9?format=webp&width=800",
+    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/b7b48059ce93bda69e742bce22c368089bcd8f7b?width=264",
+    instructions: [
+      "1. Lie your back onto a bench while squeezing your shoulder blades together and placing your heels firmly on the ground underneath your knees.",
+      "2. The bench should be in contact with your head, shoulders, and butt at all times.",
+      "3. Position the dumbbells so that they are over your shoulders, palms facing inward, and your elbows are slightly bent.",
+      "4. Keeping your core braced by breathing into your stomach and flexing the abdominal muscles, laterally lower the dumbbells in a wide arc to the sides while keeping your elbows slightly bent.",
+      "5. Once the dumbbells have been lowered to the same height as your chest, exhale to return the dumbbells back to the starting position.",
+    ],
+    equipment: ["Dumbbells", "Bench (Floor as substitute)"],
+    tips: "Extending your arms away from your body increases the tension placed on your joint's and muscles. Keep the resistance for this exercise fairly light, and focus on moving slowly, and controlling the movement before you add more resistance.",
+  },
   squats: {
     title: "Squat Details",
     image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F69f6d8a6486247f29bb4e94cd18f204a?format=webp&width=800",
