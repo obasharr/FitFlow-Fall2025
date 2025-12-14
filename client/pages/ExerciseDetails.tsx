@@ -289,6 +289,23 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Plates"],
   },
+  "cable-wrist-curl": {
+    title: "Cable Wrist Curl",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fa73fcd6d1582449e882cd11c83fb9dc3?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/7022dae1aaea30eeefab11898e8994ebf3c4f975?width=264",
+    instructions: [
+      "1. Position and sit on a flat bench in front of the cable machine. Grasp the handle with both hands such that your palms are face up.",
+      "2. Rest the back of your forearms on your legs such that your wrists are just past your knees.",
+      "3. Release the tension in your forearm to allow the weight to descend slowly. Keep the bar in the palms of your hands, not your fingertips.",
+      "4. Engage your forearms to raise the bar by curling your wrists up and toward you.",
+      "5. Tense your forearms and hold this position for a moment at the top of the movement.",
+      "6. Maintain good posture by keeping your forearms in contact with your legs and the weight in the palms of your hands throughout this exercise.",
+      "7. You should feel this exercise in your forearms."
+    ],
+    equipment: ["Hi-Lo Pulley Cable", "Rope Cable", "Flat Bench"],
+  },
 };
 
 export default function ExerciseDetails() {
