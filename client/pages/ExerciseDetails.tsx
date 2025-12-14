@@ -481,6 +481,48 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Cable Machine", "Handle Attachment"],
   },
+  "seated-machine-calf-press": {
+    title: "Seated Machine Calf Press",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F42bf34f2d0da4185809fdb9479bcd94d?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F630159c2256f4542bba4940e71ad0f3f?format=webp&width=800",
+    instructions: [
+      "1. Sit upright in a calf raise machine with the pad resting on your thighs just above your knees.",
+      "2. Place your forefoot onto the lower bar allowing your heels to drop towards the floor.",
+      "3. Grab a hold of the support handles.Press your forefoot through the bar to extend your ankles and raise your heels.",
+      "4. Once your ankles have completely extended, return to the starting position.",
+    ],
+    equipment: ["Calf Raise Machine"],
+  },
+  "standing-barbell-calf-raise": {
+    title: "Standing Barbell Calf Raise",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F5285fcbe7cf64d899c56d85f4d97df44?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F630159c2256f4542bba4940e71ad0f3f?format=webp&width=800",
+    instructions: [
+      "1. Rack a barbell to just below shoulder height.Quarter squat underneath it, placing it just below the base of your neck.",
+      "2. Extend your hips and knees to unrack the barbell and then step back to avoid any hindrance during the exercise.",
+      "3. With your feet at hip-width apart slightly angled out and your knees slightly flexed, extend your ankles to lift the heels off the floor.",
+      "4. Keep your hips under your shoulders and your heels under your hips as you extend your ankles before you return to the starting position.",
+    ],
+    equipment: ["Barbell"],
+  },
+  "single-leg-standing-calf-raise": {
+    title: "Single Leg Standing Calf Raise",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F3269e45a75214df98951ad3cab685842?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F630159c2256f4542bba4940e71ad0f3f?format=webp&width=800",
+    instructions: [
+      "1. Engage your core and shift your weight to one foot.Raise your other foot a few inches off the ground while maintaining balance and core tension.",
+      "2. Shift your weight to the ball of your foot on the floor, and engage that calf to raise your heel off the ground.Hold this position for a moment at the top of the movement.",
+      "3. Maintain tension in your calf as you slowly allow your heel to return back to its starting position.",
+      "4. Repeat this movement with the other leg.",
+    ],
+    equipment: ["Body Weight"],
+  },
 };
 
 export default function ExerciseDetails() {
