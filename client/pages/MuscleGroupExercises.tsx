@@ -36,15 +36,15 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
     exercises: [
       {
         name: "Inchworm",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0bd9462fa5b74976b047381f61e95ebe?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6f3a4cba7ec148e9b93fc7b5ad76e836?format=webp&width=800",
       },
       {
         name: "Deadlift",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0c0ca7cd10504b6686176e4da8af9bcc?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fc647cd23ad274dba9f44363c829a20f5?format=webp&width=800",
       },
       {
         name: "Leg Curls",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Ffcb95f7ca1f641bdbe1ec308b1aa7db4?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F50a156c2aebc4329b5d5f68d4e7813be?format=webp&width=800",
       },
     ],
   },
