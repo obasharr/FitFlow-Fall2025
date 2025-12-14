@@ -254,6 +254,26 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
       },
     ],
   },
+  abs: {
+    name: "Abs",
+    exercises: [
+      {
+        name: "Russian Twists",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F15fdf1b2f40a4b2f8c05960d04747ecd?format=webp&width=800",
+      },
+      {
+        name: "Vertical Knee Raise",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F23f24b158f2a49c89b9f2c9d5a047ee4?format=webp&width=800",
+      },
+      {
+        name: "Tuck Crunch",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fa591275b821a4dbe976630af564349fc?format=webp&width=800",
+      },
+    ],
+  },
 };
 
 export default function MuscleGroupExercises() {
