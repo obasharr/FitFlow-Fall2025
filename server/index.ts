@@ -34,5 +34,8 @@ export function createServer() {
   app.post("/api/update-username", handleUpdateUsername);
   app.post("/api/update-profile-picture", handleUpdateProfilePicture);
 
+  // Favorites routes
+  app.use("/api/favorites", favoritesRouter);
+
   return app;
 }
