@@ -260,17 +260,17 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
       {
         name: "Russian Twists",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F15fdf1b2f40a4b2f8c05960d04747ecd?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F85d23c1ec80f491bbcfff8caf47ca8cf?format=webp&width=800",
       },
       {
         name: "Vertical Knee Raise",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F23f24b158f2a49c89b9f2c9d5a047ee4?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fedca87e31e264efbb8ae3f97102b04e5?format=webp&width=800",
       },
       {
         name: "Tuck Crunch",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fa591275b821a4dbe976630af564349fc?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F51ba0da440334c8faa82f74f38bfe04b?format=webp&width=800",
       },
     ],
   },
