@@ -55,7 +55,7 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "dumbbell-fly": {
     title: "Dumbbell Fly Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F3b244a75d71f4d459fe321a492fb20c9?format=webp&width=800",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F79e1e3e8f4a540739c5c9fa5e33d3494?format=webp&width=800",
     targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/b7b48059ce93bda69e742bce22c368089bcd8f7b?width=264",
     instructions: [
       "1. Lie your back onto a bench while squeezing your shoulder blades together and placing your heels firmly on the ground underneath your knees.",
