@@ -53,15 +53,15 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
     exercises: [
       {
         name: "Hip Thrust",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0bd9462fa5b74976b047381f61e95ebe?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F24d8d5c9c94247a796c7fc0903fde757?format=webp&width=800",
       },
       {
         name: "Leg Kickback",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0c0ca7cd10504b6686176e4da8af9bcc?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fe0456bdfa67a480393d225cceb70fea5?format=webp&width=800",
       },
       {
         name: "Cable Hip Extension",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Ffcb95f7ca1f641bdbe1ec308b1aa7db4?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fba424ac979b84cd894196ae45829943f?format=webp&width=800",
       },
     ],
   },
