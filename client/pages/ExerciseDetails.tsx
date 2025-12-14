@@ -256,6 +256,21 @@ const exerciseData: Record<string, ExerciseData> = {
     equipment: ["Yoga matt"],
     tips: "Sit tall with a straight spine; engage your core to support your back. The stretch should be in your inner thighs and groin, not your knees.",
   },
+  "palms-up-barbell-wrist-curl": {
+    title: "Palms-Up Barbell Wrist Curl",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fbbb38996db4d4fc0b1636a601aba2a25?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/7022dae1aaea30eeefab11898e8994ebf3c4f975?width=264",
+    instructions: [
+      "1. Drop down into a tall kneeling position facing the side of a bench.",
+      "2. Lower your forearms onto the bench, keeping them parallel with each other, while hanging your wrists off the bench on the other side.",
+      "3. You will need to have a partner hand you the barbell or have the barbell in your hands before getting into position.",
+      "4. Grip the barbell underneath so that your palms face the ceiling while keeping your forearms on the bench as you flex your wrists to raise the barbell.",
+      "5. Lower back to the starting position."
+    ],
+    equipment: ["Barbells"],
+  },
 };
 
 export default function ExerciseDetails() {
