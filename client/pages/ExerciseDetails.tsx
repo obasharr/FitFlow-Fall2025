@@ -444,7 +444,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F553cb530b7ea4bbab49a0ff31f24ddc3?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F051d928c3ada488d8a6d5bbb4cf95524?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F917bd5c281e84acfb8e35a446632a08c?format=webp&width=800",
     instructions: [
       "1. Grasp a dumbbell in each hand, and stand with your feet close to shoulder-width apart.",
       "2. Position each dumbbell in front of you with your palms facing your body.Bend your arms slightly at the elbow, and position your elbows close to shoulder-width apart.",
