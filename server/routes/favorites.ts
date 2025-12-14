@@ -112,13 +112,22 @@ router.post("/remove-favorite", async (req, res) => {
     if (!userId || !exerciseName) {
       return res.status(400).json({
         success: false,
-        message: "User ID and exercise name are required",
+        message: "User ID (email) and exercise name are required",
+      } as FavoritesResponse);
+    }
+
+    // Look up the user to get their actual UUID
+    const user = await getUserByEmail(userId);
+    if (!user) {
+      return res.status(400).json({
+        success: false,
+        message: "User not found",
       } as FavoritesResponse);
     }
 
     const result = await supabaseRequest<null>(
       "DELETE",
-      `/favorites?user_id=eq.${encodeURIComponent(userId)}&exercise_name=eq.${encodeURIComponent(exerciseName)}`
+      `/favorites?user_id=eq.${encodeURIComponent(user.id)}&exercise_name=eq.${encodeURIComponent(exerciseName)}`
     );
 
     if (result.error) {
