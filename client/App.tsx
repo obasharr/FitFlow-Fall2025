@@ -31,7 +31,7 @@ const App = () => (
           <Route path="/login" element={<Index />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/exercise-library" element={<ExerciseLibrary />} />
-          <Route path="/exercise/squats" element={<ExerciseDetails />} />
+          <Route path="/exercise/:exerciseName" element={<ExerciseDetails />} />
           <Route path="/muscle-library" element={<MuscleGroupBrowser />} />
           <Route path="/muscle/:muscleName" element={<MuscleGroupExercises />} />
           <Route path="/profile" element={<Profile />} />
