@@ -97,9 +97,7 @@ export default function Favorites() {
               <div
                 key={exercise.name}
                 className="flex items-center gap-4 bg-white rounded-lg p-3 shadow-md hover:shadow-lg transition cursor-pointer"
-                onClick={() =>
-                  navigate(`/exercise/${exercise.name}`)
-                }
+                onClick={() => navigate(`/exercise/${exercise.name}`)}
               >
                 {/* Circular Image */}
                 <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0 bg-gray-200">

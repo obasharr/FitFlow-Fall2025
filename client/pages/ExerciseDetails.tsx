@@ -576,10 +576,10 @@ const exerciseData: Record<string, ExerciseData> = {
       "2. Hold onto a weighted apparatus or clasp your hands in front of your chest with your elbows slightly flexed.",
       "3. Extend your hips to angle your torso 45 degrees from the floor.",
       "4. Rotate your shoulders to the right while keeping your weighted apparatus or your hands in the middle of your chest.",
-      "5. Once you have rotated far enough to touch the weighted apparatus or your hands to the floor by your side, rotate your shoulders to the left to again touch the floor."
+      "5. Once you have rotated far enough to touch the weighted apparatus or your hands to the floor by your side, rotate your shoulders to the left to again touch the floor.",
     ],
     equipment: ["Body weight (Weight plate to increase insensitivity)"],
-    tips: "Make sure you're using your core to twist to each side rather than simply reaching to either side with your arms. This will make the exercise more effective."
+    tips: "Make sure you're using your core to twist to each side rather than simply reaching to either side with your arms. This will make the exercise more effective.",
   },
   "vertical-knee-raise": {
     title: "Vertical Knee Raise",
@@ -592,10 +592,10 @@ const exerciseData: Record<string, ExerciseData> = {
       "2. Press your back against the pad and rest your forearms on the parallel bars grabbing a hold of the handles with your palms facing in.",
       "3. Brace your core to keep your head extended away from your shoulders before suspending your body above the floor.",
       "4. Avoid any swinging as you flex your hips and your abdomen to bring your knees up to your chest.",
-      "5. Lower your legs to the extended position."
+      "5. Lower your legs to the extended position.",
     ],
     equipment: ["Vertical Bench"],
-    tips: "Keep your core engaged for the duration of the exercise, even between reps. This exercise is designed to add instability that your core needs to compensate for. Keeping your core engaged throughout the exercise will improve the effectiveness of the exercise."
+    tips: "Keep your core engaged for the duration of the exercise, even between reps. This exercise is designed to add instability that your core needs to compensate for. Keeping your core engaged throughout the exercise will improve the effectiveness of the exercise.",
   },
   "tuck-crunch": {
     title: "Tuck Crunch",

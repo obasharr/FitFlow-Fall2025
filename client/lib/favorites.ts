@@ -32,7 +32,7 @@ export async function getFavorites(userId: string): Promise<string[]> {
 
 export async function addFavorite(
   userId: string,
-  exerciseName: string
+  exerciseName: string,
 ): Promise<boolean> {
   try {
     const response = await fetch("/api/favorites/add-favorite", {
@@ -59,7 +59,7 @@ export async function addFavorite(
 
 export async function removeFavorite(
   userId: string,
-  exerciseName: string
+  exerciseName: string,
 ): Promise<boolean> {
   try {
     const response = await fetch("/api/favorites/remove-favorite", {

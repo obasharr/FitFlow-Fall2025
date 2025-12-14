@@ -127,7 +127,7 @@ router.post("/remove-favorite", async (req, res) => {
 
     const result = await supabaseRequest<null>(
       "DELETE",
-      `/favorites?user_id=eq.${encodeURIComponent(user.id)}&exercise_name=eq.${encodeURIComponent(exerciseName)}`
+      `/favorites?user_id=eq.${encodeURIComponent(user.id)}&exercise_name=eq.${encodeURIComponent(exerciseName)}`,
     );
 
     if (result.error) {
