@@ -12,6 +12,7 @@ import Dashboard from "./pages/Dashboard";
 import ExerciseLibrary from "./pages/ExerciseLibrary";
 import ExerciseDetails from "./pages/ExerciseDetails";
 import MuscleGroupBrowser from "./pages/MuscleGroupBrowser";
+import MuscleGroupExercises from "./pages/MuscleGroupExercises";
 import Profile from "./pages/Profile";
 import EditProfile from "./pages/EditProfile";
 import Favorites from "./pages/Favorites";
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/exercise-library" element={<ExerciseLibrary />} />
           <Route path="/exercise/squats" element={<ExerciseDetails />} />
           <Route path="/muscle-library" element={<MuscleGroupBrowser />} />
+          <Route path="/muscle/:muscleName" element={<MuscleGroupExercises />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/edit-profile" element={<EditProfile />} />
           <Route path="/favorites" element={<Favorites />} />
