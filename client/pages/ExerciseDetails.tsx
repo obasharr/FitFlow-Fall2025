@@ -570,7 +570,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F85d23c1ec80f491bbcfff8caf47ca8cf?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F336df94ab9f04b3ebf0ebef4b4c04752?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fd7ec5faee349445b8910dbaae8170d6a?format=webp&width=800",
     instructions: [
       "1. Sit in an upright position with your knees bent and feet off the floor underneath a stable object.",
       "2. Hold onto a weighted apparatus or clasp your hands in front of your chest with your elbows slightly flexed.",
@@ -586,7 +586,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fedca87e31e264efbb8ae3f97102b04e5?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F336df94ab9f04b3ebf0ebef4b4c04752?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F72cc5560876d4710a7aae78f037c3296?format=webp&width=800",
     instructions: [
       "1. Stand upright on the pedals of a vertical leg raise bench.",
       "2. Press your back against the pad and rest your forearms on the parallel bars grabbing a hold of the handles with your palms facing in.",
@@ -602,7 +602,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F51ba0da440334c8faa82f74f38bfe04b?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F336df94ab9f04b3ebf0ebef4b4c04752?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F72cc5560876d4710a7aae78f037c3296?format=webp&width=800",
     instructions: [
       "1. Sit upright on the floor with your knees at a 90 degree angle and your feet flat on the floor.",
       "2. Slowly lean back until your abdomen muscles are engaged and your back is about 45 degrees from the floor. Raise your heels slightly off the floor. While engaging your abdomen, extend your legs forward without letting them touch the floor.",
