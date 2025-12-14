@@ -195,22 +195,22 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
       {
         name: "Barbell Curl",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F75bfce957bd24b48b9a624e640228d6e?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6474f488b5034abf85cdc2e4d11fce6c?format=webp&width=800",
       },
       {
         name: "Cross Body Hammer Curls",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6628831781d04838abab430fe0d02e73?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F553cb530b7ea4bbab49a0ff31f24ddc3?format=webp&width=800",
       },
       {
         name: "Cable Tricep Pushdown",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F626c1134f5954b599e21514d1c2224cd?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F431a39ee856b44a0bcc9d7a414ab5dab?format=webp&width=800",
       },
       {
         name: "One Arm Underhand Tricep Extension",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fa04dd931e8264bdb84ac3215a4806e9b?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fb1455cd70c3c452b88c66b3fdc983b7b?format=webp&width=800",
       },
     ],
   },
