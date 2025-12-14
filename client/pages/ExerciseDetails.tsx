@@ -232,7 +232,7 @@ const exerciseData: Record<string, ExerciseData> = {
     targetMusclesImage:
       "https://api.builder.io/api/v1/image/assets/TEMP/44a4a81bf5980ec9d24d021525ba520321f291b3?width=264",
     instructions: [
-      "1. Stand 3-6\" away and perpendicular to the plyo box and place your feet hip-width apart.",
+      '1. Stand 3-6" away and perpendicular to the plyo box and place your feet hip-width apart.',
       "2. Begin hinging at your hips while simultaneously extending your arms behind you.",
       "3. Maintain a straight and rigid torso throughout while you descend and keep your heels firmly on the ground.",
       "4. Once you have reached the bottom of the movement, immediately explode upward by extending your hips and knees and swinging your arms forward.",
