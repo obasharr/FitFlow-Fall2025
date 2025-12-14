@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { ChevronLeft, Heart, ChevronRight } from "lucide-react";
-import { getProfilePicture } from "@/lib/auth";
+import { getProfilePicture, getEmail } from "@/lib/auth";
+import { getFavorites, addFavorite, removeFavorite } from "@/lib/favorites";
+import { toast } from "sonner";
 
 interface ExerciseData {
   title: string;
