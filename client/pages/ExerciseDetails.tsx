@@ -54,6 +54,43 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Bodyweight", "Optional: Weighted Plate"],
   },
+  inchworm: {
+    title: "Inchworm Details",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F4acb968b5920424598b415386d70a345?format=webp&width=800",
+    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/1e3d91ce68ec47b59f2298b6f8536842d38bc683?width=264",
+    instructions: [
+      "1. Stand upright with your feet shoulder width apart.",
+      "2. Lower your hands so that your palms are just in front of your toes and begin to walk your hands forward until you've created a straight line from your shoulders to your heels..",
+      "3. Tiptoe your toes back up towards your hands before standing back upright to the starting position.",
+    ],
+    equipment: ["Bodyweight"],
+  },
+  deadlift: {
+    title: "Deadlift Details",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fb5560439f80d43c1989aaba05c095b69?format=webp&width=800",
+    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/2cd72be2dc7452fb50f955ee7868d9f90ae4fee5?width=264",
+    instructions: [
+      "1. Stand in an upright posture with your feet at shoulder-width apart and angled out slightly positioning a loaded barbell an inch away from the front of your lower legs.",
+      "2. Hinge at the hips and flex your knees to drop down allowing your shins to drop forward to touch the barbell.",
+      "3. With your arms extended, grip the barbell with either double overhand grip or alternate grip next to your lower legs while keeping your chest up.",
+      "4. Maintain this rigid spinal posture throughout the exercise.",
+      "5. Pull the barbell in a vertical path next to your body by extending your hips and knees until you are back to a standing upright posture.",
+      "6. Lower the barbell in a duplicate path it came up with.",
+    ],
+    equipment: ["Barbells"],
+  },
+  "leg-curls": {
+    title: "Leg Curl Details",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fad6da53577d441069e7c393c5e837e5d?format=webp&width=800",
+    targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/b9041f06c003bd9da9b69f5a3982912723f12eca?width=264",
+    instructions: [
+      "1. Sit upright in a leg curl machine while positioning the top support pad just above your knees and placing it just above the back of your ankles onto the lower pad.",
+      "2. Grab ahold of the handles for additional support.",
+      "3. Flex your knees to lower your heels towards towards the floor in a downward arc.",
+      "4. Once you can no longer flex your knees, return to the starting position.",
+    ],
+    equipment: ["Leg Curl Machine"],
+  },
 };
 
 export default function ExerciseDetails() {
