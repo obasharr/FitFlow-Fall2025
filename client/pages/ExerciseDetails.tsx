@@ -89,7 +89,11 @@ export default function ExerciseDetails() {
                 src="https://cdn.builder.io/o/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fdb5904de7e7c4f4ab3563bb03cba3cca?alt=media&token=f5945f75-96df-470d-bfd7-c7d3a7f97b30&apiKey=2b2051e6b49f4e57abbdf7a6692fa1f3"
                 controls
                 autoPlay
-                className="w-[149px] h-[148px] object-cover rounded"
+                muted
+                playsInline
+                poster="https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F69f6d8a6486247f29bb4e94cd18f204a?format=webp&width=800"
+                onEnded={() => setPlaying(false)}
+                className="w-[149px] h-[148px] object-cover rounded block"
               />
             )}
           </div>
