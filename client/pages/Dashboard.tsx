@@ -42,7 +42,7 @@ export default function Dashboard() {
             className="bg-[#32402F] hover:bg-[#2a3427] text-white font-bold text-lg px-8 py-6 rounded-full h-auto whitespace-nowrap"
             asChild
           >
-            <Link to="/muscle-library">Muscle Group Library</Link>
+            <Link to="/muscle-library">Muscle Group/Exercise Library</Link>
           </Button>
 
           {/* Profile pill */}
