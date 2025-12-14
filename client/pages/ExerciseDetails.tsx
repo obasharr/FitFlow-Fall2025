@@ -654,8 +654,9 @@ export default function ExerciseDetails() {
         </h1>
 
         <button
-          onClick={() => setIsFavorite(!isFavorite)}
-          className="flex items-center justify-center"
+          onClick={handleFavoriteToggle}
+          disabled={isLoading}
+          className="flex items-center justify-center disabled:opacity-50"
         >
           <Heart
             className={`w-5 h-5 ${
