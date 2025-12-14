@@ -164,6 +164,31 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
       },
     ],
   },
+  back: {
+    name: "Back",
+    exercises: [
+      {
+        name: "Cable Row",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0c661e1d08ac4b489063b365ab399570?format=webp&width=800",
+      },
+      {
+        name: "Dumbbell Row",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fe73f890ca56e45558eb7831bf780c25d?format=webp&width=800",
+      },
+      {
+        name: "Lat Pulldown",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fb41775dbd32e4aff9df84d69bc407f94?format=webp&width=800",
+      },
+      {
+        name: "Pull Up",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fb41775dbd32e4aff9df84d69bc407f94?format=webp&width=800",
+      },
+    ],
+  },
 };
 
 export default function MuscleGroupExercises() {
