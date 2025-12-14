@@ -523,6 +523,46 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Body Weight"],
   },
+  "seated-back-extension": {
+    title: "Seated Back Extension",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F15fdf1b2f40a4b2f8c05960d04747ecd?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F336df94ab9f04b3ebf0ebef4b4c04752?format=webp&width=800",
+    instructions: [
+      "1. Sit upright in a back extension machine with your feet firmly on the footrests.",
+      "2. Place the pad just below your shoulder blades and grab ahold the support handles with a neutral grip, palms in.",
+      "3. Brace your core to keep your spine neutral as you extend your hips and lower the pad in a downward arc.",
+      "4. Extend until your torso in alignment with your thighs before returning to the starting position.",
+    ],
+    equipment: ["Back Extension Machine"],
+  },
+  "rack-pulls": {
+    title: "Rack Pulls",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F23f24b158f2a49c89b9f2c9d5a047ee4?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F336df94ab9f04b3ebf0ebef4b4c04752?format=webp&width=800",
+    instructions: [
+      "1. Place the barbell on safety bar in a low position in a power rack. Position feet about shoulder-width apart.",
+      "2. Bend your hips and knees into a slight squat position and grasp the barbell. Your grip should be shoulder-width apart or slightly wider, using either an overhand or mixed grip.",
+      "3. Brace your core, keep your spine in a neutral position, engage your lats and then lift the barbell by extending your hips and knees until you are in an upright position.",
+    ],
+    equipment: ["Squat Rack", "Barbell"],
+  },
+  "stiff-legged-barbell-good-morning": {
+    title: "Stiff-Legged Barbell Good Morning",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fa591275b821a4dbe976630af564349fc?format=webp&width=800",
+    targetMusclesImage:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F336df94ab9f04b3ebf0ebef4b4c04752?format=webp&width=800",
+    instructions: [
+      "1. Set the barbell just below shoulder height and grab ahold the barbell outside shoulder-width.Squeeze your shoulder blades together and brace your core.",
+      "2. Quarter squat underneath the barbell to place it on the base of your neck before lifting and stepping back and planting your feet shoulder-width apart.",
+      "3. Keep your spine straight and once you have angled your torso to 45 degrees from the floor, extend to return to the starting position.",
+    ],
+    equipment: ["Squat Rack", "Barbell"],
+  },
 };
 
 export default function ExerciseDetails() {
