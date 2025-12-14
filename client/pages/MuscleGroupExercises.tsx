@@ -119,6 +119,31 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
       },
     ],
   },
+  forearms: {
+    name: "Forearms",
+    exercises: [
+      {
+        name: "Palms-Up Barbell Waist Curl",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F1f6314a651ed412bafcb6f557ad58c8f?format=webp&width=800",
+      },
+      {
+        name: "Plate Flips",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9b80737769c7432cb72cd7344433139d?format=webp&width=800",
+      },
+      {
+        name: "Cable Wrist Curl",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F749507474cb94eabae7c06f8c6ed737d?format=webp&width=800",
+      },
+      {
+        name: "Plate Pinch",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F749507474cb94eabae7c06f8c6ed737d?format=webp&width=800",
+      },
+    ],
+  },
 };
 
 export default function MuscleGroupExercises() {
