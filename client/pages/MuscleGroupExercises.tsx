@@ -19,15 +19,15 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
     exercises: [
       {
         name: "Squats",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0bd9462fa5b74976b047381f61e95ebe?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F589b59f9d5ec478b834f6d7e8f7e538f?format=webp&width=800",
       },
       {
         name: "Lunges",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0c0ca7cd10504b6686176e4da8af9bcc?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F1685e37c741d4960938ff84a132b5295?format=webp&width=800",
       },
       {
         name: "Wall Sits",
-        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Ffcb95f7ca1f641bdbe1ec308b1aa7db4?format=webp&width=800",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F43009d39720f46c69866e7a32a4b710c?format=webp&width=800",
       },
     ],
   },
