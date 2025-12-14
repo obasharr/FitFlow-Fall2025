@@ -105,17 +105,17 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
       {
         name: "Machine Hip Adductor",
         image:
-          "https://api.builder.io/api/v1/image/assets/TEMP/e1d19d2d285bdd0a016b8dc79124f04ad9c7d7c9?width=708",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F1f6314a651ed412bafcb6f557ad58c8f?format=webp&width=800",
       },
       {
         name: "Lateral Box Jump",
         image:
-          "https://api.builder.io/api/v1/image/assets/TEMP/13ba86c4e0652e1d637d1a356948b1494cd54396?width=708",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9b80737769c7432cb72cd7344433139d?format=webp&width=800",
       },
       {
         name: "Butterfly Stretch",
         image:
-          "https://api.builder.io/api/v1/image/assets/TEMP/b8766f56173d04391b0342b10a8c8c171402c993?width=708",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F749507474cb94eabae7c06f8c6ed737d?format=webp&width=800",
       },
     ],
   },
