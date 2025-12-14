@@ -234,6 +234,26 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
       },
     ],
   },
+  lowerback: {
+    name: "Lower Back",
+    exercises: [
+      {
+        name: "Seated Back Extension",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F42bf34f2d0da4185809fdb9479bcd94d?format=webp&width=800",
+      },
+      {
+        name: "Rack Pulls",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F5285fcbe7cf64d899c56d85f4d97df44?format=webp&width=800",
+      },
+      {
+        name: "Stiff-Legged Barbell Good Mornings",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F3269e45a75214df98951ad3cab685842?format=webp&width=800",
+      },
+    ],
+  },
 };
 
 export default function MuscleGroupExercises() {
