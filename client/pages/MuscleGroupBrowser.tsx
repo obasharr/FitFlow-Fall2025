@@ -20,7 +20,7 @@ export default function MuscleGroupBrowser() {
       name: "Chest (Pectorals)",
       description: "Primary Push",
       image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F49f276c26e6a44889ab33112904fd889?format=webp&width=800",
-      route: null,
+      route: "/muscle/chest",
     },
     {
       name: "Back (Lats & Traps)",

@@ -14,6 +14,27 @@ interface MuscleGroupData {
 }
 
 const muscleGroupData: Record<string, MuscleGroupData> = {
+  chest: {
+    name: "Chest",
+    exercises: [
+      {
+        name: "Dumbbell Bench Press",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F2bdc3cbe45e74f3fadb1ba79fcda5f81?format=webp&width=800",
+      },
+      {
+        name: "Svend Press",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F2bdc3cbe45e74f3fadb1ba79fcda5f81?format=webp&width=800",
+      },
+      {
+        name: "Push Up",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F2bdc3cbe45e74f3fadb1ba79fcda5f81?format=webp&width=800",
+      },
+      {
+        name: "Dumbbell Fly",
+        image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F2bdc3cbe45e74f3fadb1ba79fcda5f81?format=webp&width=800",
+      },
+    ],
+  },
   quads: {
     name: "Quads",
     exercises: [
