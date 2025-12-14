@@ -144,6 +144,26 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
       },
     ],
   },
+  shoulders: {
+    name: "Shoulders",
+    exercises: [
+      {
+        name: "Dumbbell Rear Delt Raise",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fbbb38996db4d4fc0b1636a601aba2a25?format=webp&width=800",
+      },
+      {
+        name: "Dumbbell Back Fly",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9a7e83cab498485bb4b4bf6d5b9f52b0?format=webp&width=800",
+      },
+      {
+        name: "Barbell Shoulder Press",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fa73fcd6d1582449e882cd11c83fb9dc3?format=webp&width=800",
+      },
+    ],
+  },
 };
 
 export default function MuscleGroupExercises() {
