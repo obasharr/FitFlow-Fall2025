@@ -416,7 +416,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fa04dd931e8264bdb84ac3215a4806e9b?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F58bc5031c1b943859596b90c2976b0ba?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F051d928c3ada488d8a6d5bbb4cf95524?format=webp&width=800",
     instructions: [
       "1. Place your hands on the pull up bar with your palms facing away from your body.",
       "2. Brace your torso by breathing into your stomach and keeping your abdominal muscles flexed.",
