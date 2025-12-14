@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { supabaseRequest } from "../lib/supabase";
+import { supabaseRequest, getUserByEmail } from "../lib/supabase";
 
 const router = Router();
 
@@ -17,13 +17,22 @@ router.post("/get-favorites", async (req, res) => {
     if (!userId) {
       return res.status(400).json({
         success: false,
-        message: "User ID is required",
+        message: "User ID (email) is required",
+      } as FavoritesResponse);
+    }
+
+    // Look up the user to get their actual UUID
+    const user = await getUserByEmail(userId);
+    if (!user) {
+      return res.status(400).json({
+        success: false,
+        message: "User not found",
       } as FavoritesResponse);
     }
 
     const result = await supabaseRequest<
       { id: string; exercise_name: string; created_at: string }[]
-    >("GET", `/favorites?user_id=eq.${encodeURIComponent(userId)}&select=*`);
+    >("GET", `/favorites?user_id=eq.${encodeURIComponent(user.id)}&select=*`);
 
     if (result.error) {
       return res.status(400).json({
