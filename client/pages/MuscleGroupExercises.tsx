@@ -119,18 +119,6 @@ export default function MuscleGroupExercises() {
         <h2 className="text-xl font-bold text-black">{muscleGroup.name}</h2>
       </div>
 
-      {/* Search Bar */}
-      <div className="px-4 py-2">
-        <div className="flex items-center gap-3 px-4 py-2 border border-[#32402F] rounded-lg bg-white">
-          <Search className="w-6 h-6 text-[#828282]" strokeWidth={2} />
-          <input
-            type="text"
-            placeholder="Search"
-            className="flex-1 text-base text-[#828282] bg-transparent outline-none placeholder:text-[#828282]"
-          />
-        </div>
-      </div>
-
       {/* Exercise List */}
       <div className="flex-1 px-4 py-4 overflow-y-auto">
         <div className="flex flex-col gap-6">
