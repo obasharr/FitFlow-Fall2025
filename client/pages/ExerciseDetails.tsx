@@ -306,6 +306,22 @@ const exerciseData: Record<string, ExerciseData> = {
     ],
     equipment: ["Hi-Lo Pulley Cable", "Rope Cable", "Flat Bench"],
   },
+  "plate-pinch": {
+    title: "Plate Pinch",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F22b183eb96c04bad92d8913297eb5427?format=webp&width=800",
+    targetMusclesImage:
+      "https://api.builder.io/api/v1/image/assets/TEMP/7022dae1aaea30eeefab11898e8994ebf3c4f975?width=264",
+    instructions: [
+      "1. Grasp the edge of a plate in a single hand between your thumb and fingers.",
+      "2. Engage your shoulder to raise your arm out to the side.",
+      "3. Squeeze the plate to prevent it from falling.",
+      "4. Maintain this grasp for the duration of the exercise.",
+      "5. Slowly place the weight on the floor by descending into a squat position as you finish the exercise.",
+      "6. You should feel this exercise primarily in your forearms and shoulders."
+    ],
+    equipment: ["Plates"],
+  },
 };
 
 export default function ExerciseDetails() {
