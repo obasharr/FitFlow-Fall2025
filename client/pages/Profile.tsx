@@ -92,7 +92,6 @@ export default function Profile() {
             </div>
             <div>
               <h3 className="text-2xl font-bold text-black">Favorites</h3>
-              <p className="text-lg font-bold text-black">6 Exercises</p>
             </div>
           </div>
         </Link>
