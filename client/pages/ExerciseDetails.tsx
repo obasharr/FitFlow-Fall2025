@@ -267,14 +267,14 @@ const exerciseData: Record<string, ExerciseData> = {
       "2. Lower your forearms onto the bench, keeping them parallel with each other, while hanging your wrists off the bench on the other side.",
       "3. You will need to have a partner hand you the barbell or have the barbell in your hands before getting into position.",
       "4. Grip the barbell underneath so that your palms face the ceiling while keeping your forearms on the bench as you flex your wrists to raise the barbell.",
-      "5. Lower back to the starting position."
+      "5. Lower back to the starting position.",
     ],
     equipment: ["Barbells"],
   },
-   "plate-flips": {
+  "plate-flips": {
     title: "Plate Flips",
     image:
-       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9a7e83cab498485bb4b4bf6d5b9f52b0?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9a7e83cab498485bb4b4bf6d5b9f52b0?format=webp&width=800",
     targetMusclesImage:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fd8652257ec5c4f83b82befa3d7bf3cb5?format=webp&width=800",
     instructions: [
@@ -285,7 +285,7 @@ const exerciseData: Record<string, ExerciseData> = {
       "5. Catch the top of the bumper plate after it flips and squeeze the lip of the plate.",
       "6. If you feel you are going to drop the bumper plate while it is still in your grasp, hinge into a squat position and place the weight on the floor.",
       "7. If you feel you are going to drop the bumper plate on the catch, step back and allow the weight to hit the floor. Do not try to recatch if you fumble an attempt.",
-      "8. Maintain good posture by keeping your core engaged and your chest up."
+      "8. Maintain good posture by keeping your core engaged and your chest up.",
     ],
     equipment: ["Plates"],
   },
@@ -302,7 +302,7 @@ const exerciseData: Record<string, ExerciseData> = {
       "4. Engage your forearms to raise the bar by curling your wrists up and toward you.",
       "5. Tense your forearms and hold this position for a moment at the top of the movement.",
       "6. Maintain good posture by keeping your forearms in contact with your legs and the weight in the palms of your hands throughout this exercise.",
-      "7. You should feel this exercise in your forearms."
+      "7. You should feel this exercise in your forearms.",
     ],
     equipment: ["Hi-Lo Pulley Cable", "Rope Cable", "Flat Bench"],
   },
@@ -318,7 +318,7 @@ const exerciseData: Record<string, ExerciseData> = {
       "3. Squeeze the plate to prevent it from falling.",
       "4. Maintain this grasp for the duration of the exercise.",
       "5. Slowly place the weight on the floor by descending into a squat position as you finish the exercise.",
-      "6. You should feel this exercise primarily in your forearms and shoulders."
+      "6. You should feel this exercise primarily in your forearms and shoulders.",
     ],
     equipment: ["Plates"],
   },
@@ -332,7 +332,7 @@ const exerciseData: Record<string, ExerciseData> = {
       "1. Grab a pair of dumbbells and stand in an upright posture with your feet at shoulder-width apart.",
       "2. Flex your knees and hinge at your hips to 90 degrees to position the dumbbells directly underneath your shoulders at knee height with your palms facing each other.",
       "3. Keeping your elbows slightly flexed and your back straight, raise the dumbbells out laterally with emphasis on tightening between your shoulder blades once the dumbbells reach shoulder height.",
-      "4. Control the dumbbells as you return to the starting position."
+      "4. Control the dumbbells as you return to the starting position.",
     ],
     equipment: ["Dumbbells"],
   },
@@ -346,7 +346,7 @@ const exerciseData: Record<string, ExerciseData> = {
       "1. Grab a pair of dumbbells and position your chest on an incline bench while standing with knees slightly bent.",
       "2. Once in a comfortable position, position the dumbbells in front of your shoulders so your shoulders are at a 90 degree from your torso with palms facing forward.",
       "3. Keeping your elbows slightly flexed and your back straight, raise the dumbbells out laterally with emphasis on tightening between your shoulder blades once the dumbbells reach shoulder height.",
-      "4. Control the dumbbells as you return to the starting position."
+      "4. Control the dumbbells as you return to the starting position.",
     ],
     equipment: ["Dumbbells", "Incline Bench"],
   },
@@ -361,7 +361,7 @@ const exerciseData: Record<string, ExerciseData> = {
       "2. Quarter squat underneath the barbell and place the barbell on your upper chest.",
       "3. Turn your elbows underneath the barbell so that your forearms are vertical and your palms face upward before unracking the barbell and taking a step back.",
       "4. Begin to extend your arms overhead by pressing through your palms to lift the barbell vertically.",
-      "5. The barbell should be aligned with your ears at full arm extension before descending it back to the starting position."
+      "5. The barbell should be aligned with your ears at full arm extension before descending it back to the starting position.",
     ],
     equipment: ["Barbells"],
   },
@@ -377,7 +377,7 @@ const exerciseData: Record<string, ExerciseData> = {
       "3. Engage your back to pull the handles towards your torso.",
       "4. Simultaneously engage your lower back to lean back slightly.",
       "5. Pinch your shoulder blades together, and hold this position for a moment at the end of the movement.",
-      "6. Slowly return to the starting position while maintaining tension in your back."
+      "6. Slowly return to the starting position while maintaining tension in your back.",
     ],
     equipment: ["Row Cable"],
   },
@@ -392,7 +392,7 @@ const exerciseData: Record<string, ExerciseData> = {
       "2. Place your right knee on top of the bench and right hand on the other side of the bench. Your torso should be parallel to the floor.",
       "3. Grasp a dumbbell with your left hand while keeping your back straight. The palm of your hand should face your torso.",
       "4. Pull the dumbbell straight up to the side of your torso. Engage the muscles in your back and breathe out as you perform this step. The torso should remain stationary as your arm moves.",
-      "5. After a brief pause at the top of the movement, reverse this movement by lowering the dumbbell back to the starting position."
+      "5. After a brief pause at the top of the movement, reverse this movement by lowering the dumbbell back to the starting position.",
     ],
     equipment: ["Dumbbells", "Flat Bench"],
   },
@@ -407,7 +407,7 @@ const exerciseData: Record<string, ExerciseData> = {
       "2. Sit upright on the seat positioning your knees underneath the adjustable pad.",
       "3. Brace your core to maintain a neutral spine.",
       "4. With your arms extended overhead, flex your elbows to your the backside of your ribcage leaning back slightly.",
-      "5. Extend your arms back to the starting position."
+      "5. Extend your arms back to the starting position.",
     ],
     equipment: ["Lat Pulldown Cable"],
   },
@@ -421,7 +421,7 @@ const exerciseData: Record<string, ExerciseData> = {
       "1. Place your hands on the pull up bar with your palms facing away from your body.",
       "2. Brace your torso by breathing into your stomach and keeping your abdominal muscles flexed.",
       "3. Pull your chest up to the bar by flexing your elbows down into the backside of your ribcage.",
-      "4. Once you have reached your chest to the bar, you will lower yourself back to the starting position."
+      "4. Once you have reached your chest to the bar, you will lower yourself back to the starting position.",
     ],
     equipment: ["Pull Up Bar"],
   },
