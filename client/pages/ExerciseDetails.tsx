@@ -472,7 +472,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fb1455cd70c3c452b88c66b3fdc983b7b?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F051d928c3ada488d8a6d5bbb4cf95524?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F630159c2256f4542bba4940e71ad0f3f?format=webp&width=800",
     instructions: [
       "1. Position your body such that one arm is in line with the cable. Grasp the handle with that hand such that your palm is facing up.Engage your tricep to bring the handle down by extending your arm at your elbow",
       "2. Allow your arm to rotate such that your palms are facing in towards you at the bottom of the movement. Tense your tricep and hold this position for a moment at the bottom of the movement",
