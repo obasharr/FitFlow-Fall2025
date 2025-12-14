@@ -37,14 +37,6 @@ export default function Dashboard() {
       <div className="flex-1 flex flex-col items-center justify-start pt-8 px-6">
         {/* Pills section */}
         <div className="w-full flex flex-col items-center gap-4 mb-12">
-          {/* Exercise Library pill */}
-          <Button
-            className="bg-[#32402F] hover:bg-[#2a3427] text-white font-bold text-lg px-8 py-6 rounded-full h-auto whitespace-nowrap"
-            asChild
-          >
-            {/* Exercise Library removed */}
-          </Button>
-
           {/* Muscle Group Library pill */}
           <Button
             className="bg-[#32402F] hover:bg-[#2a3427] text-white font-bold text-lg px-8 py-6 rounded-full h-auto whitespace-nowrap"
