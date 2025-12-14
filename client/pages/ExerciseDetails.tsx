@@ -327,7 +327,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0c661e1d08ac4b489063b365ab399570?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fd8652257ec5c4f83b82befa3d7bf3cb5?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fdd0f028bfc5b45deb7d0f5b37fa3fe9f?format=webp&width=800",
     instructions: [
       "1. Grab a pair of dumbbells and stand in an upright posture with your feet at shoulder-width apart.",
       "2. Flex your knees and hinge at your hips to 90 degrees to position the dumbbells directly underneath your shoulders at knee height with your palms facing each other.",
@@ -341,7 +341,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fe73f890ca56e45558eb7831bf780c25d?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fd8652257ec5c4f83b82befa3d7bf3cb5?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fdd0f028bfc5b45deb7d0f5b37fa3fe9f?format=webp&width=800",
     instructions: [
       "1. Grab a pair of dumbbells and position your chest on an incline bench while standing with knees slightly bent.",
       "2. Once in a comfortable position, position the dumbbells in front of your shoulders so your shoulders are at a 90 degree from your torso with palms facing forward.",
@@ -355,7 +355,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fb41775dbd32e4aff9df84d69bc407f94?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fd8652257ec5c4f83b82befa3d7bf3cb5?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F58bc5031c1b943859596b90c2976b0ba?format=webp&width=800",
     instructions: [
       "1. Place the barbell at shoulder height and grab ahold the barbell shoulder-width apart.",
       "2. Quarter squat underneath the barbell and place the barbell on your upper chest.",
