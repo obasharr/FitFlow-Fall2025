@@ -63,10 +63,8 @@ export default function ExerciseDetails() {
               onClick={(e) => {
                 e.preventDefault();
                 setPlaying(true);
-                // ensure video element is mounted before attempting to play
-                setTimeout(() => {
-                  videoRef.current?.play().catch(() => {});
-                }, 100);
+                // attempt to play immediately (within user gesture)
+                videoRef.current?.play().catch(() => {});
               }}
               className={`absolute inset-0 w-full h-full flex items-center justify-center rounded overflow-hidden focus:outline-none ${playing ? "hidden" : "block"}`}
               aria-label="Play video"
