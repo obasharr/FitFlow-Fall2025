@@ -170,22 +170,22 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
       {
         name: "Cable Row",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F0c661e1d08ac4b489063b365ab399570?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F75bfce957bd24b48b9a624e640228d6e?format=webp&width=800",
       },
       {
         name: "Dumbbell Row",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fe73f890ca56e45558eb7831bf780c25d?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6628831781d04838abab430fe0d02e73?format=webp&width=800",
       },
       {
         name: "Lat Pulldown",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fb41775dbd32e4aff9df84d69bc407f94?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F626c1134f5954b599e21514d1c2224cd?format=webp&width=800",
       },
       {
         name: "Pull Up",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fb41775dbd32e4aff9df84d69bc407f94?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fa04dd931e8264bdb84ac3215a4806e9b?format=webp&width=800",
       },
     ],
   },
