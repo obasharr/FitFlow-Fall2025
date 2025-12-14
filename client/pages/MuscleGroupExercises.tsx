@@ -214,6 +214,26 @@ const muscleGroupData: Record<string, MuscleGroupData> = {
       },
     ],
   },
+  calves: {
+    name: "Calves",
+    exercises: [
+      {
+        name: "Seated Machine Calf Press",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F6474f488b5034abf85cdc2e4d11fce6c?format=webp&width=800",
+      },
+      {
+        name: "Standing Barbell Calf Raise",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F553cb530b7ea4bbab49a0ff31f24ddc3?format=webp&width=800",
+      },
+      {
+        name: "Single Leg Standing Calf Raise",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F431a39ee856b44a0bcc9d7a414ab5dab?format=webp&width=800",
+      },
+    ],
+  },
 };
 
 export default function MuscleGroupExercises() {
