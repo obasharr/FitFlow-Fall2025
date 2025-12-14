@@ -62,7 +62,16 @@ router.post("/add-favorite", async (req, res) => {
     if (!userId || !exerciseName) {
       return res.status(400).json({
         success: false,
-        message: "User ID and exercise name are required",
+        message: "User ID (email) and exercise name are required",
+      } as FavoritesResponse);
+    }
+
+    // Look up the user to get their actual UUID
+    const user = await getUserByEmail(userId);
+    if (!user) {
+      return res.status(400).json({
+        success: false,
+        message: "User not found",
       } as FavoritesResponse);
     }
 
@@ -70,7 +79,7 @@ router.post("/add-favorite", async (req, res) => {
       | { id: string; user_id: string; exercise_name: string }[]
       | { id: string; user_id: string; exercise_name: string }
     >("POST", "/favorites", {
-      user_id: userId,
+      user_id: user.id,
       exercise_name: exerciseName,
     });
 
