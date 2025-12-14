@@ -261,7 +261,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fbbb38996db4d4fc0b1636a601aba2a25?format=webp&width=800",
     targetMusclesImage:
-      "https://api.builder.io/api/v1/image/assets/TEMP/7022dae1aaea30eeefab11898e8994ebf3c4f975?width=264",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F36e33a6396eb4e168be97a72d86b4fd6?format=webp&width=800",
     instructions: [
       "1. Drop down into a tall kneeling position facing the side of a bench.",
       "2. Lower your forearms onto the bench, keeping them parallel with each other, while hanging your wrists off the bench on the other side.",
@@ -276,7 +276,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
        "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9a7e83cab498485bb4b4bf6d5b9f52b0?format=webp&width=800",
     targetMusclesImage:
-      "https://api.builder.io/api/v1/image/assets/TEMP/7022dae1aaea30eeefab11898e8994ebf3c4f975?width=264",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fd8652257ec5c4f83b82befa3d7bf3cb5?format=webp&width=800",
     instructions: [
       "1. Stand in a location away from other exercisers with your feet roughly shoulder-width apart and a slight bend in your knees.",
       "2. Grasp the top of a bumper plate in one hand. Squeeze the lip of the bumper plate and hold it in front of you with your palms facing you.",
@@ -294,7 +294,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fa73fcd6d1582449e882cd11c83fb9dc3?format=webp&width=800",
     targetMusclesImage:
-      "https://api.builder.io/api/v1/image/assets/TEMP/7022dae1aaea30eeefab11898e8994ebf3c4f975?width=264",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F36e33a6396eb4e168be97a72d86b4fd6?format=webp&width=800",
     instructions: [
       "1. Position and sit on a flat bench in front of the cable machine. Grasp the handle with both hands such that your palms are face up.",
       "2. Rest the back of your forearms on your legs such that your wrists are just past your knees.",
@@ -311,7 +311,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F22b183eb96c04bad92d8913297eb5427?format=webp&width=800",
     targetMusclesImage:
-      "https://api.builder.io/api/v1/image/assets/TEMP/7022dae1aaea30eeefab11898e8994ebf3c4f975?width=264",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fd8652257ec5c4f83b82befa3d7bf3cb5?format=webp&width=800",
     instructions: [
       "1. Grasp the edge of a plate in a single hand between your thumb and fingers.",
       "2. Engage your shoulder to raise your arm out to the side.",
