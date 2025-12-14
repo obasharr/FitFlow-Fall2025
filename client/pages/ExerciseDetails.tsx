@@ -458,7 +458,7 @@ const exerciseData: Record<string, ExerciseData> = {
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F431a39ee856b44a0bcc9d7a414ab5dab?format=webp&width=800",
     targetMusclesImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F051d928c3ada488d8a6d5bbb4cf95524?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F630159c2256f4542bba4940e71ad0f3f?format=webp&width=800",
     instructions: [
       "1. Place pulley to the highest position with a straight or angled bar attachment.",
       "2. Grab ahold of the bar with an overhand grip, palms facing down, and pull your elbows to your sides and flexed to 90 degrees so your forearms are parallel with the floor.",
