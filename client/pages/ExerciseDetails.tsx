@@ -106,7 +106,7 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "leg-kickback": {
     title: "Leg Kickback Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Faf1994d8ed154eeca96412babc3b8a83?format=webp&width=800",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F9a48327a311d4a67ae30c784a7a0f33c?format=webp&width=800",
     targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/54a324930c243212104e8149112b458d3dc1a993?width=264",
     instructions: [
       "1. Get into a kneeling push-up position with your hands underneath your shoulders and your knees underneath your hips bent to 90 degrees.",
@@ -119,7 +119,7 @@ const exerciseData: Record<string, ExerciseData> = {
   },
   "cable-hip-extension": {
     title: "Cable Hip Extension Details",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2F8c2364746aa74fc183466de911fc6f89?format=webp&width=800",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2b2051e6b49f4e57abbdf7a6692fa1f3%2Fe194c5965736472db87ab1a8803a7594?format=webp&width=800",
     targetMusclesImage: "https://api.builder.io/api/v1/image/assets/TEMP/54a324930c243212104e8149112b458d3dc1a993?width=264",
     instructions: [
       "1. Place a pulley at the lowest position with an ankle cuff attachment and wrap it around your right ankle.",
