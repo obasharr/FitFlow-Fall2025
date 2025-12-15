@@ -44,11 +44,44 @@ async function supabaseRequest<T>(
 
     const responseText = await response.text();
 
-    if (!responseText) {
-      console.error(`Empty response from Supabase: ${method} ${path}`);
+    // DELETE operations may return empty responses (204 No Content)
+    if (!response.ok) {
+      if (!responseText) {
+        const errorMsg = `HTTP ${response.status}`;
+        console.error(`Supabase API error: ${errorMsg}`);
+        return {
+          data: null,
+          error: { message: errorMsg },
+        };
+      }
+
+      let data: unknown;
+      try {
+        data = JSON.parse(responseText);
+      } catch (e) {
+        console.error(`Invalid JSON response: ${responseText}`);
+        return {
+          data: null,
+          error: { message: "Invalid response from database" },
+        };
+      }
+
+      const errorMsg =
+        (data as any)?.message ||
+        (data as any)?.error_description ||
+        "Unknown error";
+      console.error(`Supabase API error: ${response.status}`, errorMsg);
       return {
         data: null,
-        error: { message: "Empty response from database" },
+        error: { message: errorMsg },
+      };
+    }
+
+    // Success - handle empty responses for DELETE
+    if (!responseText) {
+      return {
+        data: null,
+        error: null,
       };
     }
 
@@ -60,18 +93,6 @@ async function supabaseRequest<T>(
       return {
         data: null,
         error: { message: "Invalid response from database" },
-      };
-    }
-
-    if (!response.ok) {
-      const errorMsg =
-        (data as any)?.message ||
-        (data as any)?.error_description ||
-        "Unknown error";
-      console.error(`Supabase API error: ${response.status}`, errorMsg);
-      return {
-        data: null,
-        error: { message: errorMsg },
       };
     }
 
