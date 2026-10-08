@@ -25,9 +25,10 @@ FitFlow is a full-stack fitness web application for exploring exercises, learnin
 ### Prerequisites
 
 - Node.js and npm
-- A Supabase project configured with the data structures expected by the application
-- Optional: a Google OAuth client ID for Google sign-in
+- Internet connection for Supabase functionality
 
+Configuration: The repository includes environment variables for the existing Supabase project. To use your own database, update the .env file with your Supabase project URL, anon key, and Google OAuth client ID (if applicable).
+  
 ### Installation
 
 1. Clone the repository and open the project directory:
@@ -42,26 +43,15 @@ FitFlow is a full-stack fitness web application for exploring exercises, learnin
    ```bash
    npm install
    ```
-
-3. Create or update a `.env` file in the project root with your own configuration:
-
-   ```dotenv
-   SUPABASE_URL=your_supabase_project_url
-   SUPABASE_ANON_KEY=your_supabase_anon_key
-   VITE_GOOGLE_CLIENT_ID=your_google_client_id
-   ```
-
-   The Google client ID is needed only for the Google sign-in integration. Never commit real credentials or secrets.
-
-4. Start the development server:
+3. Start the development server:
 
    ```bash
    npm run dev
    ```
 
-5. Open the local URL printed by Vite in your terminal.
+4. Open the local URL printed by Vite in your terminal.
 
-**Note:** Supabase setup is not automated in this repository. You will need to configure the required tables and permissions to match the backend's database requests before account and favorites features will work.
+**Note:**  FitFlow uses Supabase for persistent data storage. The repository includes configuration for the original project database. If you want to use your own Supabase instance, you will need to configure the required database tables and permissions.
 
 ## Available Scripts
 
@@ -107,7 +97,7 @@ The Express backend exposes endpoints including:
 
 ## Security and Development Status
 
-FitFlow was developed as a student project and is **not production-ready**. The current authentication implementation includes simplified credential/token handling, and the Google sign-in backend decodes tokens without verifying their signatures. Before any public deployment, replace these mechanisms with properly validated authentication, secure password hashing, server-side authorization checks, and suitable Supabase access controls.
+FitFlow was developed as an academic group project and is intended for educational and demonstration purposes. Its authentication implementation is not production-ready, including simplified credential handling and unverified Google sign-in tokens. Production deployment would require stronger authentication, server-side authorization, and appropriate database security policies.
 
 ## Project Background
 
