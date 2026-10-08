@@ -33,7 +33,7 @@ FitFlow is a full-stack fitness web application for exploring exercises, learnin
 1. Clone the repository and open the project directory:
 
    ```bash
-   git clone <YOUR_REPOSITORY_URL>
+   git clone https://github.com/obasharr/FitFlow-Fall2025.git
    cd FitFlow-Fall2025
    ```
 
